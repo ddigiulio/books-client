@@ -13,61 +13,23 @@ export class Board extends React.Component {
         this.changeCurrentlyReading = this.changeCurrentlyReading.bind(this);
         // this.addTopBook = this.addTopBook.bind(this);
 
-
-        this.state = {
-            authors: [{
-                imageSrc: "https://images.gr-assets.com/authors/1182118389p5/585.jpg",
-                author: "John Steinbeck"
-            },
-            {
-                imageSrc: "https://images.gr-assets.com/authors/1434625177p5/656983.jpg",
-                author: "J.R.R. Tolkien"
-            },
-            {
-                imageSrc: "https://images.gr-assets.com/authors/1367519078p5/1069006.jpg",
-                author: "C.S. Lewis"
-            },
-            {
-                imageSrc: "https://images.gr-assets.com/authors/1510435123p5/1077326.jpg",
-                author: "J.K. Rowling"
-            },
-            {
-                imageSrc: "https://images.gr-assets.com/authors/1406040005p5/1455.jpg",
-                author: "Ernest Hemingway"
-            },
-            {
-                imageSrc: "https://images.gr-assets.com/authors/1393683411p5/5754446.jpg",
-                author: "Voltaire"
-            },
-            {
-                imageSrc: "https://images.gr-assets.com/authors/1506091612p5/957894.jpg",
-                author: "Camus"
-            },
-            {
-                imageSrc: "https://images.gr-assets.com/authors/1433582280p5/2778055.jpg",
-                author: "Vonnegut"
-            }]
-        }
     }
 
     changeCurrentlyReading = (event) => {
         event.preventDefault();
         var param = event.target.bookTitle.value;
-
         this.props.dispatch(actions.currentBookThunk(param))
     }
 
     addTopBook = (event) => {
         event.preventDefault();
         var param = event.target.topBookTitle.value;
-        console.log(param)
         this.props.dispatch(actions.topBookThunk(param))
     }
 
      addTopAuthor = (event) => {
         event.preventDefault();
-        var param = event.target.topAuthorTitle.value;
-        console.log(param)
+        var param = event.target.topAuthorTitle.value; 
         this.props.dispatch(actions.topAuthorThunk(param))
     }
 
@@ -80,9 +42,9 @@ export class Board extends React.Component {
             <Book key={index} {...book} />
         );
 
-        // const topAuthors = this.state.authors.map((author, index) =>
-        //     <Author key={index} {...author} />
-        // );
+        const topAuthors = this.props.topAuthors.map((author, index) =>
+            <Author key={index} {...author} />
+        );
 
 
         return (
@@ -122,9 +84,9 @@ export class Board extends React.Component {
                     <input type="submit" value="Submit" />
                 </form>
 
-                {/*<div className="topAuthors">
+                <div className="topAuthors">
             {topAuthors}
-        </div>*/}
+        </div>
             </div>
         )
     };
@@ -137,7 +99,8 @@ Board.defaultProps = {
 
 const mapStateToProps = state => ({
     currentlyReading: state.currentlyReading,
-    topBooks: state.topBooks
+    topBooks: state.topBooks,
+    topAuthors: state.topAuthors
 });
 
 

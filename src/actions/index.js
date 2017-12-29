@@ -92,15 +92,13 @@ export const topAuthorThunk = (param) => (dispatch) => {
             return res.json();
         })
         .then(data => {
-            
-            // const result = data.GoodreadsResponse.search[0].results[0].work[0].best_book[0]
-            // const book = {
-            //     author: result.author[0].name[0],
-            //     title: result.title[0],
-            //     imageSrc: result.image_url[0]
-            // }
+            const result = data.GoodreadsResponse.author[0]
+            const author = {
+                name: result.name[0],
+                imageSrc: result.image_url[0]
+            }
            
-            // dispatch(topBookSuccess(book));
+            dispatch(topAuthorSuccess(author));
         }
         )
         .catch(err => console.log(err)

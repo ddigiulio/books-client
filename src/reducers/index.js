@@ -8,7 +8,7 @@ const initialState = {
      topBooks: [{
      }], 
      topAuthors: [{
-         
+
      }]
 };
 
@@ -39,6 +39,15 @@ export const reducer = (state=initialState, action) => {
                title: action.book.title,
                author: action.book.author,
                imageSrc: action.book.imageSrc
+           }]
+        });
+    }
+     else if (action.type === actions.TOP_AUTHOR_SUCCESS){
+        
+        return Object.assign({}, state, {
+           topAuthors: [...state.topAuthors, {
+               name: action.author.name,
+               imageSrc: action.author.imageSrc
            }]
         });
     }
