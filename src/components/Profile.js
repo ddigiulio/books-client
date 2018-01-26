@@ -1,46 +1,40 @@
 import React from 'react';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 import requiresLogin from './requires-login';
 import * as actions from '../actions/profile';
-
-
+import Book from './book'
+import { Link } from 'react-router-dom'
+import './Profile.css'
 
 export class Profile extends React.Component {
-     constructor(props) {
-        super(props);
-        this.changeCurrentlyReading = this.changeCurrentlyReading.bind(this);
-        // this.addTopBook = this.addTopBook.bind(this);
-
-    }
+ 
     componentDidMount() {
         this.props.dispatch(actions.getCurrentlyReading());
+        this.props.dispatch(actions.getTopBooks());
     }
 
-      changeCurrentlyReading = (event) => {
-        event.preventDefault();
-        var param = event.target.bookTitle.value;
-        this.props.dispatch(actions.currentBookThunk(param))
-    }
 
     render() {
+        const topBooks = this.props.topBooks.map((book, index) =>
+            <Link  key={index} to={"/Book/" + book._id}> <Book {...book} /></Link>);
         return (
-            <div className="dashboard">
-                <div className="dashboard-username">
+            <div className="profile">
+                <div className="profile-username">
                     Username: {this.props.username}
                 </div>
-                <div className="dashboard-name">Name: {this.props.name}</div>
+                <div className="profile-name">Name: {this.props.name}</div>
                 <div className="currentlyReading">
-                    <form onSubmit={this.changeCurrentlyReading}>
-                        <label>
-                            Update Currently Reading:
-          <input type="text" name="bookTitle" />
-                        </label>
-                        <input type="submit" value="Submit" />
-                    </form>
-                    {/*<Book
+                    <button><Link to="/currentBookPageUpdate">Update Currently Reading</Link></button>
+                    <Book
                         imageSrc={this.props.currentlyReading.imageSrc}
                         author={this.props.currentlyReading.author}
-                        title={this.props.currentlyReading.title} />*/}
+                        title={this.props.currentlyReading.title} />
+                </div>
+                <div className="topBooksContainer">
+                    <button><Link to="/topBooksPage">Update Top Books</Link></button>
+                    <div className="topBooks">
+                        {topBooks}
+                    </div>
                 </div>
             </div>
         );
@@ -50,12 +44,15 @@ Profile.defaultProps = {
     text: ''
 };
 
+//ask about this return statement
 const mapStateToProps = state => {
-    const {currentUser} = state.auth;
+    const { currentUser } = state.auth;
     return {
         username: state.auth.currentUser.username,
         name: `${currentUser.firstName} ${currentUser.lastName}`,
-        // protectedData: state.protectedData.data
+        currentlyReading: state.profile.currentlyReading,
+        topBooks: state.profile.topBooks
+
     };
 };
 

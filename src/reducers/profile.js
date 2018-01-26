@@ -29,23 +29,24 @@ export default function reducer (state = initialState, action) {
 
         return Object.assign({}, state, {
             currentlyReading: {
+                id: action.book._id,
                 title: action.book.title,
                 author: action.book.author,
                 imageSrc: action.book.imageSrc,
+                description: action.book.description,
+                rating: action.book.rating,
+                pubYear: action.book.pubYear,
+                pubMonth: action.book.pubMonth,
+                fetched: Date.now()
             }
         });
     }
-    // else if (action.type === actions.TOP_BOOK_SUCCESS) {
+    else if (action.type === actions.TOP_BOOKS_SUCCESS) {
 
-    //     return Object.assign({}, state, {
-    //         topBooks: [...state.topBooks, {
-    //             title: action.book.title,
-    //             author: action.book.author,
-    //             imageSrc: action.book.imageSrc,
-    //             imageSrcSmall: action.book.imageSrcSmall
-    //         }]
-    //     });
-    // }
+        return Object.assign({}, state, {
+            topBooks: action.books
+        });
+    }
     // else if (action.type === actions.TOP_AUTHOR_SUCCESS) {
 
     //     return Object.assign({}, state, {

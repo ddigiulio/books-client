@@ -15,6 +15,7 @@ const initialState = {
 
 export default function reducer(state = initialState, action) {
     if (action.type === SET_AUTH_TOKEN) {
+        
         return Object.assign({}, state, {
             authToken: action.authToken
         });
@@ -29,6 +30,7 @@ export default function reducer(state = initialState, action) {
             error: null
         });
     } else if (action.type === AUTH_SUCCESS) {
+       
         return Object.assign({}, state, {
             loading: false,
             currentUser: action.currentUser

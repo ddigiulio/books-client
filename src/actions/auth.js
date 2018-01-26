@@ -43,6 +43,7 @@ const storeAuthInfo = (authToken, dispatch) => {
 };
 
 export const login = (username, password) => dispatch => {
+   
     dispatch(authRequest());
     return (
         fetch(`${API_BASE_URL}/auth/login`, {
@@ -79,6 +80,7 @@ export const login = (username, password) => dispatch => {
 };
 
 export const refreshAuthToken = () => (dispatch, getState) => {
+    
     dispatch(authRequest());
     const authToken = getState().auth.authToken;
     return fetch(`${API_BASE_URL}/auth/refresh`, {
@@ -92,6 +94,7 @@ export const refreshAuthToken = () => (dispatch, getState) => {
         .then(res => res.json())
         .then(({authToken}) => storeAuthInfo(authToken, dispatch))
         .catch(err => {
+          
             // We couldn't get a refresh token because our current credentials
             // are invalid or expired, or something else went wrong, so clear
             // them and sign us out

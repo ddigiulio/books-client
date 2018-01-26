@@ -1,5 +1,5 @@
 // import {API_BASE_URL} from '../config';
-import {normalizeResponseErrors} from './utils';
+import { normalizeResponseErrors } from './utils';
 
 export const CURRENT_BOOK_SUCCESS = 'CURRENT_BOOK_SUCCESS';
 export const currentBookSuccess = book => ({
@@ -18,10 +18,10 @@ export const currentBookFailure = () => ({
     type: CURRENT_BOOK_FAILURE
 });
 
-export const TOP_BOOK_SUCCESS = 'TOP_BOOK_SUCCESS';
-export const topBookSuccess = book => ({
-    type: TOP_BOOK_SUCCESS,
-    book
+export const TOP_BOOKS_SUCCESS = 'TOP_BOOKS_SUCCESS';
+export const topBooksSuccess = books => ({
+    type: TOP_BOOKS_SUCCESS,
+    books
 });
 
 export const TOP_AUTHOR_SUCCESS = 'TOP_AUTHOR_SUCCESS';
@@ -36,9 +36,60 @@ export const recommendationSuccess = book => ({
     book
 });
 
-export const currentBookThunk = (param) => (dispatch, getState) => {
+export const currentBookThunk = (param, history) => (dispatch, getState) => {
     // dispatch(currentBookLoading())
-    const url = "http://localhost:8080/books/" + param 
+    const url = "http://localhost:8080/books/currentlyReading/" + param
+    const authToken = getState().auth.authToken;
+    return fetch(url, {
+        method: 'POST',
+        headers: {
+            // Provide our auth token as credentials
+            Authorization: `Bearer ${authToken}`
+        }
+    })
+        .then(res => {
+            if (!res.ok) {
+                return Promise.reject(res.statusText);
+            }
+            return res.json();
+        })
+        .then( data => {
+            dispatch(currentBookSuccess(data))
+            history.push('/profile')
+        })
+
+}
+
+export const getCurrentlyReading = () => (dispatch, getState) => {
+
+    const fetched= getState().profile.currentlyReading.fetched;
+    if (fetched && (Date.now() - fetched) < 3600) {
+        return;
+    }
+    const authToken = getState().auth.authToken;
+    const url = "http://localhost:8080/books/currentlyReading"
+    return fetch(url, {
+        method: 'GET',
+        headers: {
+            Authorization: `Bearer ${authToken}`
+        }
+    })
+        .then(res => normalizeResponseErrors(res))
+        .then(res => res.json())
+        .then( data  => {
+          
+            dispatch(currentBookSuccess(data))
+        }
+           
+        )
+        .catch(err => {
+            // dispatch(fetchProtectedDataError(err));
+        });
+}
+
+export const topBooksThunk = (param) => (dispatch, getState) => {
+
+    const url = "http://localhost:8080/books/topBooks/" + param
     const authToken = getState().auth.authToken;
     return fetch(url, {
         method: 'GET',
@@ -47,23 +98,35 @@ export const currentBookThunk = (param) => (dispatch, getState) => {
             Authorization: `Bearer ${authToken}`
         }
     })
+        .then(res => {
+            if (!res.ok) {
+                return Promise.reject(res.statusText);
+            }
+            return res.json();
+        })
+        .then( data => {
+            
+            dispatch(topBooksSuccess(data))
+        })
 
 }
 
-export const getCurrentlyReading = () => (dispatch, getState) =>{
+export const getTopBooks = () => (dispatch, getState) => {
     const authToken = getState().auth.authToken;
-    const url = "http://localhost:8080/books/currentlyReading" 
+    const url = "http://localhost:8080/books/topBooks"
     return fetch(url, {
         method: 'GET',
-        headers:{
+        headers: {
             Authorization: `Bearer ${authToken}`
         }
     })
-    .then(res => normalizeResponseErrors(res))
+        .then(res => normalizeResponseErrors(res))
         .then(res => res.json())
-        .then(({data}) => 
-        // dispatch(fetchProtectedDataSuccess(data)))
-        console.log(data)
+        .then( data  => {
+          
+            dispatch(topBooksSuccess(data))
+        }
+           
         )
         .catch(err => {
             // dispatch(fetchProtectedDataError(err));
@@ -89,7 +152,7 @@ export const getCurrentlyReading = () => (dispatch, getState) =>{
 //                 imageSrc: result.image_url[0],
 //                 imageSrcSmall: result.small_image_url[0]
 //             }
-         
+
 //             dispatch(topBookSuccess(book));
 //         }
 //         )

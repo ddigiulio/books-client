@@ -1,14 +1,18 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {Route, withRouter} from 'react-router-dom';
-
+import currentBookPageUpdate from './currentBookPageUpdate';
+import topBooksPage from './topBooksPage';
 import HeaderBar from './header-bar';
 import LandingPage from './landing-page';
 import Profile from './profile';
 import RegistrationPage from './registration-page';
 import {refreshAuthToken} from '../actions/auth';
+import bookPage from './bookPage'
+import './app.css'
 
 export class App extends React.Component {
+
     componentWillReceiveProps(nextProps) {
         if (nextProps.loggedIn && !this.props.loggedIn) {
             // When we are logged in, refresh the auth token periodically
@@ -38,6 +42,7 @@ export class App extends React.Component {
         clearInterval(this.refreshInterval);
     }
 
+
     render() {
         return (
             <div className="app">
@@ -45,6 +50,9 @@ export class App extends React.Component {
                 <Route exact path="/" component={LandingPage} />
                 <Route exact path="/profile" component={Profile} />
                 <Route exact path="/register" component={RegistrationPage} />
+                <Route exact path="/currentBookPageUpdate" component={currentBookPageUpdate} />
+                <Route exact path="/topBooksPage" component={topBooksPage} />
+                <Route path="/Book/:id" component={bookPage} />
             </div>
         );
     }
