@@ -1,0 +1,13 @@
+@media (min-width: 375px) and (max-height: 667px){
+    
+    .input{
+        width: 170px;
+        height: 25px;
+        font-size: 20px;
+        
+    }
+    .form-input{
+        width: 172px;
+    }
+ 
+ }

@@ -1,0 +1,23 @@
+@media (min-width: 375px) and (max-height: 667px){
+    
+    .home {
+        height: 700px;
+        margin-top: -50px;
+      
+    }
+
+    .home h1{
+        text-align: center;
+        padding-top: 60px;
+        font-family: 'Berkshire Swash', cursive;
+        font-size: 60px;
+        color: silver;
+        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    }
+
+    .register{
+        margin-left: 40%;
+        color: white;
+    }
+
+}

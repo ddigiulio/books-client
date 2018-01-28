@@ -12,7 +12,6 @@ import {setAuthToken, refreshAuthToken} from './actions/auth';
 
 
 const history = createHistory()
-
 const store = configureStore(history)
 
 const authToken = loadAuthToken();

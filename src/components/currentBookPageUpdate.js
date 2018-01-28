@@ -43,5 +43,4 @@ const mapStateToProps = (state, props) => ({
     id: props.match.params.id,
 })
 
-export default requiresLogin()(connect(mapStateToProps)(currentBookPageUpdate
-));
+export default requiresLogin()(connect(mapStateToProps)(currentBookPageUpdate));

@@ -1,0 +1,31 @@
+@media (min-width: 375px) and (max-height: 667px){
+    
+   .login-form{
+       margin-top: 150px;
+       margin-left: 28%;
+            /* background-color: white */
+   }
+
+   .formWrapper{
+       width: auto;
+   }
+   .username{
+       color: black;
+       background-color: white;
+   }
+   .password{
+       color: black;
+       background-color: white;
+   }
+   /* .formWrapper{
+       display:inline-block;
+       background: white;
+   } */
+
+    .login-button{
+        width: 170px;
+        font-size: 18px;
+
+    }
+
+}

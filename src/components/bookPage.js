@@ -38,8 +38,8 @@ export class bookPage extends React.Component {
                 <div className="description">
                 {this.props.currentBook.description}
                 <div className="info">
-                <span>{this.currentBook.rating}</span>
-                <span>`{this.currentBook.pubYear} / {this.currentBook.pubMonth}`</span>
+                {this.props.currentBook.rating}
+                {this.props.currentBook.pubYear} / {this.props.currentBook.pubMonth}
                 </div>
                 </div>
                 <button onClick={this.removeBook}>Remove</button>

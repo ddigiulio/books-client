@@ -5,6 +5,7 @@ import * as actions from '../actions/profile';
 import Book from './book'
 import { Link } from 'react-router-dom'
 import './Profile.css'
+import HeaderBar from './header-bar'
 
 export class Profile extends React.Component {
  
@@ -19,10 +20,7 @@ export class Profile extends React.Component {
             <Link  key={index} to={"/Book/" + book._id}> <Book {...book} /></Link>);
         return (
             <div className="profile">
-                <div className="profile-username">
-                    Username: {this.props.username}
-                </div>
-                <div className="profile-name">Name: {this.props.name}</div>
+                <HeaderBar/>
                 <div className="currentlyReading">
                     <button><Link to="/currentBookPageUpdate">Update Currently Reading</Link></button>
                     <Book
