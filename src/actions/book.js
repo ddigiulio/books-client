@@ -1,4 +1,4 @@
-import { push, replace } from 'react-router-redux'
+
 
 export const BOOK_INFO_SUCCESS = 'BOOK_INFO_SUCCESS';
 export const bookInfoSuccess = book => ({

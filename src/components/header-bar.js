@@ -3,6 +3,9 @@ import {connect} from 'react-redux';
 import {clearAuth} from '../actions/auth';
 import {clearAuthToken} from '../local-storage';
 import './header-bar.css'
+import { Link } from 'react-router-dom'
+import requiresLogin from './requires-login';
+
 
 export class HeaderBar extends React.Component {
     logOut() {
@@ -15,17 +18,18 @@ export class HeaderBar extends React.Component {
         let logOutButton;
         if (this.props.loggedIn) {
             logOutButton = (
-                <button onClick={() => this.logOut()}>Log out</button>
+                <button className="logOut"onClick={() => this.logOut()}>Log out</button>
             );
         }
+
         return (
-            <div className="header-bar">
+            <div  className="header-bar">
                 <h1>The Book Nook</h1>
                 
                 <div className="secondary">
                 
-                <button>{this.props.currentUser.firstName || this.props.currentUser.username}</button>
-                <button>Search</button>
+                <Link to="/profile"><button className="profileButton">{this.props.currentUser.firstName || this.props.currentUser.username}</button></Link>
+                <Link to="/searchPage"><button className="search">Search</button></Link>
                 {logOutButton}
                 </div>
             </div>
@@ -38,4 +42,4 @@ const mapStateToProps = state => ({
     currentUser: state.auth.currentUser
 });
 
-export default connect(mapStateToProps)(HeaderBar);
+export default requiresLogin()(connect(mapStateToProps)(HeaderBar));

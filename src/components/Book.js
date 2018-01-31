@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Book.css';
+import './book.css';
 
 export default function Book(props) {
     return (

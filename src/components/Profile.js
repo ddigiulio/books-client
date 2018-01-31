@@ -4,7 +4,7 @@ import requiresLogin from './requires-login';
 import * as actions from '../actions/profile';
 import Book from './book'
 import { Link } from 'react-router-dom'
-import './Profile.css'
+import './profile.css'
 import HeaderBar from './header-bar'
 
 export class Profile extends React.Component {
@@ -16,22 +16,31 @@ export class Profile extends React.Component {
 
 
     render() {
+
         const topBooks = this.props.topBooks.map((book, index) =>
-            <Link  key={index} to={"/Book/" + book._id}> <Book {...book} /></Link>);
+            <Link  key={index} to={"/Book/" + book._id}> <Book {...book} param={{type:"top"}}/></Link>);
         return (
             <div className="profile">
                 <HeaderBar/>
-                <div className="currentlyReading">
-                    <button><Link to="/currentBookPageUpdate">Update Currently Reading</Link></button>
-                    <Book
+                <div className="currentBookContainer">
+                    <div className="currentBookTitle">Currently Reading</div>
+                    <div className="currentBook">
+                    <Link  to={"/currentBook/" + this.props.currentlyReading.id}><Book 
                         imageSrc={this.props.currentlyReading.imageSrc}
                         author={this.props.currentlyReading.author}
-                        title={this.props.currentlyReading.title} />
+                        title={this.props.currentlyReading.title} /></Link>
+                    </div>
+                    <div className="updateCurrentBookContainer">
+                        <Link to="/currentBookPageUpdate"><button className="updateCurrentButton">Update</button></Link>
+                    </div>
                 </div>
                 <div className="topBooksContainer">
-                    <button><Link to="/topBooksPage">Update Top Books</Link></button>
+                <div className="topBooksTitle">Top Books</div>
                     <div className="topBooks">
                         {topBooks}
+                    </div>
+                    <div className="updateTopBooksContainer">
+                    <Link to="/topBooksPage"><button>Update</button></Link>
                     </div>
                 </div>
             </div>
@@ -46,8 +55,6 @@ Profile.defaultProps = {
 const mapStateToProps = state => {
     const { currentUser } = state.auth;
     return {
-        username: state.auth.currentUser.username,
-        name: `${currentUser.firstName} ${currentUser.lastName}`,
         currentlyReading: state.profile.currentlyReading,
         topBooks: state.profile.topBooks
 

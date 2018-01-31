@@ -62,10 +62,10 @@ export const currentBookThunk = (param, history) => (dispatch, getState) => {
 
 export const getCurrentlyReading = () => (dispatch, getState) => {
 
-    const fetched= getState().profile.currentlyReading.fetched;
-    if (fetched && (Date.now() - fetched) < 3600) {
-        return;
-    }
+    // const fetched= getState().profile.currentlyReading.fetched;
+    // if (fetched && (Date.now() - fetched) < 3600) {
+    //     return;
+    // }
     const authToken = getState().auth.authToken;
     const url = "http://localhost:8080/books/currentlyReading"
     return fetch(url, {
@@ -77,7 +77,7 @@ export const getCurrentlyReading = () => (dispatch, getState) => {
         .then(res => normalizeResponseErrors(res))
         .then(res => res.json())
         .then( data  => {
-          
+           
             dispatch(currentBookSuccess(data))
         }
            
@@ -123,7 +123,7 @@ export const getTopBooks = () => (dispatch, getState) => {
         .then(res => normalizeResponseErrors(res))
         .then(res => res.json())
         .then( data  => {
-          
+            
             dispatch(topBooksSuccess(data))
         }
            

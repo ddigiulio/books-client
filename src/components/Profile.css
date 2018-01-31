@@ -1,12 +1,77 @@
-.topBooks{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    margin-top: 85px;
-    height: auto;
-}
+@media (min-width: 375px) and (max-height: 667px){
+    
+    .profile{
+        height: 100%;
+        background-color: #F5F5DC
+    }
+    .updateCurrentButton {
+        width: auto;
+        font-size: 16px;
+        background-color: #1696CC;
+        border-style: solid;
+        border-width: thin; 
+        border-radius: 5px;   
+        color: #F0F0F0;
+        margin-top: 8px;
+        margin-bottom: 5px;
+        font-family: 'Poppins', sans-serif    
+    }
+    .updateCurrentBookContainer {
+        margin: 0 auto;
+        width: 100%;
+        display: relative;
+        text-align: center;
+    }
+    .currentlyReading{
+        position: relative;
+        width: 100px;
+        margin: 0 auto;              
+    }
+    .currentBook{     
+        position: relative;
+        width: 100px;
+        margin: 0 auto;       
+    }
 
-@media (min-width: 360px) and (max-height: 640px){
-    
-    
+    .currentBookTitle{
+        margin: 10px auto;
+        width: 150px;
+        font-size: 16px;
+        color: #F0F0F0;
+        text-align: center;
+        background-color: #1696CC;
+        border-radius: 5px; 
+        font-family: 'Poppins', sans-serif 
+    }
+
+    .topBooksTitle{
+        margin: 10px auto;
+        width: 150px;
+        font-size: 16px;
+        color: #F0F0F0;
+        text-align: center;
+        background-color: #1696CC;
+        border-radius: 5px; 
+        font-family: 'Poppins', sans-serif 
+    }
+
+    .currentBookContainer{
+       
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #585858;
+   
+    /* border-right: none;
+    border-left: none;
+    border-top: none; */
+    }
+
+    .topBooks{
+
+        /* display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        height: auto; */
+        
+    }
 }

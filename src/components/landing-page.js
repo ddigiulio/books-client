@@ -17,7 +17,7 @@ export function LandingPage(props) {
         <div style={sectionStyle} className="home">
             <h1>The Book Nook</h1>
             <LoginForm />
-            <Link className="register" to="/register">Register</Link>
+            {/* <Link className="register" to="/register">Register</Link> */}
         </div>
     );
 }

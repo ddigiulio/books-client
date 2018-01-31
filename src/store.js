@@ -6,6 +6,7 @@ import {reducer as formReducer} from 'redux-form';
 // import protectedDataReducer from './reducers/protected-data';
 import profileReducer from './reducers/profile'
 import bookReducer from './reducers/book'
+import searchReducer from './reducers/search'
 import { routerReducer, routerMiddleware } from 'react-router-redux'
 import {setAuthToken, refreshAuthToken} from './actions/auth';
 
@@ -18,7 +19,7 @@ const configureStore = (history) => {
             form: formReducer,
             profile: profileReducer,
             book: bookReducer,
-            router: routerReducer
+            search: searchReducer
         }), 
         
         window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),

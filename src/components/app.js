@@ -5,10 +5,13 @@ import currentBookPageUpdate from './currentBookPageUpdate';
 import topBooksPage from './topBooksPage';
 import HeaderBar from './header-bar';
 import LandingPage from './landing-page';
+import searchPage from './searchPage'
 import Profile from './profile';
+import personProfile from './personProfile'
 import RegistrationPage from './registration-page';
 import {refreshAuthToken} from '../actions/auth';
 import bookPage from './bookPage'
+import currentBookPage from './currentBookPage'
 import './app.css'
 
 export class App extends React.Component {
@@ -52,6 +55,9 @@ export class App extends React.Component {
                 <Route exact path="/currentBookPageUpdate" component={currentBookPageUpdate} />
                 <Route exact path="/topBooksPage" component={topBooksPage} />
                 <Route path="/Book/:id" component={bookPage} />
+                <Route path="/currentBook/:id" component={currentBookPage} />
+                <Route exact path="/searchPage" component={searchPage} />
+                <Route exact path="/personProfile" component={personProfile}/>
             </div>
         );
     }

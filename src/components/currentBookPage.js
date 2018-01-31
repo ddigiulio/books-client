@@ -3,18 +3,18 @@ import requiresLogin from './requires-login';
 import { connect } from 'react-redux';
 import * as actions from '../actions/book';
 import Book from './book'
-import {Redirect} from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import { withRouter } from 'react-router-dom'
 import HeaderBar from './header-bar'
-import './bookPage.css'
+import './currentBookPage.css'
 export class bookPage extends React.Component {
     constructor(props) {
         super(props);
 
     }
-    componentDidMount(){
-   
-       this.props.dispatch(actions.bookFetchThunk(this.props.id)) 
+    componentDidMount() {
+
+        this.props.dispatch(actions.bookFetchThunk(this.props.id))
     }
 
     removeBook = () => {
@@ -28,12 +28,12 @@ export class bookPage extends React.Component {
         event.preventDefault();
         this.props.history.push('/profile')
     }
-    render(){
-        
-        return(
-            <div className="bookPage">
+    render() {
+
+        return (
+            <div className="currentBookPage">
                 <HeaderBar />
-                <div className="containerBook">
+                <div className="containerCurrent">
                     <div className="info">
                     <span className="bookTitle">{this.props.currentBook.title} </span><br />
                     <span> by {this.props.currentBook.author} </span><br />  
@@ -48,10 +48,9 @@ export class bookPage extends React.Component {
                 </div>
                 <div className="description">
                     {this.props.currentBook.description}
+
                 </div>
-                <div className="remove">
-                <button className="removeButton" onClick={this.removeBook}>Remove Book</button>
-                </div>
+
             </div>
         )
     }
