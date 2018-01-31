@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {Link, Redirect} from 'react-router-dom';
+import { Redirect} from 'react-router-dom';
 import LoginForm from './login-form';
 import image from '../books.jpg'
 import './landing-page.css'
@@ -16,8 +16,7 @@ export function LandingPage(props) {
     return (
         <div style={sectionStyle} className="home">
             <h1>The Book Nook</h1>
-            <LoginForm />
-            {/* <Link className="register" to="/register">Register</Link> */}
+            <LoginForm />   
         </div>
     );
 }

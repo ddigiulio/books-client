@@ -3,8 +3,9 @@ import { connect } from 'react-redux';
 import requiresLogin from './requires-login';
 import * as actions from '../actions/profile';
 import {Redirect} from 'react-router-dom';
+import HeaderBar from './header-bar'
 
-export class topBooksPage extends React.Component {
+export class topBooksPageUpdate extends React.Component {
     constructor(props) {
         super(props);
         this.state ={
@@ -15,7 +16,7 @@ export class topBooksPage extends React.Component {
     changeTopBooks = (event) => {
         event.preventDefault();
         var param = event.target.bookTitle.value;
-        this.props.dispatch(actions.topBooksThunk(param))
+        this.props.dispatch(actions.topBooksThunk(param, this.props.history))
         this.setState({
             done: true
         })
@@ -28,6 +29,8 @@ export class topBooksPage extends React.Component {
             )
         }
         return (
+            <div>
+                <HeaderBar />
             <form onSubmit={this.changeTopBooks}>
                 <label>
                     Update Top Books:
@@ -35,8 +38,14 @@ export class topBooksPage extends React.Component {
                 </label>
                 <input type="submit" value="Submit" />
             </form>
+            </div>
         )
     }
 }
 
-export default requiresLogin()(connect()(topBooksPage));
+const mapStateToProps = (state, props) => ({
+    history: props.history,
+    id: props.match.params.id,
+})
+
+export default requiresLogin()(connect(mapStateToProps)(topBooksPageUpdate));

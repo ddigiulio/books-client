@@ -3,15 +3,11 @@ import requiresLogin from './requires-login';
 import { connect } from 'react-redux';
 import * as actions from '../actions/book';
 import Book from './book'
-import { Redirect } from 'react-router-dom';
-import { withRouter } from 'react-router-dom'
 import HeaderBar from './header-bar'
 import './currentBookPage.css'
-export class bookPage extends React.Component {
-    constructor(props) {
-        super(props);
 
-    }
+export class currentBookPage extends React.Component {
+   
     componentDidMount() {
 
         this.props.dispatch(actions.bookFetchThunk(this.props.id))
@@ -62,6 +58,4 @@ const mapStateToProps = (state, props) => ({
     currentBook: state.book.currentBook
 })
 
-
-
-export default connect(mapStateToProps)(bookPage);
+export default requiresLogin()(connect(mapStateToProps)(currentBookPage));

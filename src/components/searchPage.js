@@ -15,7 +15,7 @@ export class searchPage extends React.Component {
     render() {
         let result;
         if(!this.props.searchResult){
-            result = <span>User not found</span>
+            result = <span>User not found!</span>
         }
         else{
            result = (<Link to="/personProfile"><span>{this.props.searchResult.username}</span><br />

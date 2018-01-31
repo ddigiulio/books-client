@@ -55,23 +55,40 @@
         font-family: 'Poppins', sans-serif 
     }
 
-    .currentBookContainer{
-       
+    .currentBookContainer{   
     border-bottom-style: solid;
     border-bottom-width: thin;
     border-bottom-color: #585858;
-   
-    /* border-right: none;
-    border-left: none;
-    border-top: none; */
     }
 
     .topBooks{
-
-        /* display: flex;
+        display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
-        height: auto; */
-        
+        height: auto; 
     }
+    .updateTopBooksContainer {
+        margin: 0 auto;
+        width: 100%;
+        display: relative;
+        text-align: center;
+    }
+
+    .updateTopBooksButton {
+        width: auto;
+        font-size: 16px;
+        background-color: #1696CC;
+        border-style: solid;
+        border-width: thin; 
+        border-radius: 5px;   
+        color: #F0F0F0;
+        margin-top: 8px;
+        margin-bottom: 5px;
+        font-family: 'Poppins', sans-serif    
+    }
+    .topBooksContainer{   
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        border-bottom-color: #585858;
+        }
 }

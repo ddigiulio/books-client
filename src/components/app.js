@@ -2,8 +2,6 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {Route, withRouter} from 'react-router-dom';
 import currentBookPageUpdate from './currentBookPageUpdate';
-import topBooksPage from './topBooksPage';
-import HeaderBar from './header-bar';
 import LandingPage from './landing-page';
 import searchPage from './searchPage'
 import Profile from './profile';
@@ -12,6 +10,8 @@ import RegistrationPage from './registration-page';
 import {refreshAuthToken} from '../actions/auth';
 import bookPage from './bookPage'
 import currentBookPage from './currentBookPage'
+import topBooksPageUpdate from './topBooksPageUpdate'
+import topAuthorsPageUpdate from './topAuthorsPageUpdate'
 import './app.css'
 
 export class App extends React.Component {
@@ -53,7 +53,8 @@ export class App extends React.Component {
                 <Route exact path="/profile" component={Profile} />
                 <Route exact path="/register" component={RegistrationPage} />
                 <Route exact path="/currentBookPageUpdate" component={currentBookPageUpdate} />
-                <Route exact path="/topBooksPage" component={topBooksPage} />
+                <Route exact path="/updateTopBooksPage" component={topBooksPageUpdate} />
+                <Route exact path="/updateTopAuthorsPage" component={topAuthorsPageUpdate} />
                 <Route path="/Book/:id" component={bookPage} />
                 <Route path="/currentBook/:id" component={currentBookPage} />
                 <Route exact path="/searchPage" component={searchPage} />

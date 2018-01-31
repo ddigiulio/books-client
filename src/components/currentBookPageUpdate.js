@@ -2,12 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux';
 import requiresLogin from './requires-login';
 import * as actions from '../actions/profile';
-import {Redirect} from 'react-router-dom';
+import HeaderBar from './header-bar'
 export class currentBookPageUpdate extends React.Component {
-    constructor(props) {
-        super(props);
-       
-    }
+    
 
     changeCurrentlyReading = (event) => {
         event.preventDefault();
@@ -16,14 +13,11 @@ export class currentBookPageUpdate extends React.Component {
         
     }
 
-    goBack = (event) => {
-        event.preventDefault;
-        this.props.history.push('/profile')
-    }
     render() {
         
         return (
             <div>
+                <HeaderBar />
             <form onSubmit={this.changeCurrentlyReading}>
                 <label>
                     Update Currently Reading:
@@ -31,7 +25,6 @@ export class currentBookPageUpdate extends React.Component {
                 </label>
                 <input type="submit" value="Submit" />
             </form>
-            <button onClick={this.goBack}>Go Back </button>
             </div>
         )
     }

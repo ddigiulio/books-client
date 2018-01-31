@@ -34,8 +34,6 @@ export const searchThunk = (param) => (dispatch, getState) => {
                 return dispatch(searchEmpty())
                 
             }
-            
-           
             dispatch(searchSuccess(data))
         })
 }

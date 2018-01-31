@@ -1,10 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import requiresLogin from './requires-login';
-import * as actions from '../actions/search';
 import Book from './book'
 import { Link } from 'react-router-dom'
-import './Profile.css'
+import './profile.css'
 import HeaderBar from './header-bar'
 
 export class personProfile extends React.Component {
@@ -40,7 +39,7 @@ personProfile.defaultProps = {
 
 //ask about this return statement
 const mapStateToProps = state => {
-    const { searchResult } = state.search;
+    
     return {
         username: state.search.searchResult.username,
         currentlyReading: state.search.searchResult.currentlyReading,

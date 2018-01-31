@@ -9,13 +9,14 @@ const initialState = {
 export default function reducer (state=initialState, action) {
     
     if(action.type === actions.SEARCH_SUCCESS){
+        // console.log(action)
         return Object.assign({}, state, {
             searchResult: {
-                username: action.result[0].username,
-                firstname: action.result[0].firstName,
-                lastname: action.result[0].lastName,
-                topBooks: action.result[0].topBooks,
-                currentlyReading: action.result[0].currentlyReading     
+                username: action.result.username,
+                firstname: action.result.firstName,
+                lastname: action.result.lastName,
+                topBooks: action.result.topBooks,
+                currentlyReading: action.result.currentlyReading     
             }
         });
         

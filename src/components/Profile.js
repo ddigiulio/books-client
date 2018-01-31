@@ -40,7 +40,12 @@ export class Profile extends React.Component {
                         {topBooks}
                     </div>
                     <div className="updateTopBooksContainer">
-                    <Link to="/topBooksPage"><button>Update</button></Link>
+                    <Link to="/updateTopBooksPage"><button className="updateTopBooksButton">Update</button></Link>
+                    </div>
+                </div>
+                <div className="topAuthorsContainer">
+                <div className="updateTopAuthorsContainer">
+                    <Link to="/updateTopAuthorsPage"><button className="updateTopAuthorsButton">Authors</button></Link>
                     </div>
                 </div>
             </div>
@@ -53,7 +58,7 @@ Profile.defaultProps = {
 
 //ask about this return statement
 const mapStateToProps = state => {
-    const { currentUser } = state.auth;
+    
     return {
         currentlyReading: state.profile.currentlyReading,
         topBooks: state.profile.topBooks

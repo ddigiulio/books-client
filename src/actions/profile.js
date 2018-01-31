@@ -62,10 +62,10 @@ export const currentBookThunk = (param, history) => (dispatch, getState) => {
 
 export const getCurrentlyReading = () => (dispatch, getState) => {
 
-    // const fetched= getState().profile.currentlyReading.fetched;
-    // if (fetched && (Date.now() - fetched) < 3600) {
-    //     return;
-    // }
+    const fetched= getState().profile.currentlyReading.fetched;
+    if (fetched && (Date.now() - fetched) < 3600) {
+        return;
+    }
     const authToken = getState().auth.authToken;
     const url = "http://localhost:8080/books/currentlyReading"
     return fetch(url, {
@@ -79,15 +79,14 @@ export const getCurrentlyReading = () => (dispatch, getState) => {
         .then( data  => {
            
             dispatch(currentBookSuccess(data))
-        }
-           
-        )
+            
+        })
         .catch(err => {
             // dispatch(fetchProtectedDataError(err));
         });
 }
 
-export const topBooksThunk = (param) => (dispatch, getState) => {
+export const topBooksThunk = (param, history) => (dispatch, getState) => {
 
     const url = "http://localhost:8080/books/topBooks/" + param
     const authToken = getState().auth.authToken;
@@ -107,6 +106,7 @@ export const topBooksThunk = (param) => (dispatch, getState) => {
         .then( data => {
             
             dispatch(topBooksSuccess(data))
+            history.push('/profile')
         })
 
 }
@@ -125,41 +125,35 @@ export const getTopBooks = () => (dispatch, getState) => {
         .then( data  => {
             
             dispatch(topBooksSuccess(data))
-        }
-           
-        )
+        })
         .catch(err => {
             // dispatch(fetchProtectedDataError(err));
         });
 }
 
-// export const topBookThunk = (param) => (dispatch) => {
-//     // dispatch(currentBookLoading())
-//     const url = "http://localhost:8080/books/" + param
-//     fetch(url)
-//         .then(res => {
-//             if (!res.ok) {
-//                 return Promise.reject(res.statusText);
-//             }
-//             return res.json();
-//         })
-//         .then(data => {
+export const topAuthorThunk = (param, history) => (dispatch, getState) => {
+    // dispatch(currentBookLoading())
+    const url = "http://localhost:8080/authors/" + param
+    const authToken = getState().auth.authToken;
+    return fetch(url, {
+        method: 'POST',
+        headers: {
+            // Provide our auth token as credentials
+            Authorization: `Bearer ${authToken}`
+        }
+    })
+        .then(res => {
+            if (!res.ok) {
+                return Promise.reject(res.statusText);
+            }
+            return res.json();
+        })
+        .then( data => {
+            console.log(data)
+            // dispatch(topAuthorSuccess(data))
+        })
+}
 
-//             const result = data.GoodreadsResponse.search[0].results[0].work[0].best_book[0]
-//             const book = {
-//                 author: result.author[0].name[0],
-//                 title: result.title[0],
-//                 imageSrc: result.image_url[0],
-//                 imageSrcSmall: result.small_image_url[0]
-//             }
-
-//             dispatch(topBookSuccess(book));
-//         }
-//         )
-//         .catch(err => console.log(err)
-//         // dispatch(currentBookFailure())}
-//         );
-// }
 
 // export const recommendationThunk = (param) => (dispatch) => {
 //     // dispatch(currentBookLoading())
@@ -184,32 +178,6 @@ export const getTopBooks = () => (dispatch, getState) => {
 //             dispatch(recommendationSuccess(book));
 //         })
 //         .catch(err => { console.log(err) }
-//         // dispatch(currentBookFailure())}
-//         );
-// }
-
-// export const topAuthorThunk = (param) => (dispatch) => {
-//     // dispatch(currentBookLoading())
-//     const url = "http://localhost:8080/author/" + param
-//     fetch(url)
-//         .then(res => {
-//             if (!res.ok) {
-//                 return Promise.reject(res.statusText);
-//             }
-//             return res.json();
-//         })
-//         .then(data => {
-//             const result = data.GoodreadsResponse.author[0]
-//             const author = {
-//                 name: result.name[0],
-//                 imageSrc: result.image_url[0],
-//                 imageSrcSmall: result.small_image_url[0]
-//             }
-
-//             dispatch(topAuthorSuccess(author));
-//         }
-//         )
-//         .catch(err => console.log(err)
 //         // dispatch(currentBookFailure())}
 //         );
 // }

@@ -3,25 +3,17 @@ import requiresLogin from './requires-login';
 import { connect } from 'react-redux';
 import * as actions from '../actions/book';
 import Book from './book'
-import {Redirect} from 'react-router-dom';
-import { withRouter } from 'react-router-dom'
 import HeaderBar from './header-bar'
 import './bookPage.css'
 export class bookPage extends React.Component {
-    constructor(props) {
-        super(props);
 
-    }
     componentDidMount(){
-   
        this.props.dispatch(actions.bookFetchThunk(this.props.id)) 
     }
 
     removeBook = () => {
         this.props.dispatch(actions.bookRemoveThunk(this.props.id, this.props.history))
-        // this.setState({
-        //     removed: true
-        // })
+
     }
 
     goBack = (event) => {
@@ -65,4 +57,4 @@ const mapStateToProps = (state, props) => ({
 
 
 
-export default connect(mapStateToProps)(bookPage);
+export default requiresLogin()(connect(mapStateToProps)(bookPage));
