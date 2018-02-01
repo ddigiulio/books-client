@@ -12,6 +12,8 @@ import bookPage from './bookPage'
 import currentBookPage from './currentBookPage'
 import topBooksPageUpdate from './topBooksPageUpdate'
 import topAuthorsPageUpdate from './topAuthorsPageUpdate'
+import searchCurrentBook from './searchCurrentBook'
+import searchTopBook from './searchTopBook'
 import './app.css'
 
 export class App extends React.Component {
@@ -56,6 +58,8 @@ export class App extends React.Component {
                 <Route exact path="/updateTopBooksPage" component={topBooksPageUpdate} />
                 <Route exact path="/updateTopAuthorsPage" component={topAuthorsPageUpdate} />
                 <Route path="/Book/:id" component={bookPage} />
+                <Route path="/searchCurrentBook/:id" component={searchCurrentBook}/>
+                <Route path="/searchTopBook/:id" component={searchTopBook}/>
                 <Route path="/currentBook/:id" component={currentBookPage} />
                 <Route exact path="/searchPage" component={searchPage} />
                 <Route exact path="/personProfile" component={personProfile}/>

@@ -18,7 +18,7 @@ export class Profile extends React.Component {
     render() {
 
         const topBooks = this.props.topBooks.map((book, index) =>
-            <Link  key={index} to={"/Book/" + book._id}> <Book {...book} param={{type:"top"}}/></Link>);
+            <Link  key={index} to={"/Book/" + book._id}> <Book {...book} /></Link>);
         return (
             <div className="profile">
                 <HeaderBar/>

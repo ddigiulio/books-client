@@ -11,7 +11,14 @@ const initialState = {
     topAuthors: [{
 
     }],
-    recommendations: [{}]
+    recommendations: [{
+
+    }],
+    searchResults: [{
+
+    }],
+    currentBook:{}
+
 
 };
 
@@ -47,6 +54,41 @@ export default function reducer (state = initialState, action) {
             topBooks: action.books
         });
     }
+    else if (action.type === actions.CURRENT_BOOK_SEARCH_RESULTS) {
+
+        return Object.assign({}, state, {
+            searchResults: action.books
+        });
+    }
+    else if (action.type === actions.TOP_BOOK_SEARCH_RESULTS) {
+
+        return Object.assign({}, state, {
+            searchResults: action.books
+        });
+    }
+    else if (action.type === actions.CLEAR_SEARCH){
+        return Object.assign({}, state, {
+            searchResults: ""
+        });
+    }
+    else if (action.type === actions.UPDATE_BOOK_SUCCESS) {
+
+        return Object.assign({}, state, {
+            currentBook: {
+                index: action.book[0].index,
+                title: action.book[0].title,
+                id: action.book[0].bookID,
+                author: action.book[0].author.name[0],
+                imageSrc: action.book[0].imageSrc,
+                rating: action.book[0].rating,
+                pubYear: action.book[0].pubYear,     
+            }
+        });
+    }
+    // else if (action.type === actions.UPDATE_CURRENT_SUCCESS_ONE){
+    //     console.log(action)
+    // }
+
     // else if (action.type === actions.TOP_AUTHOR_SUCCESS) {
 
     //     return Object.assign({}, state, {

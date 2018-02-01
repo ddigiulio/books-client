@@ -3,6 +3,9 @@ import { connect } from 'react-redux';
 import requiresLogin from './requires-login';
 import * as actions from '../actions/profile';
 import HeaderBar from './header-bar'
+import Book from './book'
+import { Link } from 'react-router-dom'
+import "./currentBookPageUpdate.css"
 export class currentBookPageUpdate extends React.Component {
     
 
@@ -14,7 +17,15 @@ export class currentBookPageUpdate extends React.Component {
     }
 
     render() {
+        let result;
+        if(!this.props.searchResults){
+            result=null;
+        }
+        else{
+             result = this.props.searchResults.map((book, index) =>
+            <Link  key={index} to={"/searchCurrentBook/" + book.bookID}> <Book {...book}/></Link>);
         
+        }
         return (
             <div>
                 <HeaderBar />
@@ -25,6 +36,9 @@ export class currentBookPageUpdate extends React.Component {
                 </label>
                 <input type="submit" value="Submit" />
             </form>
+            <div className = "searchResults">
+                {result}
+            </div>
             </div>
         )
     }
@@ -34,6 +48,7 @@ export class currentBookPageUpdate extends React.Component {
 const mapStateToProps = (state, props) => ({
     history: props.history,
     id: props.match.params.id,
+    searchResults: state.profile.searchResults,
 })
 
 export default requiresLogin()(connect(mapStateToProps)(currentBookPageUpdate));
