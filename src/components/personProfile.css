@@ -1,0 +1,35 @@
+@media (min-width: 375px) and (max-height: 667px){
+    
+  .currentBookContainer{   
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #585858;
+    }
+
+    .topBooksContainer{   
+      border-bottom-style: solid;
+      border-bottom-width: thin;
+      border-bottom-color: #585858;
+      }
+
+      .personUsername{
+        text-align: center;
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        border-bottom-color: #585858;
+      }
+      .usernameSpan{
+        display: inline-block;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        /* margin: 10px auto; */
+        width: 150px;
+        font-size: 16px;
+        color: #F0F0F0;
+        text-align: center;
+        background-color: #1696CC;
+        border-radius: 5px; 
+        font-family: 'Poppins', sans-serif;
+
+      }
+}

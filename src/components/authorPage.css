@@ -1,0 +1,23 @@
+@media (min-width: 375px) and (max-height: 667px){
+  .containerAuthor {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  .authorCurrent{
+    display: flex;
+    margin: 0 auto;
+    width: 200px;
+  }
+  .infoContainer{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .infoContainer span{
+    display: inline-block;
+
+  }
+  
+}

@@ -11,11 +11,14 @@ import {refreshAuthToken} from '../actions/auth';
 import bookPage from './bookPage'
 import authorPage from './authorPage'
 import currentBookPage from './currentBookPage'
+import currentBookPagePerson from './currentBookPagePerson'
 import topBooksPageUpdate from './topBooksPageUpdate'
 import topAuthorsPageUpdate from './topAuthorsPageUpdate'
 import searchCurrentBook from './searchCurrentBook'
 import searchTopBook from './searchTopBook'
 import searchTopAuthor from './searchTopAuthor'
+import personBookPage from './personBookPage'
+import personAuthorPage from './personAuthorPage'
 import './app.css'
 
 export class App extends React.Component {
@@ -60,10 +63,13 @@ export class App extends React.Component {
                 <Route exact path="/updateTopBooksPage" component={topBooksPageUpdate} />
                 <Route exact path="/updateTopAuthorsPage" component={topAuthorsPageUpdate} />
                 <Route path="/Book/:id" component={bookPage} />
+                <Route path="/personBookPage/:id" component={personBookPage} />
                 <Route path="/Author/:id" component={authorPage} />
+                <Route path="/personAuthor/:id" component={personAuthorPage} />
                 <Route path="/searchCurrentBook/:id" component={searchCurrentBook}/>
                 <Route path="/searchTopBook/:id" component={searchTopBook}/>
                 <Route path="/currentBook/:id" component={currentBookPage} />
+                <Route path="/currentBookPerson/:id" component={currentBookPagePerson} />
                 <Route path="/searchTopAuthor/:id" component={searchTopAuthor} />
                 <Route exact path="/searchPage" component={searchPage} />
                 <Route exact path="/personProfile" component={personProfile}/>

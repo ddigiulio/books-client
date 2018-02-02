@@ -16,7 +16,7 @@ export function LandingPage(props) {
     return (
         <div style={sectionStyle} className="home">
             <h1>The Book Nook</h1>
-            <LoginForm />   
+            <LoginForm />  
         </div>
     );
 }

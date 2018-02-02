@@ -13,9 +13,9 @@ export class authorPage extends React.Component {
        this.props.dispatch(actions.authorFetchThunk(this.props.id)) 
     }
 
-    removeAuthor = () => {
-        this.props.dispatch(actions.authorRemoveThunk(this.props.id, this.props.history))
-
+    goBack = (event) => {
+        event.preventDefault();
+        this.props.history.push('/personProfile')
     }
 
     render(){
@@ -39,8 +39,8 @@ export class authorPage extends React.Component {
                 <div className="description">
                     {this.props.currentAuthor.about}
                 </div>
-                <div className="remove">
-                <button className="removeButton" onClick={this.removeAuthor}>Remove Author</button>
+                <div className="goBackContainer">
+                <button className="goBackButton" onClick={this.goBack}>Back to profile</button>
                 </div>
             </div>
         )

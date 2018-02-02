@@ -7,6 +7,10 @@ export const SEARCH_EMPTY = 'SEARCH_EMPTY';
 export const searchEmpty = () => ({
     type: SEARCH_EMPTY,
     
+});
+export const CLEAR_SEARCH = 'CLEAR_SEARCH';
+export const clearSearch = () => ({
+    type: CLEAR_SEARCH
 })
 
 

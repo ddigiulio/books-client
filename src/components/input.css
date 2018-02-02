@@ -16,3 +16,69 @@
     }
  
  }
+
+ @media (min-width: 375px) and (max-height: 812px){
+    
+    .input{
+        width: 170px;
+        height: 25px;
+        font-size: 20px;
+        border-radius: 3px;
+        
+    }
+
+    input:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0px 1000px 	#DCDCDC inset;
+    }
+    .form-input{
+        width: 172px;
+    }
+ }
+
+ @media (min-width: 360px) and (max-height: 640px){  
+    .input{
+        width: 170px;
+        height: 25px;
+        font-size: 20px;
+        border-radius: 3px;
+        
+    }
+
+    input:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0px 1000px 	#DCDCDC inset;
+    }
+    .form-input{
+        width: 172px;
+    }
+ }
+ @media (min-width: 412px) and (max-height: 732px){  
+    .input{
+        width: 170px;
+        height: 25px;
+        font-size: 20px;
+        border-radius: 3px;
+        
+    }
+    input:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0px 1000px 	#DCDCDC inset;
+    }
+    .form-input{
+        width: 172px;
+    }
+ }
+
+ @media (min-width: 768px) and (max-height: 1024px){  
+    .input{
+        width: 170px;
+        height: 25px;
+        font-size: 20px;
+        border-radius: 3px;
+        
+    }
+    input:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0px 1000px 	#DCDCDC inset;
+    }
+    .form-input{
+        width: 172px;
+    }
+ }

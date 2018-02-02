@@ -16,7 +16,8 @@ export default function reducer (state=initialState, action) {
                 firstname: action.result.firstName,
                 lastname: action.result.lastName,
                 topBooks: action.result.topBooks,
-                currentlyReading: action.result.currentlyReading     
+                currentlyReading: action.result.currentlyReading  ,
+                topAuthors: action.result.topAuthors  
             }
         });
         
@@ -24,6 +25,11 @@ export default function reducer (state=initialState, action) {
     else if (action.type ===actions.SEARCH_EMPTY){
         return Object.assign({}, state, {
             searchResult: false
+        });
+    }
+    else if (action.type === actions.CLEAR_SEARCH){
+        return Object.assign({}, state, {
+            searchResult: ""
         });
     }
     return state;

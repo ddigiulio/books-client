@@ -7,6 +7,10 @@ import { Link } from 'react-router-dom'
 
 export class searchPage extends React.Component {
 
+    componentDidMount() {
+        this.props.dispatch(actions.clearSearch())
+        
+    }
     searchUser = (event) => {
         event.preventDefault();
         var param = event.target.username.value;
@@ -16,12 +20,13 @@ export class searchPage extends React.Component {
     render() {
         let result;
         if(!this.props.searchResult){
-            result = <span>User not found!</span>
+            
         }
         else{
-           result = (<Link to="/personProfile"><span>{this.props.searchResult.username}</span><br />
-                <span>{this.props.searchResult.firstname}</span><br />
-                <span>{this.props.searchResult.lastname}</span><br /></Link>)
+           result = (<Link to="/personProfile" style={{ textDecoration: 'none' }}><div className="searchResultContainer">
+                <span> {this.props.searchResult.firstname} </span>
+                <span>{this.props.searchResult.lastname}</span><br />
+                <span> {this.props.searchResult.username}</span><br /></div></Link>)
         }
         return (
             <div>
