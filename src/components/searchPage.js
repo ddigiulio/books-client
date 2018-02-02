@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import HeaderBar from './header-bar'
 import * as actions from '../actions/search';
+import './searchPage.css'
 import { Link } from 'react-router-dom'
 
 export class searchPage extends React.Component {
@@ -25,14 +26,16 @@ export class searchPage extends React.Component {
         return (
             <div>
                 <HeaderBar />
+                <div className="searchWrapper">
                 <form onSubmit={this.searchUser}>
-                    <label>
-                        Search by user name:
-          <input type="text" name="username" />
-                    </label>
+                    <label className="searchLabel">
+                        Search by user name
+                        </label>
+          <input type="text" name="username" /> 
                     <input type="submit" value="Submit" />
                 </form>  
-                <div className="searchResult">
+                </div>
+                <div className="searchResults">
                 {result}
                 </div>          
             </div>

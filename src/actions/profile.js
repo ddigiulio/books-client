@@ -17,6 +17,12 @@ export const TOP_BOOK_SEARCH_RESULTS = 'TOP_BOOK_SEARCH_RESULTS';
 export const topBookSearchResult = books => ({
     type: TOP_BOOK_SEARCH_RESULTS,
     books
+})
+
+export const TOP_AUTHOR_SEARCH_RESULTS = 'TOP_AUTHOR_SEARCH_RESULTS';
+export const topAuthorSearchResult = authors => ({
+    type: TOP_AUTHOR_SEARCH_RESULTS,
+    authors
 }) 
 
 export const CLEAR_SEARCH = 'CLEAR_SEARCH';
@@ -34,6 +40,12 @@ export const updateBookSuccess = book => ({
     book
 });
 
+export const UPDATE_TOP_AUTHOR_SUCCESS = 'UPDATE_TOP_AUTHOR_SUCCESS';
+export const updateTopAuthorSuccess = author => ({
+    type: UPDATE_TOP_AUTHOR_SUCCESS,
+    author
+});
+
 
 export const CURRENT_BOOK_FAILURE = 'CURRENT_BOOK_FAILURE';
 export const currentBookFailure = () => ({
@@ -47,9 +59,9 @@ export const topBooksSuccess = books => ({
 });
 
 export const TOP_AUTHOR_SUCCESS = 'TOP_AUTHOR_SUCCESS';
-export const topAuthorSuccess = author => ({
+export const topAuthorSuccess = authors => ({
     type: TOP_AUTHOR_SUCCESS,
-    author
+    authors
 });
 
 export const RECOMMENDATION_SUCCESS = 'RECOMMENDATION_SUCCESS';
@@ -102,7 +114,7 @@ export const addCurrentBookThunk = (param, history) => (dispatch, getState) => {
         })
         .then( data => {
            
-            dispatch(topBooksSuccess(data))
+            dispatch(currentBookSuccess(data))
             dispatch(clearSearch())
             history.push('/profile')
         })
@@ -129,10 +141,8 @@ export const getCurrentlyReading = () => (dispatch, getState) => {
     })
         .then(res => normalizeResponseErrors(res))
         .then(res => res.json())
-        .then( data  => {
-           
-            dispatch(currentBookSuccess(data))
-            
+        .then( data  => {     
+            dispatch(currentBookSuccess(data))      
         })
         .catch(err => {
             
@@ -157,31 +167,11 @@ export const topBooksThunk = (param, history) => (dispatch, getState) => {
             return res.json();
         })
         .then( data => {
-            console.log(data)
+        
             dispatch(topBookSearchResult(data))
-            // history.push('/profile')
+           
         })
 
-}
-
-export const getTopBooks = () => (dispatch, getState) => {
-    const authToken = getState().auth.authToken;
-    const url = "http://localhost:8080/books/topBooks"
-    return fetch(url, {
-        method: 'GET',
-        headers: {
-            Authorization: `Bearer ${authToken}`
-        }
-    })
-        .then(res => normalizeResponseErrors(res))
-        .then(res => res.json())
-        .then( data  => {
-            
-            dispatch(topBooksSuccess(data))
-        })
-        .catch(err => {
-            // dispatch(fetchProtectedDataError(err));
-        });
 }
 
 export const addTopBookThunk = (param, history) => (dispatch, getState) => {
@@ -203,17 +193,36 @@ export const addTopBookThunk = (param, history) => (dispatch, getState) => {
             return res.json();
         })
         .then( data => {
-           
-            console.log(data)
-            // dispatch(currentBookSuccess(data))
+            dispatch(topBooksSuccess(data))
             dispatch(clearSearch())
             history.push('/profile')
 
         })
 }
+export const getTopBooks = () => (dispatch, getState) => {
+    const authToken = getState().auth.authToken;
+    const url = "http://localhost:8080/books/topBooks"
+    return fetch(url, {
+        method: 'GET',
+        headers: {
+            Authorization: `Bearer ${authToken}`
+        }
+    })
+        .then(res => normalizeResponseErrors(res))
+        .then(res => res.json())
+        .then( data  => {
+            
+            dispatch(topBooksSuccess(data))
+        })
+        .catch(err => {
+          
+        });
+}
+
 
 export const topAuthorThunk = (param, history) => (dispatch, getState) => {
     // dispatch(currentBookLoading())
+ 
     const url = "http://localhost:8080/authors/" + param
     const authToken = getState().auth.authToken;
     return fetch(url, {
@@ -230,11 +239,63 @@ export const topAuthorThunk = (param, history) => (dispatch, getState) => {
             return res.json();
         })
         .then( data => {
-            console.log(data)
-            // dispatch(topAuthorSuccess(data))
+
+            dispatch(topAuthorSearchResult(data))
         })
 }
 
+export const updateTopAuthor = (currentAuthor) =>(dispatch, getState) =>{
+
+    dispatch(updateTopAuthorSuccess(currentAuthor))
+}
+
+export const addTopAuthorThunk = (param, history) => (dispatch, getState) => {
+    
+    //param is ID
+  
+    const url = "http://localhost:8080/authors/topAuthorAdd/" + param
+    const authToken = getState().auth.authToken;
+    return fetch(url, {
+        method: 'POST',
+        headers: {
+            // Provide our auth token as credentials
+            Authorization: `Bearer ${authToken}`
+        },
+    })
+        .then(res => {
+            if (!res.ok) {
+                return Promise.reject(res.statusText);
+            }
+            return res.json();
+        })
+        .then( data => {
+         
+            dispatch(topAuthorSuccess(data))
+            dispatch(clearSearch())
+            history.push('/profile')
+
+        })
+}
+export const getTopAuthors = () => (dispatch, getState) => {
+
+    const authToken = getState().auth.authToken;
+    const url = "http://localhost:8080/authors/topAuthors"
+    return fetch(url, {
+        method: 'GET',
+        headers: {
+            Authorization: `Bearer ${authToken}`
+        }
+    })
+        .then(res => normalizeResponseErrors(res))
+        .then(res => res.json())
+        .then( data  => {
+            
+            dispatch(topAuthorSuccess(data))
+        })
+        .catch(err => {
+          
+        });
+}
 
 // export const recommendationThunk = (param) => (dispatch) => {
 //     // dispatch(currentBookLoading())

@@ -1,0 +1,19 @@
+@media (min-width: 375px) and (max-height: 667px){
+
+  .buttonsCurrent {
+    display: inline-block;
+    width: 150px;
+    font-size: 14px;
+    background-color: #1696CC;
+    border-radius: 5px;   
+    color: #F0F0F0;
+    border-radius: 5px;   
+    /* margin-top: px; */
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 5px;
+  }
+  .addBook{
+    float: right;
+    
+  }
+}

@@ -4,7 +4,7 @@ import requiresLogin from './requires-login';
 import * as actions from '../actions/profile';
 import Book from './book'
 import { Link } from 'react-router-dom'
-
+import './topBooksPageUpdate.css'
 import HeaderBar from './header-bar'
 
 export class topBooksPageUpdate extends React.Component {
@@ -31,14 +31,16 @@ export class topBooksPageUpdate extends React.Component {
         return (
             <div>
                 <HeaderBar />
+            <div className="topFormWrapper">
             <form onSubmit={this.changeTopBooks}>
-                <label>
-                    Update Top Books:
+                <label className="searchLabel">
+                    Update Top Books
+                    </label>
           <input type="text" name="bookTitle" />
-                </label>
                 <input type="submit" value="Submit" />
             </form>
-            <div className = "searchResults">
+            </div>
+            <div className="searchResults">
                 {result}
             </div>
             </div>

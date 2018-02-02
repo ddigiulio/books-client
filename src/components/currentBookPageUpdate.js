@@ -7,38 +7,42 @@ import Book from './book'
 import { Link } from 'react-router-dom'
 import "./currentBookPageUpdate.css"
 export class currentBookPageUpdate extends React.Component {
-    
+
 
     changeCurrentlyReading = (event) => {
         event.preventDefault();
         var param = event.target.bookTitle.value;
         this.props.dispatch(actions.currentBookThunk(param, this.props.history))
-        
+
     }
 
     render() {
         let result;
-        if(!this.props.searchResults){
-            result=null;
+        if (!this.props.searchResults) {
+            result = null;
+ 
         }
-        else{
-             result = this.props.searchResults.map((book, index) =>
-            <Link  key={index} to={"/searchCurrentBook/" + book.bookID}> <Book {...book}/></Link>);
-        
+        else {
+            result = this.props.searchResults.map((book, index) =>
+                <Link key={index} to={"/searchCurrentBook/" + book.bookID}> <Book {...book} /></Link>);
+            
         }
         return (
             <div>
                 <HeaderBar />
-            <form onSubmit={this.changeCurrentlyReading}>
-                <label>
-                    Update Currently Reading:
-          <input type="text" name="bookTitle" />
-                </label>
-                <input type="submit" value="Submit" />
-            </form>
-            <div className = "searchResults">
-                {result}
-            </div>
+                <div className="currentFormWrapper">
+                    <form onSubmit={this.changeCurrentlyReading}>
+
+                        <label className="searchLabel">
+                             Search for new book 
+                        </label><br />
+          <input type="text" name="bookTitle" /><br />        
+                        <input type="submit" value="Submit" />
+                    </form>
+                </div>
+                <div className="searchResults">
+                    {result}
+                </div>
             </div>
         )
     }

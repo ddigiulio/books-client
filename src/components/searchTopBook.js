@@ -5,6 +5,7 @@ import * as actions from '../actions/profile';
 import Book from './book'
 import HeaderBar from './header-bar'
 import './bookPage.css'
+import './searchTopBook.css'
 export class searchTopBook extends React.Component {
 
     componentDidMount(){
@@ -41,11 +42,9 @@ export class searchTopBook extends React.Component {
                         />
                     </div>
                 </div>
-                <div className="goBack">
-                <button className="goBackButton" onClick={this.goBack}>Go Back</button>
-                </div>
-                <div className="addBook">
-                <button className="addBook" onClick ={this.addBook}>Add Book</button>
+                <div className="buttonsContainer">        
+                        <button className="goBackButton buttonsCurrent" onClick={this.goBack}>Search Results</button>
+                        <button className="addBook buttonsCurrent" onClick={this.addBook}>Add Book</button>          
                 </div>
             </div>
         )

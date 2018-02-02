@@ -5,10 +5,11 @@ import * as actions from '../actions/profile';
 import Book from './book'
 import HeaderBar from './header-bar'
 import './bookPage.css'
+import './searchCurrentBook.css'
 export class searchCurrentBook extends React.Component {
 
-    componentDidMount(){
-       
+    componentDidMount() {
+
         const currentBook = this.props.searchResults.filter(book => book.bookID === this.props.id)
         this.props.dispatch(actions.updateBookPage(currentBook))
     }
@@ -22,17 +23,17 @@ export class searchCurrentBook extends React.Component {
         event.preventDefault();
         this.props.history.push('/currentBookPageUpdate')
     }
-    render(){
-        
-        return(
+    render() {
+
+        return (
             <div className="searchBook">
                 <HeaderBar />
                 <div className="containerBook">
                     <div className="info">
-                    <span className="bookTitle">{this.props.currentBook.title} </span><br />
-                    <span> by {this.props.currentBook.author} </span><br />  
-                    <span>Rating: {this.props.currentBook.rating}</span><br />
-                    <span>Published: {this.props.currentBook.pubYear} </span>
+                        <span className="bookTitle">{this.props.currentBook.title} </span><br />
+                        <span> by {this.props.currentBook.author} </span><br />
+                        <span>Rating: {this.props.currentBook.rating}</span><br />
+                        <span>Published: {this.props.currentBook.pubYear} </span>
                     </div>
                     <div className="current">
                         <Book
@@ -40,11 +41,9 @@ export class searchCurrentBook extends React.Component {
                         />
                     </div>
                 </div>
-                <div className="goBack">
-                <button className="goBackButton" onClick={this.goBack}>Go Back</button>
-                </div>
-                <div className="addBook">
-                <button className="addBook" onClick ={this.addBook}>Add Book</button>
+                <div className="buttonsContainer">          
+                        <button className="goBackButton buttonsCurrent" onClick={this.goBack}>Search Results</button>
+                        <button className="addBook buttonsCurrent" onClick={this.addBook}>Add Book</button>
                 </div>
             </div>
         )

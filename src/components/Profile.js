@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import requiresLogin from './requires-login';
 import * as actions from '../actions/profile';
 import Book from './book'
+import Author from './Author'
 import { Link } from 'react-router-dom'
 import './profile.css'
 import HeaderBar from './header-bar'
@@ -10,15 +11,19 @@ import HeaderBar from './header-bar'
 export class Profile extends React.Component {
  
     componentDidMount() {
+        this.props.dispatch(actions.clearSearch())
         this.props.dispatch(actions.getCurrentlyReading());
         this.props.dispatch(actions.getTopBooks());
+        this.props.dispatch(actions.getTopAuthors());
+        
     }
-
 
     render() {
 
         const topBooks = this.props.topBooks.map((book, index) =>
             <Link  key={index} to={"/Book/" + book._id}> <Book {...book} /></Link>);
+        const topAuthors = this.props.topAuthors.map((author, index) =>
+        <Link  key={index} to={"/Author/" + author._id}> <Author imageSrc={author.smallImageSrc} /></Link>);
         return (
             <div className="profile">
                 <HeaderBar/>
@@ -44,11 +49,16 @@ export class Profile extends React.Component {
                     </div>
                 </div>
                 <div className="topAuthorsContainer">
-                <div className="updateTopAuthorsContainer">
-                    <Link to="/updateTopAuthorsPage"><button className="updateTopAuthorsButton">Authors</button></Link>
+                <div className="topAuthorsTitle">Top Authors</div>
+                <div className="topAuthors">
+                        {topAuthors}
+                    </div>
+                    <div className="updateTopAuthorsContainer">
+                    <Link to="/updateTopAuthorsPage"><button className="updateTopAuthorsButton">Update</button></Link>
+                    </div>
                     </div>
                 </div>
-            </div>
+           
         );
     }
 }
@@ -61,8 +71,8 @@ const mapStateToProps = state => {
     
     return {
         currentlyReading: state.profile.currentlyReading,
-        topBooks: state.profile.topBooks
-
+        topBooks: state.profile.topBooks,
+        topAuthors: state.profile.topAuthors
     };
 };
 

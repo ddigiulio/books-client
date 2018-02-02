@@ -17,7 +17,8 @@ const initialState = {
     searchResults: [{
 
     }],
-    currentBook:{}
+    currentBook:{},
+    currentAuthor:{}
 
 
 };
@@ -66,6 +67,12 @@ export default function reducer (state = initialState, action) {
             searchResults: action.books
         });
     }
+    else if (action.type === actions.TOP_AUTHOR_SEARCH_RESULTS) {
+
+        return Object.assign({}, state, {
+            searchResults: action.authors
+        });
+    }
     else if (action.type === actions.CLEAR_SEARCH){
         return Object.assign({}, state, {
             searchResults: ""
@@ -85,19 +92,28 @@ export default function reducer (state = initialState, action) {
             }
         });
     }
+    else if (action.type === actions.UPDATE_TOP_AUTHOR_SUCCESS) {
+
+        
+        return Object.assign({}, state, {
+            currentAuthor: {
+                id: action.author[0].id,
+                name: action.author[0].name,
+                imageSrc: action.author[0].imageSrc,
+                   
+            }
+        });
+    }
     // else if (action.type === actions.UPDATE_CURRENT_SUCCESS_ONE){
     //     console.log(action)
     // }
 
-    // else if (action.type === actions.TOP_AUTHOR_SUCCESS) {
+    else if (action.type === actions.TOP_AUTHOR_SUCCESS) {
 
-    //     return Object.assign({}, state, {
-    //         topAuthors: [...state.topAuthors, {
-    //             name: action.author.name,
-    //             imageSrc: action.author.imageSrc
-    //         }]
-    //     });
-    // }
+        return Object.assign({}, state, {
+            topAuthors: action.authors
+        });
+    }
     // else if (action.type === actions.RECOMMENDATION_SUCCESS) {
     //     return Object.assign({}, state, {
     //         recommendations: [...state.recommendations, {

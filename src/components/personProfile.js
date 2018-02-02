@@ -10,6 +10,7 @@ export class personProfile extends React.Component {
  
 
     render() {
+        //this has to change to personprofilebook
         const topBooks = this.props.topBooks.map((book, index) =>
             <Link  key={index} to={"/Book/" + book._id}> <Book {...book} /></Link>);
         return (

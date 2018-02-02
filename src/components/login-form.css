@@ -60,8 +60,7 @@
     }
     .form-wrapper{
         height: auto;
-        margin: 170px auto 0px;
-        
+        margin: 170px auto 0px;   
         width: 220px;
         display: flex;
         align-items: center;
