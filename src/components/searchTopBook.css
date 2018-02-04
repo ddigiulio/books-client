@@ -11,9 +11,121 @@
     /* margin-top: px; */
     font-family: 'Poppins', sans-serif;
     margin-bottom: 5px;
+    margin-top: 8px;
   }
   .addBook{
     float: right;
     
   }
+}
+
+@media (min-width: 360px) and (max-height: 640px){
+
+  .buttonsCurrent {
+    display: inline-block;
+    width: 150px;
+    font-size: 14px;
+    background-color: #1696CC;
+    border-radius: 5px;   
+    color: #F0F0F0;
+    border-radius: 5px;   
+    /* margin-top: px; */
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 5px;
+    margin-top: 40px;
+  }
+  .addBook{
+    float: right;
+    
+  }
+}
+
+@media (min-width: 412px) and (max-height: 732px){
+
+  .buttonsCurrent {
+    display: inline-block;
+    width: 150px;
+    font-size: 14px;
+    background-color: #1696CC;
+    border-radius: 5px;   
+    color: #F0F0F0;
+    border-radius: 5px;   
+    /* margin-top: px; */
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 5px;
+    margin-top: 40px;
+  }
+  .addBook{
+    float: right;
+    
+  }
+}
+
+@media (min-width: 414px) and (max-height: 736px){
+
+  .buttonsCurrent {
+    display: inline-block;
+    width: 150px;
+    font-size: 14px;
+    background-color: #1696CC;
+    border-radius: 5px;   
+    color: #F0F0F0;
+    border-radius: 5px;   
+    /* margin-top: px; */
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 5px;
+    margin-top: 40px;
+  }
+  .addBook{
+    float: right;
+    
+  }
+}
+
+@media (min-width: 375px) and (max-height: 812px){
+
+  .buttonsCurrent {
+    display: inline-block;
+    width: 150px;
+    font-size: 14px;
+    background-color: #1696CC;
+    border-radius: 5px;   
+    color: #F0F0F0;
+    border-radius: 5px;   
+    /* margin-top: px; */
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 5px;
+    margin-top: 40px;
+  }
+  .addBook{
+    float: right;
+    
+  }
+}
+
+/* ipad */
+@media (min-width: 768px) and (max-height: 1024px){
+
+  .buttonsCurrent {
+    display: inline-block;
+    width: 150px;
+    font-size: 26px;
+    background-color: #1696CC;
+    border-radius: 5px;   
+    color: #F0F0F0;
+    border-radius: 5px;   
+    /* margin-top: px; */
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 5px;
+    margin-top: 40px;
+  }
+  .addBook{
+    float: right;
+  }
+
+  .goBack{
+    width: 220px;
+  }
+
+  
 }

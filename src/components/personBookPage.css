@@ -1,3 +1,59 @@
+.goBackContainer{
+  text-align: center;
+  margin: 0 auto;
+}
+.goBackButton{
+width: 178px;
+ font-size: 18px;
+ background-color: #1696CC;
+ border-style: solid;
+ border-width: thin; 
+ border-radius: 5px;   
+ color: white;
+ margin-top: 8px;
+ margin-bottom: 3px;
+ font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width: 360px) and (max-height: 640px){
+  .goBackContainer{
+    text-align: center;
+    margin: 0 auto;
+}
+.goBackButton{
+  width: 178px;
+   font-size: 18px;
+   background-color: #1696CC;
+   border-style: solid;
+   border-width: thin; 
+   border-radius: 5px;   
+   color: white;
+   margin-top: 8px;
+   margin-bottom: 3px;
+   font-family: 'Poppins', sans-serif;
+  }
+}
+
+@media (min-width: 412px) and (max-height: 732px){
+  .goBackContainer{
+    text-align: center;
+    margin: 0 auto;
+}
+.goBackButton{
+  width: 178px;
+   font-size: 18px;
+   background-color: #1696CC;
+   border-style: solid;
+   border-width: thin; 
+   border-radius: 5px;   
+   color: white;
+   margin-top: 8px;
+   margin-bottom: 3px;
+   font-family: 'Poppins', sans-serif;
+  }
+}
+
+
 @media (min-width: 375px) and (max-height: 667px){
   .goBackContainer{
     text-align: center;
@@ -14,5 +70,62 @@
    margin-top: 8px;
    margin-bottom: 3px;
    font-family: 'Poppins', sans-serif;
+  }
 }
+
+@media (min-width: 414px) and (max-height: 736px){
+  .goBackContainer{
+    text-align: center;
+    margin: 0 auto;
+}
+.goBackButton{
+  width: 178px;
+   font-size: 18px;
+   background-color: #1696CC;
+   border-style: solid;
+   border-width: thin; 
+   border-radius: 5px;   
+   color: white;
+   margin-top: 8px;
+   margin-bottom: 3px;
+   font-family: 'Poppins', sans-serif;
+  }
+}
+
+@media (min-width: 375px) and (max-height: 812px){
+  .goBackContainer{
+    text-align: center;
+    margin: 0 auto;
+}
+.goBackButton{
+  width: 178px;
+   font-size: 18px;
+   background-color: #1696CC;
+   border-style: solid;
+   border-width: thin; 
+   border-radius: 5px;   
+   color: white;
+   margin-top: 8px;
+   margin-bottom: 3px;
+   font-family: 'Poppins', sans-serif;
+  }
+}
+
+@media (min-width: 768px) and (max-height: 1024px){
+.goBackContainer{
+  text-align: center;
+  margin: 0 auto;
+}
+.goBackButton{
+  width: 178px;
+   font-size: 18px;
+   background-color: #1696CC;
+   border-style: solid;
+   border-width: thin; 
+   border-radius: 5px;   
+   color: white;
+   margin-top: 8px;
+   margin-bottom: 3px;
+   font-family: 'Poppins', sans-serif;
+  }
 }

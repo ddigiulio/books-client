@@ -32,9 +32,9 @@ export class currentBookPage extends React.Component {
                 <div className="containerCurrent">
                     <div className="info">
                     <span className="bookTitle">{this.props.currentBook.title} </span><br />
-                    <span> by {this.props.currentBook.author} </span><br />  
-                    <span>Rating: {this.props.currentBook.rating}</span><br />
-                    <span>Published: {this.props.currentBook.pubYear} </span>
+                    <span className="spans"> by {this.props.currentBook.author} </span><br />  
+                    <span className="spans">Rating: {this.props.currentBook.rating}</span><br />
+                    <span className="spans">Published: {this.props.currentBook.pubYear} </span>
                     </div>
                     <div className="current">
                         <Book

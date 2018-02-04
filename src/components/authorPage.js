@@ -32,9 +32,9 @@ export class authorPage extends React.Component {
                 </div>
                 <div className="infoContainer">  
                     <span className="authorName">{this.props.currentAuthor.name} </span><br />
-                    <span> born: {this.props.currentAuthor.born} </span><br />  
-                    <span> died: {this.props.currentAuthor.died}</span><br />
-                    <span>Hometown: {this.props.currentAuthor.hometown} </span>
+                    <span className="span"> born: {this.props.currentAuthor.born} </span><br />  
+                    <span className="span"> died: {this.props.currentAuthor.died}</span><br />
+                    <span className="span">Hometown: {this.props.currentAuthor.hometown} </span>
                 </div>
                 <div className="description">
                     {this.props.currentAuthor.about}

@@ -1,40 +1,43 @@
-@media (min-width: 375px) and (max-height: 667px){
-
+/* desktop */
 .header-bar h1 {
     text-align: center;
     font-family: 'Berkshire Swash', cursive;
-    font-size: 45px;
+    font-size: 75px;
     padding-top: 10px;
     padding-bottom: 5px;
     -webkit-margin-before:0em;
     -webkit-margin-after:0em;
     color: #1696CC;
-  
+      
     }
 .header-bar{
     background-color: #F5F5DC
-}
+    }
 .secondary{
-    /* border-width: thin;
-    border-style: solid;
-    border-color: #778899; */
+    width: 100%;
     border-radius: 3px;
     background-color: #1696CC;
-   }
-
+    text-align: center;
+    }
+    
 .secondary button{
-    font-size: 16px;
+    font-size: 28px;
     font-family: 'Poppins', sans-serif;
-    color: #F0F0F0;
+    background-color: #1696CC;
     display: inline-block;
     }
 .logOut{
     float: right;
+    border-style: none;
+    color: #F0F0F0;
+    }
+.profileButton{
+    border-style: none;
+    float: left;
+    color: #F0F0F0;
 }
 .search{
-    position: absolute;
-    /* background-color:#1696CC;  */
-    right: 30%; 
+    background-color:#1696CC; 
     background-color: #1696CC;
     border-right-style: solid;
     border-right-color: #585858;
@@ -43,5 +46,294 @@
     border-bottom: none;
     border-top: none;
     width: 140px;
+    color: #F0F0F0;
+ }
+
+ @media (min-width: 360px) and (max-height: 640px){
+
+    .header-bar h1 {
+        text-align: center;
+        font-family: 'Berkshire Swash', cursive;
+        font-size: 45px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        -webkit-margin-before:0em;
+        -webkit-margin-after:0em;
+        color: #1696CC;
+          
+        }
+    .header-bar{
+        background-color: #F5F5DC
+        }
+    .secondary{
+        border-radius: 3px;
+        background-color: #1696CC;
+        text-align: center;
+        }
+        
+    .secondary button{
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+        color: #F0F0F0;
+        display: inline-block;
+        }
+    .logOut{
+        float: right;
+        }
+    .profileButton{
+        border-style: none;
+        float: left;
+    }
+    .search{
+        background-color: #1696CC;
+        border-right-style: solid;
+        border-right-color: #585858;
+        border-left-style: solid;
+        border-left-color: #585858;
+        border-bottom: none;
+        border-top: none;
+        width: 140px;
+     }
+ }
+
+ @media (min-width: 412px) and (max-height: 732px){
+
+    .header-bar h1 {
+        text-align: center;
+        font-family: 'Berkshire Swash', cursive;
+        font-size: 45px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        -webkit-margin-before:0em;
+        -webkit-margin-after:0em;
+        color: #1696CC;
+      
+        }
+    .header-bar{
+        background-color: #F5F5DC
+    }
+    .secondary{
+        text-align: center;
+        border-radius: 3px;
+        background-color: #1696CC;
+       }
+    
+    .secondary button{
+        font-size: 18px;
+        font-family: 'Poppins', sans-serif;
+        color: #F0F0F0;
+        display: inline-block;
+    }
+    .logOut{
+        float: right;
+    }
+
+    .profileButton{
+        border-style: none;
+        float: left;
+    }
+    .search{
+
+        background-color: #1696CC;
+        border-right-style: solid;
+        border-right-color: #585858;
+        border-left-style: solid;
+        border-left-color: #585858;
+        border-bottom: none;
+        border-top: none;
+        width: 140px;
+        }
+    }
+
+ @media (min-width: 375px) and (max-height: 667px){
+
+    .header-bar h1 {
+        text-align: center;
+        font-family: 'Berkshire Swash', cursive;
+        font-size: 45px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        -webkit-margin-before:0em;
+        -webkit-margin-after:0em;
+        color: #1696CC;
+      
+        }
+    .header-bar{
+        background-color: #F5F5DC
+    }
+    .secondary{
+        text-align: center;
+        border-radius: 3px;
+        background-color: #1696CC;
+       }
+    
+    .secondary button{
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+        color: #F0F0F0;
+        display: inline-block;
+        }
+    .logOut{
+        float: right;
+    }
+    .profileButton{
+        border-style: none;
+        float: left;
+    }
+    .search{  
+        background-color: #1696CC;
+        border-right-style: solid;
+        border-right-color: #585858;
+        border-left-style: solid;
+        border-left-color: #585858;
+        border-bottom: none;
+        border-top: none;
+        width: 140px;
+        }
 }
-}
+
+@media (min-width: 414px) and (max-height: 736px){
+
+    .header-bar h1 {
+        text-align: center;
+        font-family: 'Berkshire Swash', cursive;
+        font-size: 45px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        -webkit-margin-before:0em;
+        -webkit-margin-after:0em;
+        color: #1696CC;
+          
+        }
+    .header-bar{
+        background-color: #F5F5DC
+        }
+    .secondary{
+        border-radius: 3px;
+        background-color: #1696CC;
+        text-align: center;
+        }
+        
+    .secondary button{
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+        color: #F0F0F0;
+        display: inline-block;
+        }
+    .profileButton{
+        border-style: none;
+        float: left;
+        }
+    .logOut{
+        float: right;
+        }
+    .search{
+        background-color: #1696CC;
+        border-right-style: solid;
+        border-right-color: #585858;
+        border-left-style: solid;
+        border-left-color: #585858;
+        border-bottom: none;
+        border-top: none;
+        width: 140px;
+     }
+ }
+
+ @media (min-width: 375px) and (max-height: 812px){
+
+    .header-bar h1 {
+        text-align: center;
+        font-family: 'Berkshire Swash', cursive;
+        font-size: 45px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        -webkit-margin-before:0em;
+        -webkit-margin-after:0em;
+        color: #1696CC;
+          
+        }
+    .header-bar{
+        background-color: #F5F5DC
+        }
+    .secondary{
+        border-radius: 3px;
+        background-color: #1696CC;  
+        text-align: center;
+        }
+        
+    .secondary button{
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+        color: #F0F0F0;
+        display: inline-block;
+        }
+    .logOut{
+        float: right;
+        }
+    .profileButton{
+        border-style: none;
+        float: left;
+        }
+    .search{
+        background-color: #1696CC;
+        border-right-style: solid;
+        border-right-color: #585858;
+        border-left-style: solid;
+        border-left-color: #585858;
+        border-bottom: none;
+        border-top: none;
+        width: 140px;
+     }
+ }
+
+
+
+/* ipad */
+ @media (min-width: 768px) and (max-height: 1024px){
+
+    .header-bar h1 {
+        text-align: center;
+        font-family: 'Berkshire Swash', cursive;
+        font-size: 75px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        -webkit-margin-before:0em;
+        -webkit-margin-after:0em;
+        color: #1696CC;
+          
+        }
+    .header-bar{
+        background-color: #F5F5DC
+        }
+    .secondary{
+        border-radius: 3px;
+        background-color: #1696CC;
+        text-align: center;
+        }
+        
+    .secondary button{
+        font-size: 28px;
+        font-family: 'Poppins', sans-serif;
+        color: #F0F0F0;
+        display: inline-block;
+        }
+    .logOut{
+        float: right;
+        }
+    .profileButton{
+        border-style: none;
+        float: left;
+        }
+    .search{
+        background-color: #1696CC;
+        border-right-style: solid;
+        border-right-color: #585858;
+        border-left-style: solid;
+        border-left-color: #585858;
+        border-bottom: none;
+        border-top: none;
+        width: 140px;
+     }
+ }
+
+ 

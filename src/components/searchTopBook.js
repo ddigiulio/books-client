@@ -43,7 +43,7 @@ export class searchTopBook extends React.Component {
                     </div>
                 </div>
                 <div className="buttonsContainer">        
-                        <button className="goBackButton buttonsCurrent" onClick={this.goBack}>Search Results</button>
+                        <button className="goBack buttonsCurrent" onClick={this.goBack}>Search Results</button>
                         <button className="addBook buttonsCurrent" onClick={this.addBook}>Add Book</button>          
                 </div>
             </div>
