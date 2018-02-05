@@ -32,7 +32,7 @@ export class searchPage extends React.Component {
             <div>
                 <HeaderBar />
                 <div className="helpPage">
-                <span>Search is by exact username only</span>
+                <span>Search is by exact username only.</span><br />
                 <span> Search for: demo1 </span>
                 </div>
                 <div className="searchWrapper">

@@ -1,5 +1,13 @@
 @media (min-width: 375px) and (max-height: 667px){
 
+   .helpPage{
+       text-align: center;
+       border-style: solid;
+       border-width: thin;
+       margin-top: 5px;
+       background-color: #1696CC;
+       color: #F0F0F0;
+   } 
   .searchResults{
       display: flex;
       flex-flow: row wrap;
@@ -56,6 +64,14 @@
 
 @media (min-width: 360px) and (max-height: 640px){
 
+    .helpPage{
+        text-align: center;
+        border-style: solid;
+        border-width: thin;
+        margin-top: 5px;
+        background-color: #1696CC;
+        color: #F0F0F0;
+    } 
     .searchResults{
         display: flex;
         flex-flow: row wrap;
@@ -110,6 +126,14 @@
   }
   @media (min-width: 412px) and (max-height: 732px){
 
+    .helpPage{
+        text-align: center;
+        border-style: solid;
+        border-width: thin;
+        margin-top: 5px;
+        background-color: #1696CC;
+        color: #F0F0F0;
+    } 
     .searchResults{
         display: flex;
         flex-flow: row wrap;
@@ -165,6 +189,14 @@
 
   @media (min-width: 414px) and (max-height: 736px){
 
+    .helpPage{
+        text-align: center;
+        border-style: solid;
+        border-width: thin;
+        margin-top: 5px;
+        background-color: #1696CC;
+        color: #F0F0F0;
+    } 
     .searchResults{
         display: flex;
         flex-flow: row wrap;
@@ -220,6 +252,14 @@
 
   @media (min-width: 375px) and (max-height: 812px){
 
+    .helpPage{
+        text-align: center;
+        border-style: solid;
+        border-width: thin;
+        margin-top: 5px;
+        background-color: #1696CC;
+        color: #F0F0F0;
+    } 
     .searchResults{
         display: flex;
         flex-flow: row wrap;
