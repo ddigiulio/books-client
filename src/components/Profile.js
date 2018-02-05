@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 import './profile.css'
 import HeaderBar from './header-bar'
 
-export class Profile extends React.Component {
+export class profile extends React.Component {
  
     componentDidMount() {
         this.props.dispatch(actions.clearSearch())
@@ -76,4 +76,4 @@ const mapStateToProps = state => {
     };
 };
 
-export default requiresLogin()(connect(mapStateToProps)(Profile));
+export default requiresLogin()(connect(mapStateToProps)(profile));
