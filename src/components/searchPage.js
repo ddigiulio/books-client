@@ -31,6 +31,10 @@ export class searchPage extends React.Component {
         return (
             <div>
                 <HeaderBar />
+                <div className="helpPage">
+                <span>Search is by exact username only</span>
+                <span> Search for: demo1 </span>
+                </div>
                 <div className="searchWrapper">
                 <form onSubmit={this.searchUser}>
                     <label className="searchLabel">
