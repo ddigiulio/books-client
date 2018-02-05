@@ -39,7 +39,7 @@ export class searchTopAuthor extends React.Component {
                 {this.props.currentAuthor.name}
                 </div>
                 <div className="buttonsContainer">        
-                    <button className="goBackButton buttonsCurrent" onClick={this.goBack}>Search Results</button>
+                    <button className="searchResultsButton buttonsCurrent" onClick={this.goBack}>Search Results</button>
                     <button className="addBook buttonsCurrent" onClick={this.addAuthor}>Add Author</button>          
                 </div>
                 </div>
