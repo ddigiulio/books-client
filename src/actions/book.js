@@ -16,8 +16,7 @@ export const bookDeleteSuccess = books => ({
 
 export const bookFetchThunk = (param) => (dispatch, getState) => {
     // dispatch(bookFetchLoading())
-
-    const url = "http://localhost:8080/books/bookInfo/" + param
+    const url = `${API_BASE_URL}/books/bookInfo/${param}`
     const authToken = getState().auth.authToken;
     return fetch(url, {
         method: 'GET',
@@ -42,7 +41,7 @@ export const bookFetchThunk = (param) => (dispatch, getState) => {
 export const bookRemoveThunk = (param, history) => (dispatch, getState) => {
     // dispatch(bookFetchLoading())
 
-    const url = "http://localhost:8080/books/deleteBook/" + param
+    const url = `${API_BASE_URL}/books/deleteBook/${param}`
     const authToken = getState().auth.authToken;
     return fetch(url, {
         method: 'DELETE',

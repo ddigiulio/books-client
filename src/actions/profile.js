@@ -72,7 +72,7 @@ export const recommendationSuccess = book => ({
 
 export const currentBookThunk = (param, history) => (dispatch, getState) => {
     // dispatch(currentBookLoading())
-    const url = "http://localhost:8080/books/currentlyReading/" + param
+    const url = `${API_BASE_URL}/books/currentlyReading/${param}`
     const authToken = getState().auth.authToken;
     return fetch(url, {
         method: 'GET',
@@ -96,7 +96,7 @@ export const currentBookThunk = (param, history) => (dispatch, getState) => {
 
 export const addCurrentBookThunk = (param, history) => (dispatch, getState) => {
     
-    const url = "http://localhost:8080/books/currentlyReadingAdd/" + param
+    const url = `${API_BASE_URL}/books/currentlyReadingAdd/${param}`
     const authToken = getState().auth.authToken;
     return fetch(url, {
         method: 'POST',
@@ -132,7 +132,7 @@ export const getCurrentlyReading = () => (dispatch, getState) => {
         return;
     }
     const authToken = getState().auth.authToken;
-    const url = "http://localhost:8080/books/currentlyReading"
+    const url = `${API_BASE_URL}/books/currentlyReading`
     return fetch(url, {
         method: 'GET',
         headers: {
@@ -151,7 +151,7 @@ export const getCurrentlyReading = () => (dispatch, getState) => {
 
 export const topBooksThunk = (param, history) => (dispatch, getState) => {
 
-    const url = "http://localhost:8080/books/topBooks/" + param
+    const url = `${API_BASE_URL}/books/topBooks/${param}`
     const authToken = getState().auth.authToken;
     return fetch(url, {
         method: 'POST',
@@ -176,7 +176,7 @@ export const topBooksThunk = (param, history) => (dispatch, getState) => {
 
 export const addTopBookThunk = (param, history) => (dispatch, getState) => {
     
-    const url = "http://localhost:8080/books/topBookAdd/" + param
+    const url = `${API_BASE_URL}/books/topBookAdd/${param}`
     const authToken = getState().auth.authToken;
     return fetch(url, {
         method: 'POST',
@@ -201,7 +201,7 @@ export const addTopBookThunk = (param, history) => (dispatch, getState) => {
 }
 export const getTopBooks = () => (dispatch, getState) => {
     const authToken = getState().auth.authToken;
-    const url = "http://localhost:8080/books/topBooks"
+    const url = `${API_BASE_URL}/books/topBooks`
     return fetch(url, {
         method: 'GET',
         headers: {
@@ -222,8 +222,7 @@ export const getTopBooks = () => (dispatch, getState) => {
 
 export const topAuthorThunk = (param, history) => (dispatch, getState) => {
     // dispatch(currentBookLoading())
- 
-    const url = "http://localhost:8080/authors/" + param
+    const url = `${API_BASE_URL}/authors/${param}`
     const authToken = getState().auth.authToken;
     return fetch(url, {
         method: 'POST',
@@ -252,8 +251,7 @@ export const updateTopAuthor = (currentAuthor) =>(dispatch, getState) =>{
 export const addTopAuthorThunk = (param, history) => (dispatch, getState) => {
     
     //param is ID
-  
-    const url = "http://localhost:8080/authors/topAuthorAdd/" + param
+    const url = `${API_BASE_URL}/authors/topAuthorAdd/${param}`
     const authToken = getState().auth.authToken;
     return fetch(url, {
         method: 'POST',
@@ -279,7 +277,7 @@ export const addTopAuthorThunk = (param, history) => (dispatch, getState) => {
 export const getTopAuthors = () => (dispatch, getState) => {
 
     const authToken = getState().auth.authToken;
-    const url = "http://localhost:8080/authors/topAuthors"
+    const url = `${API_BASE_URL}/authors/topAuthors`
     return fetch(url, {
         method: 'GET',
         headers: {
@@ -297,29 +295,3 @@ export const getTopAuthors = () => (dispatch, getState) => {
         });
 }
 
-// export const recommendationThunk = (param) => (dispatch) => {
-//     // dispatch(currentBookLoading())
-//     const url = "http://localhost:8080/books/" + param
-//     fetch(url)
-//         .then(res => {
-//             if (!res.ok) {
-//                 return Promise.reject(res.statusText);
-//             }
-//             return res.json();
-//         })
-//         .then(data => {
-
-//             const result = data.GoodreadsResponse.search[0].results[0].work[0].best_book[0]
-//             const book = {
-//                 author: result.author[0].name[0],
-//                 title: result.title[0],
-//                 imageSrc: result.image_url[0],
-//                 imageSrcSmall: result.small_image_url[0]
-//             }
-
-//             dispatch(recommendationSuccess(book));
-//         })
-//         .catch(err => { console.log(err) }
-//         // dispatch(currentBookFailure())}
-//         );
-// }

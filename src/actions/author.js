@@ -38,8 +38,7 @@ export const authorFetchThunk = (param) => (dispatch, getState) => {
 
 export const authorRemoveThunk = (param, history) => (dispatch, getState) => {
     // dispatch(bookFetchLoading())
-
-    const url = "http://localhost:8080/authors/deleteAuthor/" + param
+    const url = `${API_BASE_URL}/authors/deleteAuthor/${param}`
     const authToken = getState().auth.authToken;
     return fetch(url, {
         method: 'DELETE',
