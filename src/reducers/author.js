@@ -9,7 +9,7 @@ const initialState = {
 export default function reducer (state=initialState, action) {
     
     if(action.type === actions.AUTHOR_INFO_SUCCESS){
-        // console.log(action.author)
+        
         return Object.assign({}, state, {
             currentAuthor: {
                 id: action.author._id,
