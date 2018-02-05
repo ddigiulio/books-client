@@ -14,8 +14,7 @@ export const authorDeleteSuccess = authors => ({
 
 export const authorFetchThunk = (param) => (dispatch, getState) => {
     // dispatch(bookFetchLoading())
-
-    const url = "http://localhost:8080/authors/authorInfo/" + param
+    const url = `${API_BASE_URL}/authors/authorInfo/${param}`
     const authToken = getState().auth.authToken;
     return fetch(url, {
         method: 'GET',
