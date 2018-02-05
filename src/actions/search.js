@@ -1,3 +1,4 @@
+import {API_BASE_URL} from '../config';
 export const SEARCH_SUCCESS = 'SEARCH_SUCCESS';
 export const searchSuccess = result => ({
     type: SEARCH_SUCCESS,
@@ -16,8 +17,7 @@ export const clearSearch = () => ({
 
 export const searchThunk = (param) => (dispatch, getState) => {
     // dispatch(bookFetchLoading())
-
-    const url = "http://localhost:8080/users/search/" + param
+    const url = `${API_BASE_URL}/users/search/${param}`
     const authToken = getState().auth.authToken;
     return fetch(url, {
         method: 'GET',

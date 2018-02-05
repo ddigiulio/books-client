@@ -1,3 +1,5 @@
+import {API_BASE_URL} from '../config';
+
 export const AUTHOR_INFO_SUCCESS = 'AUTHOR_INFO_SUCCESS';
 export const authorInfoSuccess = author => ({
     type: AUTHOR_INFO_SUCCESS,

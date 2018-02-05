@@ -1,4 +1,4 @@
-
+import {API_BASE_URL} from '../config';
 
 export const BOOK_INFO_SUCCESS = 'BOOK_INFO_SUCCESS';
 export const bookInfoSuccess = book => ({
