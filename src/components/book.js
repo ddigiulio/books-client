@@ -2,7 +2,7 @@ import React from 'react';
 
 import './book.css';
 
-export default function Book(props) {
+export default function book(props) {
     return (
         <div className="book">
             <img src={props.imageSrc} alt="" />
@@ -11,6 +11,6 @@ export default function Book(props) {
 };
 
 
-Book.defaultProps = {
+book.defaultProps = {
     text: ''
 };

@@ -62,7 +62,7 @@ export class profile extends React.Component {
         );
     }
 }
-Profile.defaultProps = {
+profile.defaultProps = {
     text: ''
 };
 
