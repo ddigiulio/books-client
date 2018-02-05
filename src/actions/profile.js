@@ -222,7 +222,7 @@ export const getTopBooks = () => (dispatch, getState) => {
 
 export const topAuthorThunk = (param, history) => (dispatch, getState) => {
     // dispatch(currentBookLoading())
-    const url = `${API_BASE_URL}/authors/${param}`
+    const url = `${API_BASE_URL}/authors/authorname/${param}`
     const authToken = getState().auth.authToken;
     return fetch(url, {
         method: 'POST',
