@@ -5,6 +5,7 @@ import * as actions from '../actions/book';
 import Book from './book'
 import HeaderBar from './header-bar'
 import './bookPage.css'
+import image from '../books2.jpg'
 export class bookPage extends React.Component {
 
     componentDidMount(){
@@ -21,29 +22,33 @@ export class bookPage extends React.Component {
         this.props.history.push('/profile')
     }
     render(){
-        
+        const sectionStyle = {
+            backgroundImage: `url(${image})`
+        }
+
         return(
-            <div className="bookPage">
+            <div style={sectionStyle} className="bookPage">
                 <HeaderBar />
                 <div className="containerBook">
-                    <div className="info">
+                    <div className="current">
+                        <Book
+                            imageSrc={this.props.currentBook.imageSrc}
+                        />
+                    </div>  
+                </div>
+                <div className="info">
                     <span className="bookTitle">{this.props.currentBook.title} </span><br />
                     <span> by {this.props.currentBook.author} </span><br />  
                     <span>Rating: {this.props.currentBook.rating}</span><br />
                     <span>Published: {this.props.currentBook.pubYear} </span>
                     </div>
-                    <div className="current">
-                        <Book
-                            imageSrc={this.props.currentBook.imageSrc}
-                        />
-                    </div>
-                </div>
                 <div className="description">
                     {this.props.currentBook.description}
                 </div>
                 <div className="remove">
                 <button className="removeButton" onClick={this.removeBook}>Remove Book</button>
                 </div>
+               
             </div>
         )
     }

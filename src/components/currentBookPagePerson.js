@@ -5,6 +5,7 @@ import * as actions from '../actions/book';
 import Book from './book'
 import HeaderBar from './header-bar'
 import './currentBookPagePerson.css'
+import image from '../books2.jpg'
 
 export class currentBookPagePerson extends React.Component {
    
@@ -20,27 +21,30 @@ export class currentBookPagePerson extends React.Component {
     }
     render() {
 
+        const sectionStyle = {
+            backgroundImage: `url(${image})`
+        }
         return (
-            <div className="currentBookPage">
+            <div style={sectionStyle} className="currentBookPagePerson">
                 <HeaderBar />
-                <div className="containerCurrent">
-                    <div className="info">
-                    <span className="bookTitle">{this.props.currentBook.title} </span><br />
-                    <span> by {this.props.currentBook.author} </span><br />  
-                    <span>Rating: {this.props.currentBook.rating}</span><br />
-                    <span>Published: {this.props.currentBook.pubYear} </span>
-                    </div>
-                    <div className="current">
+                <div className="containerCurrentBookPerson">
+                    <div className="currentPerson">
                         <Book
                             imageSrc={this.props.currentBook.imageSrc}
                         />
                     </div>
                 </div>
-                <div className="description">
+                <div className="infoCurrentPerson">
+                    <span className="bookTitleCurrentPerson">{this.props.currentBook.title} </span><br />
+                    <span> by {this.props.currentBook.author} </span><br />  
+                    <span>Rating: {this.props.currentBook.rating}</span><br />
+                    <span>Published: {this.props.currentBook.pubYear} </span>
+                    </div>
+                <div className="descriptionCurrentPerson">
                     {this.props.currentBook.description}
                 </div>
               <div className="goBackContainer">
-                <button className="goBackButton" onClick={this.goBack}>Back to profile</button>
+                <button className="goBackButtonPerson" onClick={this.goBack}>Back to profile</button>
                 </div>
             </div>
         )

@@ -7,7 +7,7 @@ import Author from './Author'
 import { Link } from 'react-router-dom'
 import './profile.css'
 import HeaderBar from './header-bar'
-
+import image from '../books2.jpg'
 export class profile extends React.Component {
  
     componentDidMount() {
@@ -19,25 +19,38 @@ export class profile extends React.Component {
     }
 
     render() {
-
+        const sectionStyle = {
+            backgroundImage: `url(${image})`
+        }
         const topBooks = this.props.topBooks.map((book, index) =>
-            <Link  key={index} to={"/Book/" + book._id}> <Book {...book} /></Link>);
+            <div className="topBookWrapper">
+            <Link  key={index} to={"/Book/" + book._id}> 
+            <Book {...book} /></Link>
+            <span>{book.title}</span>
+            </div>);
         const topAuthors = this.props.topAuthors.map((author, index) =>
-        <Link  key={index} to={"/Author/" + author._id}> <Author imageSrc={author.smallImageSrc} /></Link>);
+        <div className="topAuthorWrapper">
+        <Link  key={index} to={"/Author/" + author._id}>
+        <Author imageSrc={author.smallImageSrc} />
+        </Link>
+        <span>{author.name}</span>
+        </div>);
         return (
-            <div className="profile">
+            <div style={sectionStyle} className="profile">
                 <HeaderBar/>
                 <div className="currentBookContainer">
+                <div className="currentBookWrapper">
                     <div className="currentBookTitle">Currently Reading</div>
                     <div className="currentBook">
                     <Link  to={"/currentBook/" + this.props.currentlyReading.id}><Book 
                         imageSrc={this.props.currentlyReading.imageSrc}
-                        author={this.props.currentlyReading.author}
-                        title={this.props.currentlyReading.title} /></Link>
+                        /></Link>
+                        <span className="spanTitle">{this.props.currentlyReading.title}</span>
                     </div>
                     <div className="updateCurrentBookContainer">
                         <Link to="/currentBookPageUpdate"><button className="updateCurrentButton">Update</button></Link>
                     </div>
+                </div>
                 </div>
                 <div className="topBooksContainer">
                 <div className="topBooksTitle">Top Books</div>

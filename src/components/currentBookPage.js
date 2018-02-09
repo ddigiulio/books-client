@@ -5,6 +5,7 @@ import * as actions from '../actions/book';
 import Book from './book'
 import HeaderBar from './header-bar'
 import './currentBookPage.css'
+import image from '../books2.jpg'
 
 export class currentBookPage extends React.Component {
    
@@ -26,23 +27,26 @@ export class currentBookPage extends React.Component {
     }
     render() {
 
+        const sectionStyle = {
+            backgroundImage: `url(${image})`
+        }
         return (
-            <div className="currentBookPage">
+            <div style={sectionStyle} className="currentBookPage">
                 <HeaderBar />
-                <div className="containerCurrent">
-                    <div className="info">
-                    <span className="bookTitle">{this.props.currentBook.title} </span><br />
-                    <span className="spans"> by {this.props.currentBook.author} </span><br />  
-                    <span className="spans">Rating: {this.props.currentBook.rating}</span><br />
-                    <span className="spans">Published: {this.props.currentBook.pubYear} </span>
-                    </div>
-                    <div className="current">
+                <div className="containerCurrentBook">
+                    <div className="current_">
                         <Book
                             imageSrc={this.props.currentBook.imageSrc}
                         />
                     </div>
                 </div>
-                <div className="description">
+                <div className="infoCurrent">
+                    <span className="bookTitleCurrent">{this.props.currentBook.title} </span><br />
+                    <span className="spans"> by {this.props.currentBook.author} </span><br />  
+                    <span className="spans">Rating: {this.props.currentBook.rating}</span><br />
+                    <span className="spans">Published: {this.props.currentBook.pubYear} </span>
+                    </div>
+                <div className="descriptionCurrentPerson">
                     {this.props.currentBook.description}
 
                 </div>

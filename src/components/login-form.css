@@ -1,5 +1,49 @@
+.login-form{
+    text-align: center;
+     margin: 0 auto;    
+ }
+
+ .form-wrapper{
+     height: auto;
+     margin: 80px auto 0px;
+     width: 260px;
+     display: flex;
+     align-items: center;
+     flex-direction: column; 
+     background-color: #F5F5DC; 
+     border-radius: 5px
+ }
+ .username{
+     color: black;
+     font-family: 'Poppins', sans-serif;
+     font-size: 20px;
+
+ }
+ .password{
+     color: black;
+     font-family: 'Poppins', sans-serif;
+     font-size: 20px;
+     
+ }
+  .login-button{
+      width: 178px;
+      font-size: 18px;
+      background-color: #1696CC;
+      border-style: solid;
+      border-width: thin; 
+      border-radius: 5px;   
+      color: white;
+      margin-top: 8px;
+      margin-bottom: 3px;
+      font-family: 'Poppins', sans-serif;
+  }
+  .register{
+      color: black;
+      font-family: 'Poppins', sans-serif;
+  }
+
 /*galaxy s5 */
-@media (min-width: 360px) and (max-height: 640px){
+@media (width: 360px) and (height: 640px){
     
    .login-form{
       text-align: center;
@@ -8,7 +52,7 @@
 
    .form-wrapper{
        height: auto;
-       margin: 120px auto 0px;
+       margin: 50px auto 0px;
        background-color: white;
        width: 220px;
        display: flex;
@@ -20,11 +64,13 @@
    .username{
        color: black;
        font-family: 'Poppins', sans-serif;
+       font-size: 18px;
 
    }
    .password{
        color: black;
        font-family: 'Poppins', sans-serif;
+       font-size: 18px;
        
    }
     .login-button{
@@ -46,8 +92,58 @@
 
 }
 
+@media (width: 412px) and (height: 732px){
+    
+    .login-form{
+       text-align: center;
+    
+        margin: 0 auto;
+            
+    }
+    .form-wrapper{
+        height: auto;
+        margin: 60px auto 0px;   
+        width: 240px;
+        display: flex;
+        align-items: center;
+        flex-direction: column; 
+        background-color: #F5F5DC; 
+        border-radius: 5px
+   
+    }
+    .username{
+        color: black;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+ 
+    }
+    .password{
+        color: black;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        
+    }
+    .login-button{
+         width: 178px;
+         font-size: 18px;
+         background-color: #1696CC;
+         border-style: solid;
+         border-width: thin; 
+         border-radius: 5px;   
+         color: white;
+         margin-top: 8px;
+         margin-bottom: 3px;
+         font-family: 'Poppins', sans-serif;
+     }
+     .register{
+         color: black;
+         font-family: 'Poppins', sans-serif;
+     }
+
+ }
+
 /* iphone 7/8 */
-@media (min-width: 375px) and (max-height: 667px){
+@media (width: 375px) and (height: 667px){
     
     .login-form{
        text-align: center;
@@ -56,7 +152,7 @@
     }
     .form-wrapper{
         height: auto;
-        margin: 120px auto 0px;   
+        margin: 60px auto 0px;   
         width: 220px;
         display: flex;
         align-items: center;
@@ -68,11 +164,13 @@
     .username{
         color: black;
         font-family: 'Poppins', sans-serif;
+        font-size: 18px;
  
     }
     .password{
         color: black;
         font-family: 'Poppins', sans-serif;
+        font-size: 18px;
         
     }
     .login-button{
@@ -93,7 +191,101 @@
      }
  }
 
- @media (min-width: 412px) and (max-height: 732px){
+ @media (width: 414px) and (height: 736px){
+    
+    .login-form{
+        text-align: center;
+        margin: 0 auto; 
+        width: 200px;      
+    }
+    .form-wrapper{
+        height: auto;
+        margin: 60px auto 0px;   
+        width: 280px;
+        display: flex;
+        align-items: center;
+        flex-direction: column; 
+        background-color: #F5F5DC; 
+        border-radius: 5px
+   
+    }
+    .username{
+        color: black;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+ 
+    }
+    .password{
+        color: black;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        
+    }
+    .login-button{
+         width: 178px;
+         font-size: 18px;
+         background-color: #1696CC;
+         border-style: solid;
+         border-width: thin; 
+         border-radius: 5px;   
+         color: white;
+         margin-top: 8px;
+         margin-bottom: 3px;
+         font-family: 'Poppins', sans-serif;
+     }
+     .register{
+         color: black;
+         font-family: 'Poppins', sans-serif;
+     }
+ }
+
+ @media (width: 375px) and (height: 812px){
+    
+    .login-form{
+        text-align: center;
+        margin: 0 auto; 
+        width: 200px;      
+    }
+    .form-wrapper{
+        height: auto;
+        margin: 60px auto 0px;   
+        width: 260px;
+        display: flex;
+        align-items: center;
+        flex-direction: column; 
+        background-color: #F5F5DC; 
+        border-radius: 5px 
+    }
+    .username{
+        color: black;
+        font-family: 'Poppins', sans-serif;
+        font-size: 22px;
+ 
+    }
+    .password{
+        color: black;
+        font-family: 'Poppins', sans-serif;
+        font-size: 22px;
+    }
+    .login-button{
+         width: 178px;
+         font-size: 18px;
+         background-color: #1696CC;
+         border-style: solid;
+         border-width: thin; 
+         border-radius: 5px;   
+         color: white;
+         margin-top: 8px;
+         margin-bottom: 3px;
+         font-family: 'Poppins', sans-serif;
+     }
+     .register{
+         color: black;
+         font-family: 'Poppins', sans-serif;
+     }
+ }
+
+ /* @media (min-width: 768px) and (max-height: 1024px){
     
     .login-form{
        text-align: center;
@@ -139,146 +331,4 @@
          font-family: 'Poppins', sans-serif;
      }
  
- }
-
- @media (min-width: 414px) and (max-height: 736px){
-    
-    .login-form{
-       text-align: center;
-    
-        margin: 0 auto;
-            
-    }
-    .form-wrapper{
-        height: auto;
-        margin: 170px auto 0px;   
-        width: 220px;
-        display: flex;
-        align-items: center;
-        flex-direction: column; 
-        background-color: #F5F5DC; 
-        border-radius: 5px
-   
-    }
-    .username{
-        color: black;
-        font-family: 'Poppins', sans-serif;
- 
-    }
-    .password{
-        color: black;
-        font-family: 'Poppins', sans-serif;
-        
-    }
-    .login-button{
-         width: 178px;
-         font-size: 18px;
-         background-color: #1696CC;
-         border-style: solid;
-         border-width: thin; 
-         border-radius: 5px;   
-         color: white;
-         margin-top: 8px;
-         margin-bottom: 3px;
-         font-family: 'Poppins', sans-serif;
-     }
-     .register{
-         color: black;
-         font-family: 'Poppins', sans-serif;
-     }
- }
-
- @media (min-width: 375px) and (max-height: 812px){
-    
-    .login-form{
-       text-align: center;
-    
-        margin: 0 auto;
-            
-    }
-    .form-wrapper{
-        height: auto;
-        margin: 170px auto 0px;   
-        width: 220px;
-        display: flex;
-        align-items: center;
-        flex-direction: column; 
-        background-color: #F5F5DC; 
-        border-radius: 5px
-   
-    }
-    .username{
-        color: black;
-        font-family: 'Poppins', sans-serif;
- 
-    }
-    .password{
-        color: black;
-        font-family: 'Poppins', sans-serif;
-        
-    }
-    .login-button{
-         width: 178px;
-         font-size: 18px;
-         background-color: #1696CC;
-         border-style: solid;
-         border-width: thin; 
-         border-radius: 5px;   
-         color: white;
-         margin-top: 8px;
-         margin-bottom: 3px;
-         font-family: 'Poppins', sans-serif;
-     }
-     .register{
-         color: black;
-         font-family: 'Poppins', sans-serif;
-     }
- }
-
- @media (min-width: 768px) and (max-height: 1024px){
-    
-    .login-form{
-       text-align: center;
-    
-        margin: 0 auto;
-            
-    }
-    .form-wrapper{
-        height: auto;
-        margin: 170px auto 0px;   
-        width: 220px;
-        display: flex;
-        align-items: center;
-        flex-direction: column; 
-        background-color: #F5F5DC; 
-        border-radius: 5px
-   
-    }
-    .username{
-        color: black;
-        font-family: 'Poppins', sans-serif;
- 
-    }
-    .password{
-        color: black;
-        font-family: 'Poppins', sans-serif;
-        
-    }
-    .login-button{
-         width: 178px;
-         font-size: 18px;
-         background-color: #1696CC;
-         border-style: solid;
-         border-width: thin; 
-         border-radius: 5px;   
-         color: white;
-         margin-top: 8px;
-         margin-bottom: 3px;
-         font-family: 'Poppins', sans-serif;
-     }
-     .register{
-         color: black;
-         font-family: 'Poppins', sans-serif;
-     }
- 
- }
+ } */

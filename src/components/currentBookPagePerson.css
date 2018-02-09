@@ -1,0 +1,464 @@
+.containerCurrentBookPerson {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding-top: 10px;
+  text-align: center;
+  overflow: auto;
+}
+.currentPerson {
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  display: block;
+
+}
+
+.infoCurrentPerson {
+  background-color: #F5F5DC;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  height: auto;
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 5px;
+}
+
+.currentBookPagePerson{
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.bookTitleCurrentPerson{
+  font-size: 24px;
+}
+
+.descriptionCurrentPerson{
+  border-radius: 5px;
+  font-size: 20px;
+  width: 80%;
+  margin: 10px auto;
+  background-color: #F5F5DC;
+  font-family: 'Poppins', sans-serif;
+  padding: 8px;
+}
+
+.goBackButtonPerson{
+  width: 220px;
+  font-size: 26px;
+  background-color: #1696CC;
+  border-style: solid;
+  border-width: thin; 
+  border-radius: 5px;   
+  color: white;
+  margin-top: 8px;
+  margin-bottom: 3px;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media (width: 360px) and (height: 640px){
+
+  containerCurrentBookPerson {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding-top: 10px;
+    text-align: center;
+    overflow: auto;
+  }
+  .currentPerson {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    display: block;
+  
+  }
+  
+  .infoCurrentPerson {
+    background-color: #F5F5DC;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    height: auto;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+  }
+  
+  .currentBookPagePerson{
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+  }
+  
+  .bookTitleCurrentPerson{
+    font-size: 22px;
+  }
+  
+  .descriptionCurrentPerson{
+    border-radius: 5px;
+    font-size: 16px;
+    width: 80%;
+    margin: 10px auto;
+    background-color: #F5F5DC;
+    font-family: 'Poppins', sans-serif;
+    padding: 8px;
+  }
+  
+  .goBackButtonPerson{
+    width: 220px;
+    font-size: 24px;
+    background-color: #1696CC;
+    border-style: solid;
+    border-width: thin; 
+    border-radius: 5px;   
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@media (width: 412px) and (height: 732px){
+
+  containerCurrentBookPerson {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding-top: 10px;
+    text-align: center;
+    overflow: auto;
+  }
+  .currentPerson {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    display: block;
+  
+  }
+  
+  .infoCurrentPerson {
+    background-color: #F5F5DC;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    height: auto;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+  }
+  
+  .currentBookPagePerson{
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+  }
+  
+  .bookTitleCurrentPerson{
+    font-size: 22px;
+  }
+  
+  .descriptionCurrentPerson{
+    border-radius: 5px;
+    font-size: 16px;
+    width: 80%;
+    margin: 10px auto;
+    background-color: #F5F5DC;
+    font-family: 'Poppins', sans-serif;
+    padding: 8px;
+  }
+  
+  .goBackButtonPerson{
+    width: 220px;
+    font-size: 24px;
+    background-color: #1696CC;
+    border-style: solid;
+    border-width: thin; 
+    border-radius: 5px;   
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@media (width: 375px) and (height: 667px){
+
+  containerCurrentBookPerson {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding-top: 10px;
+    text-align: center;
+    overflow: auto;
+  }
+  .currentPerson {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    display: block;
+  
+  }
+  
+  .infoCurrentPerson {
+    background-color: #F5F5DC;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    height: auto;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+  }
+  
+  .currentBookPagePerson{
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+  }
+  
+  .bookTitleCurrentPerson{
+    font-size: 22px;
+  }
+  
+  .descriptionCurrentPerson{
+    border-radius: 5px;
+    font-size: 16px;
+    width: 80%;
+    margin: 10px auto;
+    background-color: #F5F5DC;
+    font-family: 'Poppins', sans-serif;
+    padding: 8px;
+  }
+  
+  .goBackButtonPerson{
+    width: 220px;
+    font-size: 24px;
+    background-color: #1696CC;
+    border-style: solid;
+    border-width: thin; 
+    border-radius: 5px;   
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@media (width: 414px) and (height: 736px){
+
+  containerCurrentBookPerson {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding-top: 10px;
+    text-align: center;
+    overflow: auto;
+  }
+  .currentPerson {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    display: block;
+  
+  }
+  
+  .infoCurrentPerson {
+    background-color: #F5F5DC;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    height: auto;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+  }
+  
+  .currentBookPagePerson{
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+  }
+  
+  .bookTitleCurrentPerson{
+    font-size: 24px;
+  }
+  
+  .descriptionCurrentPerson{
+    border-radius: 5px;
+    font-size: 18px;
+    width: 80%;
+    margin: 10px auto;
+    background-color: #F5F5DC;
+    font-family: 'Poppins', sans-serif;
+    padding: 8px;
+  }
+  
+  .goBackButtonPerson{
+    width: 220px;
+    font-size: 24px;
+    background-color: #1696CC;
+    border-style: solid;
+    border-width: thin; 
+    border-radius: 5px;   
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@media (width: 375px) and (height: 812px){
+
+  containerCurrentBookPerson {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding-top: 10px;
+    text-align: center;
+    overflow: auto;
+  }
+  .currentPerson {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    display: block;
+  
+  }
+  
+  .infoCurrentPerson {
+    background-color: #F5F5DC;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    height: auto;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+  }
+  
+  .currentBookPagePerson{
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+  }
+  
+  .bookTitleCurrentPerson{
+    font-size: 22px;
+  }
+  
+  .descriptionCurrentPerson{
+    border-radius: 5px;
+    font-size: 18px;
+    width: 80%;
+    margin: 10px auto;
+    background-color: #F5F5DC;
+    font-family: 'Poppins', sans-serif;
+    padding: 8px;
+  }
+  
+  .goBackButtonPerson{
+    width: 220px;
+    font-size: 24px;
+    background-color: #1696CC;
+    border-style: solid;
+    border-width: thin; 
+    border-radius: 5px;   
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@media (width: 768px) and (height: 1024px){
+
+  containerCurrentBookPerson {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding-top: 10px;
+    text-align: center;
+    overflow: auto;
+  }
+  .currentPerson {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    display: block;
+  
+  }
+  
+  .infoCurrentPerson {
+    background-color: #F5F5DC;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    height: auto;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+  }
+  
+  .currentBookPagePerson{
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+  }
+  
+  .bookTitleCurrentPerson{
+    font-size: 24px;
+  }
+  
+  .descriptionCurrentPerson{
+    border-radius: 5px;
+    font-size: 20px;
+    width: 80%;
+    margin: 10px auto;
+    background-color: #F5F5DC;
+    font-family: 'Poppins', sans-serif;
+    padding: 8px;
+  }
+  
+  .goBackButtonPerson{
+    width: 220px;
+    font-size: 26px;
+    background-color: #1696CC;
+    border-style: solid;
+    border-width: thin; 
+    border-radius: 5px;   
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    font-family: 'Poppins', sans-serif;
+  }
+}

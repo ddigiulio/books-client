@@ -1,8 +1,55 @@
 /*desktop */
+.containerCurrentBook {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding-top: 10px;
+    text-align: center;
+    overflow: auto;
+}
+ .current_ {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    display: block;
+  
+}
 
+.infoCurrent {
+    background-color: #F5F5DC;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    height: auto;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+}
 
-/* iphone 7 8 */
-@media (min-width: 375px) and (max-height: 667px){
+.currentBookPage{
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.bookTitleCurrent{
+    font-size: 24px;
+}
+
+.descriptionCurrent{
+    border-radius: 5px;
+    font-size: 20px;
+    width: 80%;
+    margin: 10px auto;
+    background-color: #F5F5DC;
+    font-family: 'Poppins', sans-serif;
+    padding: 8px;
+}
+
+/* @media (min-width: 375px) and (max-height: 667px){
     
     .containerCurrent {
         width: 100%;
@@ -40,7 +87,7 @@
     }
 }
 
-/* galaxy s5 */
+
 @media (min-width: 360px) and (max-height: 640px){
     
     .containerCurrent {
@@ -53,20 +100,16 @@
     .current {
         width: 30%;
         height: 100px;
-        /* height: 200px; */
-        /* background: red; */
         float: left;
         display: inline-block;
         
     }
     .info {
         width: 180px;
-        /* margin-left: 40%;     */
+        
         height: auto;
         display: inline-block;
         font-family: 'Poppins', sans-serif;
-        
-        /* background: black; */
     }
     .currentBookPage{
         height: 700px;
@@ -83,7 +126,7 @@
     }
 }
 
-/* nexus 6p nexus 5x */
+
 @media (min-width: 412px) and (max-height: 732px){
     
     .containerCurrent {
@@ -96,20 +139,17 @@
     .current {
         width: 30%;
         height: 100px;
-        /* height: 200px; */
-        /* background: red; */
+
         float: left;
         display: inline-block;
         
     }
     .info {
         width: 260px;
-        /* margin-left: 40%;     */
         height: auto;
         display: inline-block;
         font-family: 'Poppins', sans-serif;
-        
-        /* background: black; */
+
     }
     .currentBookPage{
         height: 700px;
@@ -126,7 +166,7 @@
     }
 }
 
-/* iphone 7+ 8 + */
+
 @media (min-width: 414px) and (max-height: 736px){
     
     .containerCurrent {
@@ -139,20 +179,16 @@
     .current {
         width: 30%;
         height: 100px;
-        /* height: 200px; */
-        /* background: red; */
         float: left;
         display: inline-block;
         
     }
     .info {
         width: 260px;
-        /* margin-left: 40%;     */
+
         height: auto;
         display: inline-block;
         font-family: 'Poppins', sans-serif;
-        
-        /* background: black; */
     }
     .currentBookPage{
         height: 700px;
@@ -168,7 +204,7 @@
         font-family: 'Poppins', sans-serif;
     }
 }
-/* iphone x */
+
 @media (min-width: 375px) and (max-height: 812px){
     
     .containerCurrent {
@@ -181,20 +217,17 @@
     .current {
         width: 30%;
         height: 100px;
-        /* height: 200px; */
-        /* background: red; */
         float: left;
         display: inline-block;
         
     }
     .info {
         width: 260px;
-        /* margin-left: 40%;     */
+     
         height: auto;
         display: inline-block;
         font-family: 'Poppins', sans-serif;
-        
-        /* background: black; */
+
     }
     .currentBookPage{
         height: 700px;
@@ -210,7 +243,7 @@
         font-family: 'Poppins', sans-serif;
     }
 }
-/* ipad */
+
 @media (min-width: 768px) and (max-height: 1024px){
     
     .containerCurrent {
@@ -220,20 +253,18 @@
         margin: auto;
         position: relative;
         padding-top: 10px;
-        /* text-align: center; */
+       
     }
     .current {
         width: 30%;
         height: 100px;
-        /* float: left; */
-        /* margin-left: -120px; */
         display: inline-block;
         
     }
     .info {
         width: 280px;
         height: auto;  
-        /* margin-left: -280px; */
+ 
         display: inline-block;
         font-family: 'Poppins', sans-serif;
     }
@@ -251,4 +282,4 @@
         font-size: 26px;
         font-family: 'Poppins', sans-serif;
     }
-}
+} */

@@ -23,7 +23,8 @@ export class searchPage extends React.Component {
             
         }
         else{
-           result = (<Link to="/personProfile" style={{ textDecoration: 'none' }}><div className="searchResultContainer">
+           result = (<Link to="/personProfile" style={{ textDecoration: 'none' }}>
+                <div className="searchResultContainer">
                 <span> {this.props.searchResult.firstname} </span>
                 <span>{this.props.searchResult.lastname}</span><br />
                 <span> {this.props.searchResult.username}</span><br /></div></Link>)

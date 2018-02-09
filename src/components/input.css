@@ -1,26 +1,133 @@
 /*desktop */
-.input{
-    width: 170px;
+.input[type=text]{
+    width: 200px;
     height: 25px;
     font-size: 20px;
-    border-radius: 3px;
-    
+    border-radius: 3px;  
+}
+
+.input[type=password]{
+    width: 200px;
+    height: 25px;
+    font-size: 20px;
+    border-radius: 3px;  
 }
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px 	#DCDCDC inset;
 }
 .form-input{
-    width: 172px;
+    width: 200px;
 }
 
-@media (min-width: 375px) and (max-height: 667px){
+.form-error{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: red;
+    font-size: 18px;
+}
+
+@media (width: 360px) and (height: 640px){  
+    .input[type=text]{
+        width: 160px;
+        height: 25px;
+        font-size: 20px;
+        border-radius: 3px;  
+    }
+    .input[type=password]{
+        width: 160px;
+        height: 25px;
+        font-size: 20px;
+        border-radius: 3px;  
+    }
+
+
+    input:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0px 1000px 	#DCDCDC inset;
+    }
+    .form-input{
+        width: 172px;
+    }
+
+    .form-error{
+        padding-top: 3px;
+        padding-bottom: 3px;
+        color: red;
+        font-size: 18px;
+    }
+ }
+
+ @media (width: 412px) and (height: 732px){  
+    .input[type=text]{
+        width: 180px;
+        height: 25px;
+        font-size: 20px;
+        border-radius: 3px;  
+    }
+    .input[type=password]{
+        width: 180px;
+        height: 25px;
+        font-size: 20px;
+        border-radius: 3px;  
+    }
+    input:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0px 1000px 	#DCDCDC inset;
+    }
+    .form-input{
+        width: 172px;
+    }
+
+    .form-error{
+        padding-top: 3px;
+        padding-bottom: 3px;
+        color: red;
+        font-size: 18px;
+    }
+ }
+
+@media (width: 375px) and (height: 667px){
     
-    .input{
-        width: 170px;
+    .input[type=text]{
+        width: 180px;
         height: 25px;
         font-size: 20px;
-        border-radius: 3px;
-        
+        border-radius: 3px;  
+    }
+
+    .input[type=password]{
+        width: 180px;
+        height: 25px;
+        font-size: 20px;
+        border-radius: 3px;  
+    }
+
+    input:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0px 1000px 	#DCDCDC inset;
+    }
+    .form-input{
+        width: 172px;
+    }
+
+    .form-error{
+        margin: 0 auto;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        color: red;
+        font-size: 18px;
+    }
+ }
+
+ @media (width: 414px) and (height: 736px){  
+    .input[type=text]{
+        width: 200px;
+        height: 25px;
+        font-size: 20px;
+        border-radius: 3px;  
+    }
+    .input[type=password]{
+        width: 200px;
+        height: 25px;
+        font-size: 20px;
+        border-radius: 3px;  
     }
     input:-webkit-autofill {
         -webkit-box-shadow: 0 0 0px 1000px 	#DCDCDC inset;
@@ -28,17 +135,30 @@ input:-webkit-autofill {
     .form-input{
         width: 172px;
     }
- 
+
+    .form-error{
+        
+        padding-top: 3px;
+        padding-bottom: 3px;
+        color: red;
+        font-size: 20px;
+    }
  }
 
- @media (min-width: 375px) and (max-height: 812px){
+
+  @media (width: 375px) and (height: 812px){
     
-    .input{
-        width: 170px;
+    .input[type=text]{
+        width: 200px;
         height: 25px;
         font-size: 20px;
-        border-radius: 3px;
-        
+        border-radius: 3px;  
+    }
+    .input[type=password]{
+        width: 200px;
+        height: 25px;
+        font-size: 20px;
+        border-radius: 3px;  
     }
 
     input:-webkit-autofill {
@@ -47,41 +167,18 @@ input:-webkit-autofill {
     .form-input{
         width: 172px;
     }
- }
 
- @media (min-width: 360px) and (max-height: 640px){  
-    .input{
-        width: 170px;
-        height: 25px;
-        font-size: 20px;
-        border-radius: 3px;
+    .form-error{
         
-    }
-
-    input:-webkit-autofill {
-        -webkit-box-shadow: 0 0 0px 1000px 	#DCDCDC inset;
-    }
-    .form-input{
-        width: 172px;
-    }
- }
- @media (min-width: 412px) and (max-height: 732px){  
-    .input{
-        width: 170px;
-        height: 25px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        color: red;
         font-size: 20px;
-        border-radius: 3px;
-        
-    }
-    input:-webkit-autofill {
-        -webkit-box-shadow: 0 0 0px 1000px 	#DCDCDC inset;
-    }
-    .form-input{
-        width: 172px;
     }
  }
 
- @media (min-width: 768px) and (max-height: 1024px){  
+
+ /* @media (min-width: 768px) and (max-height: 1024px){  
     .input{
         width: 170px;
         height: 25px;
@@ -95,4 +192,11 @@ input:-webkit-autofill {
     .form-input{
         width: 172px;
     }
- }
+
+    .form-error{
+        padding-top: 3px;
+        padding-bottom: 3px;
+        color: red;
+        font-size: 18px;
+    }
+ } */ 
