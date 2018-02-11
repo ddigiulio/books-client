@@ -4,8 +4,9 @@ import requiresLogin from './requires-login';
 import * as actions from '../actions/profile';
 import HeaderBar from './header-bar'
 import Book from './book'
-import { Link } from 'react-router-dom'
+import SearchResultCurrent  from './searchResultCurrent'
 import "./currentBookPageUpdate.css"
+
 export class currentBookPageUpdate extends React.Component {
 
 
@@ -20,12 +21,17 @@ export class currentBookPageUpdate extends React.Component {
         let result;
         if (!this.props.searchResults) {
             result = null;
- 
         }
         else {
             result = this.props.searchResults.map((book, index) =>
-                <Link key={index} to={"/searchCurrentBook/" + book.bookID}> <Book {...book} /></Link>);
-            
+                <div className="searchCurrentBook">
+                <SearchResultCurrent 
+                title={book.title} 
+                imageSrc={book.imageSrc}
+                author={book.author.name[0]}
+                id={book.bookID}
+                history={this.props.history}/> 
+                </div>);     
         }
         return (
             <div>

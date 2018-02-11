@@ -114,16 +114,6 @@ export default function reducer (state = initialState, action) {
             topAuthors: action.authors
         });
     }
-    // else if (action.type === actions.RECOMMENDATION_SUCCESS) {
-    //     return Object.assign({}, state, {
-    //         recommendations: [...state.recommendations, {
-    //             author: action.book.author,
-    //             title: action.book.title,
-    //             imageSrc: action.book.imageSrc,
-    //             imageSrcSmall: action.book.imageSrcSmall
-    //         }]
-    //     })
-    // }
-
+ 
     return state;
 };
