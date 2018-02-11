@@ -24,7 +24,7 @@ export class currentBookPageUpdate extends React.Component {
         }
         else {
             result = this.props.searchResults.map((book, index) =>
-                <div> key={index} to={"/searchCurrentBook/" + book.bookID}> <Book {...book} /></div>);
+                <Link key={index} to={"/searchCurrentBook/" + book.bookID}> <Book {...book} /></Link>);
             
         }
         return (
