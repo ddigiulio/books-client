@@ -7,17 +7,18 @@
     overflow: auto;
 }
 .current {
-    width: 100%;
+    width: 110px;
     margin: 0 auto;
     height: auto;
     display: block;
+    border: 8px solid #DAA520;
     
 }
 .info {
     background-color: #F5F5DC;
     text-align: center;
     width: 60%;
-    margin: 0 auto;
+    margin: 10px auto;
     height: auto;
     display: block;
     font-family: 'Poppins', sans-serif;
@@ -31,6 +32,7 @@
     left: 0;
     bottom: 0;
     right: 0;
+    overflow: auto;
 }
 
 .bookTitle{
@@ -74,10 +76,11 @@
         overflow: auto;
     }
     .current {
-        width: 100%;
+        width: 110px;
         margin: 0 auto;
         height: auto;
         display: block;
+        border: 8px solid #DAA520;
         
     }
     .info {
@@ -101,12 +104,12 @@
     }
     
     .bookTitle{
-        font-size: 22px;
+        font-size: 20px;
     }
     
     .description{
         border-radius: 5px;
-        font-size: 14px;
+        font-size: 16px;
         width: 80%;
         margin: 10px auto;
         background-color: #F5F5DC;
@@ -142,17 +145,18 @@
         overflow: auto;
     }
     .current {
-        width: 100%;
+        width: 110px;
         margin: 0 auto;
         height: auto;
         display: block;
+        border: 8px solid #DAA520;
         
     }
     .info {
         background-color: #F5F5DC;
         text-align: center;
         width: 70%;
-        margin: 0 auto;
+        margin: 10px auto;
         height: auto;
         display: block;
         font-family: 'Poppins', sans-serif;
@@ -211,17 +215,18 @@
         overflow: auto;
     }
     .current {
-        width: 100%;
+        width: 110px;
         margin: 0 auto;
         height: auto;
         display: block;
+        border: 8px solid #DAA520;
         
     }
     .info {
         background-color: #F5F5DC;
         text-align: center;
         width: 70%;
-        margin: 0 auto;
+        margin: 10px auto;
         height: auto;
         display: block;
         font-family: 'Poppins', sans-serif;
@@ -239,7 +244,7 @@
     }
     
     .bookTitle{
-        font-size: 24px;
+        font-size: 22px;
     }
     
     .description{
@@ -280,17 +285,18 @@
         overflow: auto;
     }
     .current {
-        width: 100%;
+        width: 110px;
         margin: 0 auto;
         height: auto;
         display: block;
+        border: 8px solid #DAA520;
         
     }
     .info {
         background-color: #F5F5DC;
         text-align: center;
         width: 70%;
-        margin: 0 auto;
+        margin: 10px auto;
         height: auto;
         display: block;
         font-family: 'Poppins', sans-serif;
@@ -350,10 +356,11 @@
         overflow: auto;
     }
     .current {
-        width: 100%;
+        width: 110px;
         margin: 0 auto;
         height: auto;
         display: block;
+        border: 8px solid #DAA520;
         
     }
     .info {
@@ -419,10 +426,11 @@
         overflow: auto;
     }
     .current {
-        width: 100%;
-        margin: 0 auto;
+        width: 110px;
+        margin: 10px auto;
         height: auto;
         display: block;
+        border: 8px solid #DAA520;
         
     }
     .info {
@@ -477,4 +485,3 @@
     }
 }
 
-/* desktop */

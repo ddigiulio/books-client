@@ -6,7 +6,7 @@ import HeaderBar from './header-bar'
 import './bookPage.css'
 import * as actions from '../actions/author';
 import './authorPage.css'
-
+import image from '../books2.jpg'
 export class authorPage extends React.Component {
 
     componentDidMount(){
@@ -19,9 +19,11 @@ export class authorPage extends React.Component {
     }
 
     render(){
-        
+        const sectionStyle = {
+            backgroundImage: `url(${image})`
+        }
         return(
-            <div className="authorPage">
+            <div style={sectionStyle} className="authorPage">
                 <HeaderBar />
                 <div className="containerAuthor">
                     <div className="authorCurrent">
@@ -32,11 +34,11 @@ export class authorPage extends React.Component {
                 </div>
                 <div className="infoContainer">  
                     <span className="authorName">{this.props.currentAuthor.name} </span><br />
-                    <span className="span"> born: {this.props.currentAuthor.born} </span><br />  
-                    <span className="span"> died: {this.props.currentAuthor.died}</span><br />
+                    <span className="span"> Born: {this.props.currentAuthor.born} </span><br />  
+                    <span className="span"> Died: {this.props.currentAuthor.died}</span><br />
                     <span className="span">Hometown: {this.props.currentAuthor.hometown} </span>
                 </div>
-                <div className="description">
+                <div className="descriptionAuthor">
                     {this.props.currentAuthor.about}
                 </div>
                 <div className="remove">

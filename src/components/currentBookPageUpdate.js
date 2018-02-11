@@ -24,7 +24,7 @@ export class currentBookPageUpdate extends React.Component {
         }
         else {
             result = this.props.searchResults.map((book, index) =>
-                <Link key={index} to={"/searchCurrentBook/" + book.bookID}> <Book {...book} /></Link>);
+                <div> key={index} to={"/searchCurrentBook/" + book.bookID}> <Book {...book} /></div>);
             
         }
         return (
@@ -32,7 +32,6 @@ export class currentBookPageUpdate extends React.Component {
                 <HeaderBar />
                 <div className="currentFormWrapper">
                     <form onSubmit={this.changeCurrentlyReading}>
-
                         <label className="searchLabel">
                              Search for new book 
                         </label><br />

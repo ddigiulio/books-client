@@ -3,6 +3,28 @@
     height: 100%;
     background-color: #F5F5DC
 }
+.noTopBooks{
+    background-color: #F5F5DC;
+    padding-top: 2px;
+    text-align: center;
+    font-size: 26px;
+    width: 80%;
+    font-family: 'Poppins', sans-serif;
+    margin: 5px auto;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.noTopAuthors{
+    background-color: #F5F5DC;
+    padding-top: 2px;
+    text-align: center;
+    font-size: 26px;
+    width: 80%;
+    font-family: 'Poppins', sans-serif;
+    margin: 5px auto;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
 .currentBookWrapper{
     background-color: #F5F5DC;
     padding-top: 2px;
@@ -171,6 +193,9 @@
 }
 .topAuthorWrapper:hover{
     border-color: #1696CC
+}
+.spanTitle{
+    font-family: 'Poppins', sans-serif
 }
 /* iphone 7 and 8 */
 @media (width: 375px) and (height: 667px){

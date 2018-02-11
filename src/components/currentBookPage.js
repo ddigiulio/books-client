@@ -46,7 +46,7 @@ export class currentBookPage extends React.Component {
                     <span className="spans">Rating: {this.props.currentBook.rating}</span><br />
                     <span className="spans">Published: {this.props.currentBook.pubYear} </span>
                     </div>
-                <div className="descriptionCurrentPerson">
+                <div className="descriptionCurrent">
                     {this.props.currentBook.description}
 
                 </div>
