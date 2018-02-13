@@ -22,6 +22,7 @@
     flex-flow: row wrap;
     justify-content: space-around;
     height: auto; 
+    align-items: center;
 }
 .searchResultsTitle{
     text-align: center;

@@ -12,6 +12,7 @@
     flex-flow: row wrap;
     justify-content: space-around;
     height: auto; 
+    align-items: center;
 }
 .helpTopBooks{
     width: 260px;
