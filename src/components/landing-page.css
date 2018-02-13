@@ -68,7 +68,7 @@
     }
 }
 
-@media screen and (width: 412px) and (height: 732px){  
+@media (width: 412px) and (height: 732px){  
     .home {
         height: 100%;
         position: fixed;
@@ -99,7 +99,7 @@
         font-family: 'Poppins', sans-serif  
     }
 }
-@media screen and (width: 375px) and (height: 667px){ 
+@media (width: 375px) and (height: 667px){ 
     .home {
         height: 100%;
         position: fixed;
@@ -132,7 +132,7 @@
     }
 }
 
-@media screen and (width: 414px) and (height: 736px){  
+@media (width: 414px) and (height: 736px){  
     .home {
         height: 100%;
         position: fixed;
