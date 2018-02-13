@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import {Link, Redirect} from 'react-router-dom';
 import './registration-page.css'
 import RegistrationForm from './registration-form';
+import image from '../books2.jpg'
 
 export function RegistrationPage(props) {
     // If we are logged in (which happens automatically when registration
@@ -10,8 +11,11 @@ export function RegistrationPage(props) {
     if (props.loggedIn) {
         return <Redirect to="/profile" />;
     }
+    const sectionStyle = {
+        backgroundImage: `url(${image})`
+    }
     return (
-        <div className="homeone">
+        <div style={sectionStyle} className="homeone">
             <h2>The Book Nook</h2>
             <h3>Register</h3>
             <RegistrationForm />
