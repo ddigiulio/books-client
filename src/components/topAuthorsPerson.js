@@ -18,7 +18,7 @@ export class TopAuthorsPerson extends React.Component {
       topAuthors = this.props.topAuthors.map((author, index) =>
           <div className="topAuthorWrapper">
               <Link key={index} to={"/personAuthor/" + author._id}>
-               <Author imageSrc={author.smallImageSrc} />
+               <Author imageSrc={author.imageSrc} />
                </Link>
               <span className="spanTitle">{author.name}</span>
           </div>);
