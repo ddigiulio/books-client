@@ -99,7 +99,7 @@
         font-family: 'Poppins', sans-serif  
     }
 }
-@media (width: 375px) and (height: 667px){ 
+@media (min-width: 375px) and (max-height: 667px){ 
     .home {
         height: 100%;
         position: fixed;
