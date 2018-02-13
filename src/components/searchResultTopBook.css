@@ -1,0 +1,222 @@
+.searchResultTopBook{
+  text-align: center;
+  padding: 10px 5px;
+  background-color:#F5F5DC;
+  border-radius: 5px;
+  height: auto;
+  margin-top: 8px;
+  max-width: 180px;
+}
+.topBookWrapper_{
+  width: 110px;
+  padding: 3px;
+  margin: 0 auto;
+  border: 8px solid #DAA520;
+}
+.addBookSearchButton{
+  width: 178px;
+  font-size: 22px;
+  background-color: #1696CC;
+  border-style: solid;
+  border-width: thin; 
+  border-radius: 5px;   
+  color: white;
+  margin-top: 8px;
+  margin-bottom: 3px;
+  font-family: 'Poppins', sans-serif;
+}
+span{
+  font-family: 'Poppins', sans-serif;
+}
+
+@media (width: 360px) and (height: 640px){
+  .searchResultTopBook{
+    text-align: center;
+    padding: 10px 5px;
+    background-color:#F5F5DC;
+    border-radius: 5px;
+    height: auto;
+    margin-top: 8px;
+    max-width: 180px;
+  }
+  .addBookSearchButton{
+    width: 178px;
+    font-size: 22px;
+    background-color: #1696CC;
+    border-style: solid;
+    border-width: thin; 
+    border-radius: 5px;   
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    font-family: 'Poppins', sans-serif;
+  }
+  span{
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@media (width: 412px) and (height: 732px){
+  .searchResultTopBook{
+    text-align: center;
+    padding: 10px 5px;
+    background-color:#F5F5DC;
+    border-radius: 5px;
+    height: auto;
+    margin: 10px;
+    max-width: 180px;
+  }
+  .topBookWrapper_{
+    width: 110px;
+    padding: 3px;
+    margin: 0 auto;
+    border: 8px solid #DAA520;
+  }
+  .addBookSearchButton{
+    width: 178px;
+    font-size: 22px;
+    background-color: #1696CC;
+    border-style: solid;
+    border-width: thin; 
+    border-radius: 5px;   
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    font-family: 'Poppins', sans-serif;
+  }
+  span{
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@media (width: 375px) and (height: 667px){
+  .searchResultTopBook{
+    text-align: center;
+    padding: 10px 5px;
+    background-color:#F5F5DC;
+    border-radius: 5px;
+    height: auto;
+    margin: 10px;
+    max-width: 180px;
+  }
+  .topBookWrapper_{
+    width: 110px;
+    padding: 3px;
+    margin: 0 auto;
+    border: 8px solid #DAA520;
+  }
+  .addBookSearchButton{
+    width: 178px;
+    font-size: 22px;
+    background-color: #1696CC;
+    border-style: solid;
+    border-width: thin; 
+    border-radius: 5px;   
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    font-family: 'Poppins', sans-serif;
+  }
+  span{
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@media (width: 414px) and (height: 736px){
+  .searchResultTopBook{
+    text-align: center;
+    padding: 10px 5px;
+    background-color:#F5F5DC;
+    border-radius: 5px;
+    height: auto;
+    margin: 10px;
+    max-width: 180px;
+  }
+  .topBookWrapper_{
+    width: 110px;
+    padding: 3px;
+    margin: 0 auto;
+    border: 8px solid #DAA520;
+  }
+  .addBookSearchButton{
+    width: 178px;
+    font-size: 22px;
+    background-color: #1696CC;
+    border-style: solid;
+    border-width: thin; 
+    border-radius: 5px;   
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    font-family: 'Poppins', sans-serif;
+  }
+  span{
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@media (width: 375px) and (height: 812px){
+  .searchResultTopBook{
+    text-align: center;
+    padding: 10px 5px;
+    background-color:#F5F5DC;
+    border-radius: 5px;
+    height: auto;
+    margin: 10px;
+    max-width: 180px;
+  }
+  .topBookWrapper_{
+    width: 110px;
+    padding: 3px;
+    margin: 0 auto;
+    border: 8px solid #DAA520;
+  }
+  .addBookSearchButton{
+    width: 178px;
+    font-size: 22px;
+    background-color: #1696CC;
+    border-style: solid;
+    border-width: thin; 
+    border-radius: 5px;   
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    font-family: 'Poppins', sans-serif;
+  }
+  span{
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@media (width: 768px) and (height: 1024px){
+  .searchResultTopBook{
+    text-align: center;
+    padding: 10px 5px;
+    background-color:#F5F5DC;
+    border-radius: 5px;
+    height: auto;
+    margin: 10px;
+    max-width: 180px;
+  }
+  .topBookWrapper_{
+    width: 110px;
+    padding: 3px;
+    margin: 0 auto;
+    border: 8px solid #DAA520;
+  }
+  .addBookSearchButton{
+    width: 178px;
+    font-size: 22px;
+    background-color: #1696CC;
+    border-style: solid;
+    border-width: thin; 
+    border-radius: 5px;   
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    font-family: 'Poppins', sans-serif;
+  }
+  span{
+    font-family: 'Poppins', sans-serif;
+  }
+}

@@ -4,31 +4,33 @@ import requiresLogin from './requires-login';
 import Book from './book'
 import * as actions from '../actions/profile';
 import './profile.css'
-import './searchResultCurrent.css'
+import './searchResultTopBook.css'
 
-export class searchResultCurrent extends React.Component {
+export class searchResultTopBook extends React.Component {
 
   addBook = () => {
 
-    this.props.dispatch(actions.addCurrentBookThunk(this.props.id, this.props.history))
+    this.props.dispatch(actions.addTopBookThunk(this.props.id, this.props.history))
 }
 
   render() {
     return (
-      <div className="searchResultCurrent">
-      <div className="currentBookWrapper_">
+      <div className="searchResultTopBook">
+        <div className="topBookWrapper_">
         <Book imageSrc={this.props.imageSrc} />
         </div>
-        <div className="infoCurrentSearch">
+        <div className="infoTopBookSearch">
           <span> {this.props.title}</span><br />
           <span>by {this.props.author}</span>
         </div>
         <div>
-        <button className="addCurrentSearchButton" onClick={this.addBook}>Add Book</button>
+        <button className="addBookSearchButton" onClick={this.addBook}>Add Book</button>
         </div>
       </div>
     );
   }
 }
 
-export default requiresLogin()(connect()(searchResultCurrent));
+
+
+export default requiresLogin()(connect()(searchResultTopBook));

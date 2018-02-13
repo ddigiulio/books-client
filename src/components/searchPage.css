@@ -1,384 +1,762 @@
-.searchResultContainer{
-    border: 1px solid black;
-}
-.helpPage{
-   text-align: center;
-   border-style: solid;
-   border-width: thin;
-   width:240px;
-   margin: 5px auto;
-   font-size: 20px;
-   background-color: #1696CC;
-   color: #F0F0F0;
-   border-radius: 5px;
-} 
-.searchResults{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  height: auto; 
-  margin-top: 15px;
+ .searchPage {
+     position: fixed;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     overflow: auto;
+ }
+
+ .searchResultContainer {
+     border: 1px solid black;
+ }
+
+ .helpSearchPage {
+     width: 260px;
+     padding: 5px;
+     margin: 15px auto;
+     border-radius: 5px;
+     font-size: 26px;
+     text-align: center;
+     background-color: #F5F5DC;
+ }
+
+ .searchResults {
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: space-around;
+     height: auto;
+     margin-top: 20px;
+ }
+
+ .searchWrapper {
+     width: 280px;
+     margin-top: 30px;
+     text-align: center;
+     background-color: #F5F5DC;
+     margin: 30px auto 0px;
+     border-radius: 5px;
+ }
+
+ .searchLabel {
+     width: 260px;
+     font-size: 26px;
+     border-radius: 5px;
+     color: black;
+     display: inline-block;
+     border-radius: 5px;
+     margin-top: 8px;
+     font-family: 'Poppins', sans-serif;
+     margin-bottom: 5px;
+ }
+
+ input[type=submit] {
+     width: auto;
+     font-size: 22px;
+     background-color: #1696CC;
+     border-style: solid;
+     border-width: thin;
+     border-radius: 5px;
+     color: #F0F0F0;
+     margin-top: 8px;
+     margin-bottom: 5px;
+     font-family: 'Poppins', sans-serif;
+     margin-bottom: 5px;
+ }
+
+ input[type=text] {
+     margin-top: 5px;
+     width: 160px;
+     height: 24px;
+     font-size: 18px;
+     border-color: gray;
+     border-radius: 5px;
+ }
+
+ .searchResultContainer {
+     width: 280px;
+     margin-top: 30px;
+     text-align: center;
+     background-color: #F5F5DC;
+     margin: 20px auto 0px;
+     border-radius: 5px;
+     height: auto;
+ }
+
+ .searchProfileButton {
+     width: 178px;
+     font-size: 22px;
+     background-color: #1696CC;
+     border-style: solid;
+     border-width: thin;
+     border-radius: 5px;
+     color: white;
+     margin-top: 8px;
+     margin-bottom: 3px;
+     font-family: 'Poppins', sans-serif;
+ }
+
+ .searchSpan {
+     font-family: 'Poppins', sans-serif;
+     font-size: 20px;
+ }
+
+ 
+@media (width: 360px) and (height: 640px){
+
+    .searchPage {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        overflow: auto;
+    }
+   
+    .searchResultContainer {
+        border: 1px solid black;
+    }
+   
+    .helpSearchPage {
+        width: 260px;
+        padding: 5px;
+        margin: 15px auto;
+        border-radius: 5px;
+        font-size: 20px;
+        text-align: center;
+        background-color: #F5F5DC;
+    }
+   
+    .searchResults {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        height: auto;
+        margin-top: 20px;
+    }
+   
+    .searchWrapper {
+        width: 280px;
+        margin-top: 30px;
+        text-align: center;
+        background-color: #F5F5DC;
+        margin: 30px auto 0px;
+        border-radius: 5px;
+    }
+   
+    .searchLabel {
+        width: 260px;
+        font-size: 20px;
+        border-radius: 5px;
+        color: black;
+        display: inline-block;
+        border-radius: 5px;
+        margin-top: 8px;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 5px;
+    }
+   
+    input[type=submit] {
+        width: auto;
+        font-size: 22px;
+        background-color: #1696CC;
+        border-style: solid;
+        border-width: thin;
+        border-radius: 5px;
+        color: #F0F0F0;
+        margin-top: 8px;
+        margin-bottom: 5px;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 5px;
+    }
+   
+    input[type=text] {
+        margin-top: 5px;
+        width: 160px;
+        height: 24px;
+        font-size: 18px;
+        border-color: gray;
+        border-radius: 5px;
+    }
+   
+    .searchResultContainer {
+        width: 280px;
+        margin-top: 30px;
+        text-align: center;
+        background-color: #F5F5DC;
+        margin: 20px auto 0px;
+        border-radius: 5px;
+        height: auto;
+    }
+   
+    .searchResultsTitle{
+        font-size: 22px;
+    }
+    .searchProfileButton {
+        width: 178px;
+        font-size: 20px;
+        background-color: #1696CC;
+        border-style: solid;
+        border-width: thin;
+        border-radius: 5px;
+        color: white;
+        margin-top: 8px;
+        margin-bottom: 3px;
+        font-family: 'Poppins', sans-serif;
+    }
+   
+    .searchSpan {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+    }
 }
 
-.searchWrapper{
-  margin-top: 30px;
-  text-align: center;
-  background-color:#FFA07A;
-  width: 220px;
-  margin: 30px auto 0px; 
-  border-radius: 5px;
-}
+@media (width: 412px) and (height: 732px){
 
-.searchLabel{
-  width: 175px;
-  font-size: 16px;
-  /* background-color: #1696CC; */
-  border-radius: 5px;   
-  color: #F0F0F0;
-  display: inline-block;
-  border-radius: 5px;   
-  margin-top: 8px;
-  font-family: 'Poppins', sans-serif;
-  margin-bottom: 5px;
-}
-input[type=submit]{
-  width: auto;
-  font-size: 16px;
-  background-color: #1696CC;
-  border-style: solid;
-  border-width: thin; 
-  border-radius: 5px;   
-  color: #F0F0F0;
-  margin-top: 8px;
-  margin-bottom: 5px;
-  font-family: 'Poppins', sans-serif;
-  margin-bottom: 5px;
-}
-
-input[type=text]{
-  margin-top: 5px;
-  width: 160px;
-  height: 24px;
-  font-size: 16px;
-}
-
+    .searchPage {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        overflow: auto;
+    }
+   
+    .searchResultContainer {
+        border: 1px solid black;
+    }
+   
+    .helpSearchPage {
+        width: 260px;
+        padding: 5px;
+        margin: 15px auto;
+        border-radius: 5px;
+        font-size: 24px;
+        text-align: center;
+        background-color: #F5F5DC;
+        font-family: 'Poppins', sans-serif;
+    }
+   
+    .searchResults {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        height: auto;
+        margin-top: 20px;
+    }
+   
+    .searchWrapper {
+        width: 280px;
+        margin-top: 30px;
+        text-align: center;
+        background-color: #F5F5DC;
+        margin: 30px auto 0px;
+        border-radius: 5px;
+    }
+   
+    .searchLabel {
+        width: 260px;
+        font-size: 20px;
+        border-radius: 5px;
+        color: black;
+        display: inline-block;
+        border-radius: 5px;
+        margin-top: 8px;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 5px;
+    }
+   
+    input[type=submit] {
+        width: auto;
+        font-size: 22px;
+        background-color: #1696CC;
+        border-style: solid;
+        border-width: thin;
+        border-radius: 5px;
+        color: #F0F0F0;
+        margin-top: 8px;
+        margin-bottom: 5px;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 5px;
+    }
+   
+    input[type=text] {
+        margin-top: 5px;
+        width: 160px;
+        height: 24px;
+        font-size: 18px;
+        border-color: gray;
+        border-radius: 5px;
+    }
+   
+    .searchResultContainer {
+        width: 280px;
+        margin-top: 30px;
+        text-align: center;
+        background-color: #F5F5DC;
+        margin: 20px auto 0px;
+        border-radius: 5px;
+        height: auto;
+    }
+   
+    .searchResultsTitle{
+        font-size: 24px;
+    }
+    .searchProfileButton {
+        width: 178px;
+        font-size: 20px;
+        background-color: #1696CC;
+        border-style: solid;
+        border-width: thin;
+        border-radius: 5px;
+        color: white;
+        margin-top: 8px;
+        margin-bottom: 3px;
+        font-family: 'Poppins', sans-serif;
+    }
+   
+    .searchSpan {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+    }
+  }
 
 @media (width: 375px) and (height: 667px){
 
-    .searchResultContainer{
+    .searchPage {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        overflow: auto;
+    }
+   
+    .searchResultContainer {
         border: 1px solid black;
     }
-   .helpPage{
-       text-align: center;
-       border-style: solid;
-       border-width: thin;
-       margin-top: 5px;
-       background-color: #1696CC;
-       color: #F0F0F0;
-   } 
-  .searchResults{
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-around;
-      height: auto; 
-  }
-
-  .searchWrapper{
-      margin-top: 30px;
-      text-align: center;
-      background-color:#FFA07A;
-      width: 220px;
-      margin: 30px auto 0px; 
-      border-radius: 5px;
-  }
-
-  .searchLabel{
-      width: 175px;
-      font-size: 16px;
-      /* background-color: #1696CC; */
-      border-radius: 5px;   
-      color: #F0F0F0;
-      display: inline-block;
-      border-radius: 5px;   
-      margin-top: 8px;
-      font-family: 'Poppins', sans-serif;
-      margin-bottom: 5px;
-  }
-  input[type=submit]{
-      width: auto;
-      font-size: 16px;
-      background-color: #1696CC;
-      border-style: solid;
-      border-width: thin; 
-      border-radius: 5px;   
-      color: #F0F0F0;
-      margin-top: 8px;
-      margin-bottom: 5px;
-      font-family: 'Poppins', sans-serif;
-      margin-bottom: 5px;
-  }
-
-  input[type=text]{
-      margin-top: 5px;
-      width: 160px;
-      height: 24px;
-      font-size: 16px;
-  }
-  .searchResults{
-      margin-top: 15px;
-  }
-
-}
-
-@media (width: 360px) and (height: 640px){
-
-    .helpPage{
+   
+    .helpSearchPage {
+        width: 260px;
+        padding: 5px;
+        margin: 15px auto;
+        border-radius: 5px;
+        font-size: 20px;
         text-align: center;
-        border-style: solid;
-        border-width: thin;
-        margin-top: 5px;
-        background-color: #1696CC;
-        color: #F0F0F0;
-    } 
-    .searchResults{
+        background-color: #F5F5DC;
+        font-family: 'Poppins', sans-serif;
+    }
+   
+    .searchResults {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
-        height: auto; 
+        height: auto;
+        margin-top: 20px;
     }
-  
-    .searchWrapper{
+   
+    .searchWrapper {
+        width: 280px;
         margin-top: 30px;
         text-align: center;
-        background-color:#FFA07A;
-        width: 220px;
-        margin: 30px auto 0px; 
+        background-color: #F5F5DC;
+        margin: 30px auto 0px;
         border-radius: 5px;
     }
-  
-    .searchLabel{
-        width: 175px;
-        font-size: 16px;
-        /* background-color: #1696CC; */
-        border-radius: 5px;   
-        color: #F0F0F0;
+   
+    .searchLabel {
+        width: 260px;
+        font-size: 20px;
+        border-radius: 5px;
+        color: black;
         display: inline-block;
-        border-radius: 5px;   
+        border-radius: 5px;
         margin-top: 8px;
         font-family: 'Poppins', sans-serif;
         margin-bottom: 5px;
     }
-    input[type=submit]{
+   
+    input[type=submit] {
         width: auto;
-        font-size: 16px;
+        font-size: 22px;
         background-color: #1696CC;
-        border-style: solid;
-        border-width: thin; 
-        border-radius: 5px;   
-        color: #F0F0F0;
-        margin-top: 8px;
-        margin-bottom: 5px;
-        font-family: 'Poppins', sans-serif;
-        margin-bottom: 5px;
-    }
-  
-    input[type=text]{
-        margin-top: 5px;
-        width: 160px;
-        height: 24px;
-        font-size: 16px;
-    }
-    .searchResults{
-        margin-top: 15px;
-    }
-  }
-@media (width: 412px) and (height: 732px){
-
-    .helpPage{
-        text-align: center;
         border-style: solid;
         border-width: thin;
-        margin-top: 5px;
-        background-color: #1696CC;
-        color: #F0F0F0;
-    } 
-    .searchResults{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        height: auto; 
-    }
-  
-    .searchWrapper{
-        margin-top: 30px;
-        text-align: center;
-        background-color:#FFA07A;
-        width: 220px;
-        margin: 30px auto 0px; 
         border-radius: 5px;
-    }
-  
-    .searchLabel{
-        width: 175px;
-        font-size: 16px;
-        /* background-color: #1696CC; */
-        border-radius: 5px;   
-        color: #F0F0F0;
-        display: inline-block;
-        border-radius: 5px;   
-        margin-top: 8px;
-        font-family: 'Poppins', sans-serif;
-        margin-bottom: 5px;
-    }
-    input[type=submit]{
-        width: auto;
-        font-size: 16px;
-        background-color: #1696CC;
-        border-style: solid;
-        border-width: thin; 
-        border-radius: 5px;   
         color: #F0F0F0;
         margin-top: 8px;
         margin-bottom: 5px;
         font-family: 'Poppins', sans-serif;
         margin-bottom: 5px;
     }
-  
-    input[type=text]{
+   
+    input[type=text] {
         margin-top: 5px;
         width: 160px;
         height: 24px;
-        font-size: 16px;
+        font-size: 18px;
+        border-color: gray;
+        border-radius: 5px;
     }
-    .searchResults{
-        margin-top: 15px;
+   
+    .searchResultContainer {
+        width: 280px;
+        margin-top: 30px;
+        text-align: center;
+        background-color: #F5F5DC;
+        margin: 20px auto 0px;
+        border-radius: 5px;
+        height: auto;
+    }
+   
+    .searchResultsTitle{
+        font-size: 26px;
+    }
+    .searchProfileButton {
+        width: 178px;
+        font-size: 20px;
+        background-color: #1696CC;
+        border-style: solid;
+        border-width: thin;
+        border-radius: 5px;
+        color: white;
+        margin-top: 8px;
+        margin-bottom: 3px;
+        font-family: 'Poppins', sans-serif;
+    }
+   
+    .searchSpan {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
     }
   }
 
 @media (width: 414px) and (height: 736px){
 
-    .helpPage{
+    .searchPage {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        overflow: auto;
+    }
+   
+    .searchResultContainer {
+        border: 1px solid black;
+    }
+   
+    .helpSearchPage {
+        width: 260px;
+        padding: 5px;
+        margin: 15px auto;
+        border-radius: 5px;
+        font-size: 24px;
         text-align: center;
-        border-style: solid;
-        border-width: thin;
-        margin-top: 5px;
-        background-color: #1696CC;
-        color: #F0F0F0;
-    } 
-    .searchResults{
+        background-color: #F5F5DC;
+        font-family: 'Poppins', sans-serif;
+    }
+   
+    .searchResults {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
-        height: auto; 
+        height: auto;
+        margin-top: 20px;
     }
-  
-    .searchWrapper{
+   
+    .searchWrapper {
+        width: 280px;
         margin-top: 30px;
         text-align: center;
-        background-color:#FFA07A;
-        width: 220px;
-        margin: 30px auto 0px; 
+        background-color: #F5F5DC;
+        margin: 30px auto 0px;
         border-radius: 5px;
     }
-  
-    .searchLabel{
-        width: 175px;
-        font-size: 16px;
-        /* background-color: #1696CC; */
-        border-radius: 5px;   
-        color: #F0F0F0;
+   
+    .searchLabel {
+        width: 260px;
+        font-size: 20px;
+        border-radius: 5px;
+        color: black;
         display: inline-block;
-        border-radius: 5px;   
+        border-radius: 5px;
         margin-top: 8px;
         font-family: 'Poppins', sans-serif;
         margin-bottom: 5px;
     }
-    input[type=submit]{
+   
+    input[type=submit] {
         width: auto;
-        font-size: 16px;
+        font-size: 22px;
         background-color: #1696CC;
         border-style: solid;
-        border-width: thin; 
-        border-radius: 5px;   
+        border-width: thin;
+        border-radius: 5px;
         color: #F0F0F0;
         margin-top: 8px;
         margin-bottom: 5px;
         font-family: 'Poppins', sans-serif;
         margin-bottom: 5px;
     }
-  
-    input[type=text]{
+   
+    input[type=text] {
         margin-top: 5px;
         width: 160px;
         height: 24px;
-        font-size: 16px;
+        font-size: 18px;
+        border-color: gray;
+        border-radius: 5px;
     }
-    .searchResults{
-        margin-top: 15px;
+   
+    .searchResultContainer {
+        width: 280px;
+        margin-top: 30px;
+        text-align: center;
+        background-color: #F5F5DC;
+        margin: 20px auto 0px;
+        border-radius: 5px;
+        height: auto;
+    }
+   
+    .searchResultsTitle{
+        font-size: 26px;
+    }
+    .searchProfileButton {
+        width: 178px;
+        font-size: 20px;
+        background-color: #1696CC;
+        border-style: solid;
+        border-width: thin;
+        border-radius: 5px;
+        color: white;
+        margin-top: 8px;
+        margin-bottom: 3px;
+        font-family: 'Poppins', sans-serif;
+    }
+   
+    .searchSpan {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
     }
   }
 
-  @media (width: 375px) and (height: 812px){
+@media (width: 375px) and (height: 812px){
 
-    .helpPage{
+    .searchPage {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        overflow: auto;
+    }
+   
+    .searchResultContainer {
+        border: 1px solid black;
+    }
+   
+    .helpSearchPage {
+        width: 260px;
+        padding: 5px;
+        margin: 15px auto;
+        border-radius: 5px;
+        font-size: 24px;
         text-align: center;
-        border-style: solid;
-        border-width: thin;
-        margin-top: 5px;
-        background-color: #1696CC;
-        color: #F0F0F0;
-    } 
-    .searchResults{
+        background-color: #F5F5DC;
+        font-family: 'Poppins', sans-serif;
+    }
+   
+    .searchResults {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
-        height: auto; 
+        height: auto;
+        margin-top: 20px;
     }
-  
-    .searchWrapper{
+   
+    .searchWrapper {
+        width: 280px;
         margin-top: 30px;
         text-align: center;
-        background-color:#FFA07A;
-        width: 220px;
-        margin: 30px auto 0px; 
+        background-color: #F5F5DC;
+        margin: 30px auto 0px;
         border-radius: 5px;
     }
-  
-    .searchLabel{
-        width: 175px;
-        font-size: 16px;
-        /* background-color: #1696CC; */
-        border-radius: 5px;   
-        color: #F0F0F0;
+   
+    .searchLabel {
+        width: 260px;
+        font-size: 22px;
+        border-radius: 5px;
+        color: black;
         display: inline-block;
-        border-radius: 5px;   
+        border-radius: 5px;
         margin-top: 8px;
         font-family: 'Poppins', sans-serif;
         margin-bottom: 5px;
     }
-    input[type=submit]{
+   
+    input[type=submit] {
         width: auto;
-        font-size: 16px;
+        font-size: 22px;
         background-color: #1696CC;
         border-style: solid;
-        border-width: thin; 
-        border-radius: 5px;   
+        border-width: thin;
+        border-radius: 5px;
         color: #F0F0F0;
         margin-top: 8px;
         margin-bottom: 5px;
         font-family: 'Poppins', sans-serif;
         margin-bottom: 5px;
     }
-  
-    input[type=text]{
+   
+    input[type=text] {
         margin-top: 5px;
         width: 160px;
         height: 24px;
-        font-size: 16px;
+        font-size: 18px;
+        border-color: gray;
+        border-radius: 5px;
     }
-    .searchResults{
-        margin-top: 15px;
+   
+    .searchResultContainer {
+        width: 280px;
+        margin-top: 30px;
+        text-align: center;
+        background-color: #F5F5DC;
+        margin: 20px auto 0px;
+        border-radius: 5px;
+        height: auto;
+    }
+   
+    .searchResultsTitle{
+        font-size: 26px;
+    }
+    .searchProfileButton {
+        width: 178px;
+        font-size: 20px;
+        background-color: #1696CC;
+        border-style: solid;
+        border-width: thin;
+        border-radius: 5px;
+        color: white;
+        margin-top: 8px;
+        margin-bottom: 3px;
+        font-family: 'Poppins', sans-serif;
+    }
+   
+    .searchSpan {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
     }
   }
 
-  
+  @media (width: 768px) and (height: 1024px){
+
+    .searchPage {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        overflow: auto;
+    }
+   
+    .searchResultContainer {
+        border: 1px solid black;
+    }
+   
+    .helpSearchPage {
+        width: 260px;
+        padding: 5px;
+        margin: 15px auto;
+        border-radius: 5px;
+        font-size: 28px;
+        text-align: center;
+        background-color: #F5F5DC;
+        font-family: 'Poppins', sans-serif;
+    }
+   
+    .searchResults {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        height: auto;
+        margin-top: 20px;
+    }
+   
+    .searchWrapper {
+        width: 280px;
+        margin-top: 30px;
+        text-align: center;
+        background-color: #F5F5DC;
+        margin: 30px auto 0px;
+        border-radius: 5px;
+    }
+   
+    .searchLabel {
+        width: 260px;
+        font-size: 26px;
+        border-radius: 5px;
+        color: black;
+        display: inline-block;
+        border-radius: 5px;
+        margin-top: 8px;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 5px;
+    }
+   
+    input[type=submit] {
+        width: auto;
+        font-size: 22px;
+        background-color: #1696CC;
+        border-style: solid;
+        border-width: thin;
+        border-radius: 5px;
+        color: #F0F0F0;
+        margin-top: 8px;
+        margin-bottom: 5px;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 5px;
+    }
+   
+    input[type=text] {
+        margin-top: 5px;
+        width: 160px;
+        height: 24px;
+        font-size: 18px;
+        border-color: gray;
+        border-radius: 5px;
+    }
+   
+    .searchResultContainer {
+        width: 280px;
+        margin-top: 30px;
+        text-align: center;
+        background-color: #F5F5DC;
+        margin: 20px auto 0px;
+        border-radius: 5px;
+        height: auto;
+    }
+   
+    .searchResultsTitle{
+        font-size: 28px;
+    }
+    .searchProfileButton {
+        width: 178px;
+        font-size: 26px;
+        background-color: #1696CC;
+        border-style: solid;
+        border-width: thin;
+        border-radius: 5px;
+        color: white;
+        margin-top: 8px;
+        margin-bottom: 3px;
+        font-family: 'Poppins', sans-serif;
+    }
+   
+    .searchSpan {
+        font-family: 'Poppins', sans-serif;
+        font-size: 24px;
+    }
+  }

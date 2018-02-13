@@ -4,22 +4,22 @@ import requiresLogin from './requires-login';
 import Author from './Author'
 import { Link } from 'react-router-dom'
 import './profile.css'
-import './topAuthors.css'
 
-export class TopAuthors extends React.Component {
+
+export class TopAuthorsPerson extends React.Component {
 
   render() {
     let topAuthors;
     if (this.props.topAuthors.length === 0) {
-      topAuthors = (<div className="noTopAuthors">You haven't saved any authors yet.
-       Click the update button to add authors!</div>)
+      topAuthors = (<div className="noTopAuthors">{this.props.username} saved any authors yet.
+       </div>)
   }
   else {
       topAuthors = this.props.topAuthors.map((author, index) =>
           <div className="topAuthorWrapper">
-              <Link to={"/Author/" + author._id}>
-                  <Author key={index} imageSrc={author.imageSrc} />
-              </Link>
+              <Link key={index} to={"/personAuthor/" + author._id}>
+               <Author imageSrc={author.smallImageSrc} />
+               </Link>
               <span className="spanTitle">{author.name}</span>
           </div>);
   }
@@ -32,8 +32,9 @@ export class TopAuthors extends React.Component {
 const mapStateToProps = state => {
 
   return {
-    topAuthors: state.profile.topAuthors,
+    username: state.search.searchResult.username,
+    topAuthors: state.search.searchResult.topAuthors
   };
 };
 
-export default requiresLogin()(connect(mapStateToProps)(TopAuthors));
+export default requiresLogin()(connect(mapStateToProps)(TopAuthorsPerson));

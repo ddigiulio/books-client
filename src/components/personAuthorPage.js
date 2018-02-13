@@ -6,6 +6,7 @@ import HeaderBar from './header-bar'
 import './bookPage.css'
 import * as actions from '../actions/author';
 import './authorPage.css'
+import image from '../books2.jpg'
 
 export class authorPage extends React.Component {
 
@@ -19,9 +20,12 @@ export class authorPage extends React.Component {
     }
 
     render(){
-        
+        const sectionStyle = {
+            backgroundImage: `url(${image})`
+        }
+
         return(
-            <div className="authorPage">
+            <div style={sectionStyle} className="authorPage">
                 <HeaderBar />
                 <div className="containerAuthor">
                     <div className="authorCurrent">

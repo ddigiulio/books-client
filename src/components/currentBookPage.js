@@ -16,9 +16,7 @@ export class currentBookPage extends React.Component {
 
     removeBook = () => {
         this.props.dispatch(actions.bookRemoveThunk(this.props.id, this.props.history))
-        // this.setState({
-        //     removed: true
-        // })
+
     }
 
     goBack = (event) => {

@@ -2,12 +2,12 @@ import React from 'react';
 import { connect } from 'react-redux';
 import requiresLogin from './requires-login';
 import * as actions from '../actions/profile';
-import Book from './book'
 import { Link } from 'react-router-dom'
 import './profile.css'
 import HeaderBar from './header-bar'
 import TopBooks from './topBooks'
 import TopAuthors from './topAuthors'
+import CurrentBook from './currentBook'
 import image from '../books2.jpg'
 
 export class profile extends React.Component {
@@ -31,12 +31,7 @@ export class profile extends React.Component {
                 <div className="currentBookContainer">
                     <div className="currentBookWrapper">
                         <div className="currentBookTitle">Currently Reading</div>
-                        <div className="currentBook">
-                            <Link to={"/currentBook/" + this.props.currentlyReading.id}><Book
-                                imageSrc={this.props.currentlyReading.imageSrc}
-                            /></Link>
-                            <span className="spanTitle">{this.props.currentlyReading.title}</span>
-                        </div>
+                        <CurrentBook />
                         <div className="updateCurrentBookContainer">
                             <Link to="/currentBookPageUpdate"><button className="updateCurrentButton">Update</button></Link>
                         </div>
@@ -70,13 +65,5 @@ profile.defaultProps = {
 };
 
 //ask about this return statement
-const mapStateToProps = state => {
 
-    return {
-        currentlyReading: state.profile.currentlyReading,
-        topBooks: state.profile.topBooks,
-        topAuthors: state.profile.topAuthors
-    };
-};
-
-export default requiresLogin()(connect(mapStateToProps)(profile));
+export default requiresLogin()(connect()(profile));

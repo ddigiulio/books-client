@@ -1,247 +1,111 @@
-@media (min-width: 375px) and (max-height: 667px){
-
-    .searchResults{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        height: auto; 
-    }
-  
-    .topAuthorsWrapper{
-        margin-top: 30px;
-        text-align: center;
-        background-color:#FFA07A;
-        width: 220px;
-        margin: 30px auto 0px; 
-        border-radius: 5px;
-    }
-  
-    .searchLabel{
-        width: 170px;
-        font-size: 16px;
-        background-color: #1696CC;
-        border-radius: 5px;   
-        color: #F0F0F0;
-        display: inline-block;
-        border-radius: 5px;   
-        margin-top: 8px;
-        font-family: 'Poppins', sans-serif;
-        margin-bottom: 5px;
-    }
-    input[type=submit]{
-        width: auto;
-        font-size: 16px;
-        background-color: #1696CC;
-        border-style: solid;
-        border-width: thin; 
-        border-radius: 5px;   
-        color: #F0F0F0;
-        margin-top: 8px;
-        margin-bottom: 5px;
-        font-family: 'Poppins', sans-serif;
-        margin-bottom: 5px;
-    }
-  
-    input[type=text]{
-        margin-top: 5px;
-        width: 160px;
-        height: 24px;
-        font-size: 16px;
-    }
-    .searchResults{
-        margin-top: 15px;
-    }
+.searchPageTopAuthors{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+}
+.helpTopAuthors{
+    width: 260px;
+    padding: 5px;
+    margin: 15px auto;
+    border-radius: 5px;
+    font-size: 26px;
+    text-align: center;
+    background-color:#F5F5DC;
+}
+.searchResultsTopAuthors{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    height: auto; 
 }
 
-@media (min-width: 360px) and (max-height: 640px){
-
-    .searchResults{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        height: auto; 
-    }
-  
-    .topAuthorsWrapper{
-        margin-top: 30px;
-        text-align: center;
-        background-color:#FFA07A;
-        width: 220px;
-        margin: 30px auto 0px; 
-        border-radius: 5px;
-    }
-  
-    .searchLabel{
-        width: 170px;
-        font-size: 16px;
-        background-color: #1696CC;
-        border-radius: 5px;   
-        color: #F0F0F0;
-        display: inline-block;
-        border-radius: 5px;   
-        margin-top: 8px;
-        font-family: 'Poppins', sans-serif;
-        margin-bottom: 5px;
-    }
-    input[type=submit]{
-        width: auto;
-        font-size: 16px;
-        background-color: #1696CC;
-        border-style: solid;
-        border-width: thin; 
-        border-radius: 5px;   
-        color: #F0F0F0;
-        margin-top: 8px;
-        margin-bottom: 5px;
-        font-family: 'Poppins', sans-serif;
-        margin-bottom: 5px;
-    }
-  
-    input[type=text]{
-        margin-top: 5px;
-        width: 160px;
-        height: 24px;
-        font-size: 16px;
-    }
-    .searchResults{
-        margin-top: 15px;
-    }
+.topAuthorsFormWrapper{
+    width: 280px;
+    margin-top: 30px;
+    text-align: center;
+    background-color:#F5F5DC;
+    margin: 30px auto 0px; 
+    border-radius: 5px;
 }
 
-@media (min-width: 412px) and (max-height: 732px){
-
-    .searchResults{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        height: auto; 
-    }
-  
-    .topAuthorsWrapper{
-        margin-top: 30px;
-        text-align: center;
-        background-color:#FFA07A;
-        width: 220px;
-        margin: 30px auto 0px; 
-        border-radius: 5px;
-    }
-  
-    .searchLabel{
-        width: 170px;
-        font-size: 16px;
-        background-color: #1696CC;
-        border-radius: 5px;   
-        color: #F0F0F0;
-        display: inline-block;
-        border-radius: 5px;   
-        margin-top: 8px;
-        font-family: 'Poppins', sans-serif;
-        margin-bottom: 5px;
-    }
-    input[type=submit]{
-        width: auto;
-        font-size: 16px;
-        background-color: #1696CC;
-        border-style: solid;
-        border-width: thin; 
-        border-radius: 5px;   
-        color: #F0F0F0;
-        margin-top: 8px;
-        margin-bottom: 5px;
-        font-family: 'Poppins', sans-serif;
-        margin-bottom: 5px;
-    }
-  
-    input[type=text]{
-        margin-top: 5px;
-        width: 160px;
-        height: 24px;
-        font-size: 16px;
-    }
-    .searchResults{
-        margin-top: 15px;
-    }
+.searchLabelTopAuthors{
+    width: 260px;
+    font-size: 26px;
+    border-radius: 5px;   
+    color: black;
+    display: inline-block;
+    border-radius: 5px;   
+    margin-top: 8px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 5px;
+}
+input[type=submit]{
+    width: auto;
+    font-size: 22px;
+    background-color: #1696CC;
+    border-style: solid;
+    border-width: thin; 
+    border-radius: 5px;   
+    color: #F0F0F0;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 5px;
 }
 
-@media (min-width: 414px) and (max-height: 736px){
-
-    .searchResults{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        height: auto; 
-    }
-  
-    .topAuthorsWrapper{
-        margin-top: 30px;
-        text-align: center;
-        background-color:#FFA07A;
-        width: 220px;
-        margin: 30px auto 0px; 
-        border-radius: 5px;
-    }
-  
-    .searchLabel{
-        width: 170px;
-        font-size: 16px;
-        background-color: #1696CC;
-        border-radius: 5px;   
-        color: #F0F0F0;
-        display: inline-block;
-        border-radius: 5px;   
-        margin-top: 8px;
-        font-family: 'Poppins', sans-serif;
-        margin-bottom: 5px;
-    }
-    input[type=submit]{
-        width: auto;
-        font-size: 16px;
-        background-color: #1696CC;
-        border-style: solid;
-        border-width: thin; 
-        border-radius: 5px;   
-        color: #F0F0F0;
-        margin-top: 8px;
-        margin-bottom: 5px;
-        font-family: 'Poppins', sans-serif;
-        margin-bottom: 5px;
-    }
-  
-    input[type=text]{
-        margin-top: 5px;
-        width: 160px;
-        height: 24px;
-        font-size: 16px;
-    }
-    .searchResults{
-        margin-top: 15px;
-    }
+input[type=text]{
+    margin-top: 5px;
+    width: 220px;
+    height: 30px;
+    font-size: 22px;
+    border-color: gray;
+    border-radius: 5px;
 }
 
-@media (min-width: 375px) and (max-height: 812px){
 
-    .searchResults{
+@media (width: 360px) and (height: 640px){
+
+    .searchPageTopAuthors{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        overflow: auto;
+    }
+    .helpTopAuthors{
+        width: 260px;
+        padding: 5px;
+        margin: 15px auto;
+        border-radius: 5px;
+        font-size: 20px;
+        text-align: center;
+        background-color:#F5F5DC;
+    }
+    .searchResultsTopAuthors{
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
         height: auto; 
     }
-  
-    .topAuthorsWrapper{
+    
+    .topAuthorsFormWrapper{
+        width: 280px;
         margin-top: 30px;
         text-align: center;
-        background-color:#FFA07A;
-        width: 220px;
+        background-color:#F5F5DC;
         margin: 30px auto 0px; 
         border-radius: 5px;
     }
-  
-    .searchLabel{
-        width: 170px;
-        font-size: 16px;
-        background-color: #1696CC;
+    
+    .searchLabelTopAuthors{
+        width: 260px;
+        font-size: 22px;
         border-radius: 5px;   
-        color: #F0F0F0;
+        color: black;
         display: inline-block;
         border-radius: 5px;   
         margin-top: 8px;
@@ -250,7 +114,7 @@
     }
     input[type=submit]{
         width: auto;
-        font-size: 16px;
+        font-size: 22px;
         background-color: #1696CC;
         border-style: solid;
         border-width: thin; 
@@ -261,42 +125,57 @@
         font-family: 'Poppins', sans-serif;
         margin-bottom: 5px;
     }
-  
+    
     input[type=text]{
         margin-top: 5px;
-        width: 160px;
-        height: 24px;
-        font-size: 16px;
-    }
-    .searchResults{
-        margin-top: 15px;
-    }
+        width: 220px;
+        height: 30px;
+        font-size: 22px;
+        border-color: gray;
+        border-radius: 5px;
+    } 
 }
 
-@media (min-width: 768px) and (max-height: 1024px){
+@media (width: 412px) and (height: 732px){
 
-    .searchResults{
+    .searchPageTopAuthors{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        overflow: auto;
+    }
+    .helpTopAuthors{
+        width: 260px;
+        padding: 5px;
+        margin: 15px auto;
+        border-radius: 5px;
+        font-size: 20px;
+        text-align: center;
+        background-color:#F5F5DC;
+    }
+    .searchResultsTopAuthors{
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
         height: auto; 
     }
-  
-    .topAuthorsWrapper{
+    
+    .topAuthorsFormWrapper{
+        width: 280px;
         margin-top: 30px;
         text-align: center;
-        background-color:#FFA07A;
-        width: 220px;
+        background-color:#F5F5DC;
         margin: 30px auto 0px; 
         border-radius: 5px;
     }
-  
-    .searchLabel{
-        width: 170px;
-        font-size: 16px;
-        background-color: #1696CC;
+    
+    .searchLabelTopAuthors{
+        width: 260px;
+        font-size: 22px;
         border-radius: 5px;   
-        color: #F0F0F0;
+        color: black;
         display: inline-block;
         border-radius: 5px;   
         margin-top: 8px;
@@ -305,7 +184,7 @@
     }
     input[type=submit]{
         width: auto;
-        font-size: 16px;
+        font-size: 22px;
         background-color: #1696CC;
         border-style: solid;
         border-width: thin; 
@@ -316,14 +195,223 @@
         font-family: 'Poppins', sans-serif;
         margin-bottom: 5px;
     }
-  
+    
     input[type=text]{
         margin-top: 5px;
-        width: 160px;
-        height: 24px;
-        font-size: 16px;
+        width: 220px;
+        height: 30px;
+        font-size: 22px;
+        border-color: gray;
+        border-radius: 5px;
+    } 
+}
+
+@media (width: 375px) and (height: 667px){
+
+    .searchPageTopAuthors{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        overflow: auto;
     }
-    .searchResults{
-        margin-top: 15px;
+    .helpTopAuthors{
+        width: 260px;
+        padding: 5px;
+        margin: 15px auto;
+        border-radius: 5px;
+        font-size: 20px;
+        text-align: center;
+        background-color:#F5F5DC;
     }
+    .searchResultsTopAuthors{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        height: auto; 
+    }
+    
+    .topAuthorsFormWrapper{
+        width: 280px;
+        margin-top: 30px;
+        text-align: center;
+        background-color:#F5F5DC;
+        margin: 30px auto 0px; 
+        border-radius: 5px;
+    }
+    
+    .searchLabelTopAuthors{
+        width: 260px;
+        font-size: 22px;
+        border-radius: 5px;   
+        color: black;
+        display: inline-block;
+        border-radius: 5px;   
+        margin-top: 8px;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 5px;
+    }
+    input[type=submit]{
+        width: auto;
+        font-size: 22px;
+        background-color: #1696CC;
+        border-style: solid;
+        border-width: thin; 
+        border-radius: 5px;   
+        color: #F0F0F0;
+        margin-top: 8px;
+        margin-bottom: 5px;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 5px;
+    }
+    
+    input[type=text]{
+        margin-top: 5px;
+        width: 220px;
+        height: 30px;
+        font-size: 22px;
+        border-color: gray;
+        border-radius: 5px;
+    } 
+}
+
+@media (width: 414px) and (height: 736px){
+
+    .searchPageTopAuthors{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        overflow: auto;
+    }
+    .helpTopAuthors{
+        width: 260px;
+        padding: 5px;
+        margin: 15px auto;
+        border-radius: 5px;
+        font-size: 22px;
+        text-align: center;
+        background-color:#F5F5DC;
+    }
+    .searchResultsTopAuthors{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        height: auto; 
+    }
+    
+    .topAuthorsFormWrapper{
+        width: 280px;
+        margin-top: 30px;
+        text-align: center;
+        background-color:#F5F5DC;
+        margin: 30px auto 0px; 
+        border-radius: 5px;
+    }
+    
+    .searchLabelTopAuthors{
+        width: 260px;
+        font-size: 24px;
+        border-radius: 5px;   
+        color: black;
+        display: inline-block;
+        border-radius: 5px;   
+        margin-top: 8px;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 5px;
+    }
+    input[type=submit]{
+        width: auto;
+        font-size: 22px;
+        background-color: #1696CC;
+        border-style: solid;
+        border-width: thin; 
+        border-radius: 5px;   
+        color: #F0F0F0;
+        margin-top: 8px;
+        margin-bottom: 5px;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 5px;
+    }
+    
+    input[type=text]{
+        margin-top: 5px;
+        width: 220px;
+        height: 30px;
+        font-size: 22px;
+        border-color: gray;
+        border-radius: 5px;
+    } 
+}
+
+@media (width: 375px) and (height: 812px){
+
+    .searchPageTopAuthors{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        overflow: auto;
+    }
+    .helpTopAuthors{
+        width: 260px;
+        padding: 5px;
+        margin: 15px auto;
+        border-radius: 5px;
+        font-size: 22px;
+        text-align: center;
+        background-color:#F5F5DC;
+    }
+    .searchResultsTopAuthors{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        height: auto; 
+    }
+    
+    .topAuthorsFormWrapper{
+        width: 280px;
+        margin-top: 30px;
+        text-align: center;
+        background-color:#F5F5DC;
+        margin: 30px auto 0px; 
+        border-radius: 5px;
+    }
+    
+    .searchLabelTopAuthors{
+        width: 260px;
+        font-size: 24px;
+        border-radius: 5px;   
+        color: black;
+        display: inline-block;
+        border-radius: 5px;   
+        margin-top: 8px;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 5px;
+    }
+    input[type=submit]{
+        width: auto;
+        font-size: 22px;
+        background-color: #1696CC;
+        border-style: solid;
+        border-width: thin; 
+        border-radius: 5px;   
+        color: #F0F0F0;
+        margin-top: 8px;
+        margin-bottom: 5px;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 5px;
+    }
+    
+    input[type=text]{
+        margin-top: 5px;
+        width: 220px;
+        height: 30px;
+        font-size: 22px;
+        border-color: gray;
+        border-radius: 5px;
+    } 
 }

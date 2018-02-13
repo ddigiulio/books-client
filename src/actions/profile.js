@@ -238,7 +238,7 @@ export const topAuthorThunk = (param, history) => (dispatch, getState) => {
             return res.json();
         })
         .then( data => {
-
+            console.log(data)
             dispatch(topAuthorSearchResult(data))
         })
 }

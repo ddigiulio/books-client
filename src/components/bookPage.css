@@ -6,14 +6,16 @@
     text-align: center;
     overflow: auto;
 }
+
 .current {
     width: 110px;
-    margin: 0 auto;
+    margin: 10px auto;
+    padding: 5px;
     height: auto;
     display: block;
     border: 8px solid #DAA520;
-    
 }
+
 .info {
     background-color: #F5F5DC;
     text-align: center;
@@ -23,9 +25,9 @@
     display: block;
     font-family: 'Poppins', sans-serif;
     border-radius: 5px;
-    
 }
-.bookPage{
+
+.bookPage {
     height: 100%;
     position: fixed;
     top: 0;
@@ -35,38 +37,39 @@
     overflow: auto;
 }
 
-.bookTitle{
+.bookTitle {
     font-size: 26px;
 }
 
-.description{
+.description {
     border-radius: 5px;
     font-size: 20px;
-    width: 80%;
+    width: 60%;
     margin: 10px auto;
     background-color: #F5F5DC;
     font-family: 'Poppins', sans-serif;
     padding: 8px;
 }
-.remove{
+
+.remove {
     text-align: center;
     margin: 0 auto;
 }
-.removeButton{
+
+.removeButton {
     width: 220px;
     font-size: 26px;
     background-color: #1696CC;
     border-style: solid;
-    border-width: thin; 
-    border-radius: 5px;   
+    border-width: thin;
+    border-radius: 5px;
     color: white;
     margin-top: 8px;
     margin-bottom: 3px;
     font-family: 'Poppins', sans-serif;
 }
 
-@media (width: 375px) and (height: 667px){
-    
+@media (width: 375px) and (height: 667px) {
     .containerBook {
         width: 100%;
         height: auto;
@@ -77,11 +80,11 @@
     }
     .current {
         width: 110px;
-        margin: 0 auto;
+        margin: 10px auto;
+        padding: 5px;
         height: auto;
         display: block;
         border: 8px solid #DAA520;
-        
     }
     .info {
         background-color: #F5F5DC;
@@ -91,9 +94,9 @@
         height: auto;
         display: block;
         font-family: 'Poppins', sans-serif;
-        border-radius: 5px; 
+        border-radius: 5px;
     }
-    .bookPage{
+    .bookPage {
         height: 100%;
         position: fixed;
         top: 0;
@@ -102,12 +105,10 @@
         right: 0;
         overflow: auto;
     }
-    
-    .bookTitle{
+    .bookTitle {
         font-size: 20px;
     }
-    
-    .description{
+    .description {
         border-radius: 5px;
         font-size: 16px;
         width: 80%;
@@ -116,26 +117,27 @@
         font-family: 'Poppins', sans-serif;
         padding: 8px;
     }
-    .remove{
+    .remove {
         text-align: center;
         margin: 0 auto;
     }
-    .removeButton{
+    .removeButton {
         width: 178px;
-         font-size: 22px;
-         background-color: #1696CC;
-         border-style: solid;
-         border-width: thin; 
-         border-radius: 5px;   
-         color: white;
-         margin-top: 8px;
-         margin-bottom: 3px;
-         font-family: 'Poppins', sans-serif;
+        font-size: 22px;
+        background-color: #1696CC;
+        border-style: solid;
+        border-width: thin;
+        border-radius: 5px;
+        color: white;
+        margin-top: 8px;
+        margin-bottom: 3px;
+        font-family: 'Poppins', sans-serif;
     }
 }
+
 /* galaxy s5 */
-@media (width: 360px) and (height: 640px){
-    
+
+@media (width: 360px) and (height: 640px) {
     .containerBook {
         width: 100%;
         height: auto;
@@ -146,11 +148,11 @@
     }
     .current {
         width: 110px;
-        margin: 0 auto;
+        margin: 10px auto;
+        padding: 5px;
         height: auto;
         display: block;
         border: 8px solid #DAA520;
-        
     }
     .info {
         background-color: #F5F5DC;
@@ -161,9 +163,8 @@
         display: block;
         font-family: 'Poppins', sans-serif;
         border-radius: 5px;
-        
     }
-    .bookPage{
+    .bookPage {
         height: 100%;
         position: fixed;
         top: 0;
@@ -172,12 +173,10 @@
         right: 0;
         overflow: auto;
     }
-    
-    .bookTitle{
+    .bookTitle {
         font-size: 20px;
     }
-    
-    .description{
+    .description {
         border-radius: 5px;
         font-size: 14px;
         width: 80%;
@@ -186,26 +185,27 @@
         font-family: 'Poppins', sans-serif;
         padding: 8px;
     }
-    .remove{
+    .remove {
         text-align: center;
         margin: 0 auto;
     }
-    .removeButton{
+    .removeButton {
         width: 178px;
-         font-size: 22px;
-         background-color: #1696CC;
-         border-style: solid;
-         border-width: thin; 
-         border-radius: 5px;   
-         color: white;
-         margin-top: 8px;
-         margin-bottom: 3px;
-         font-family: 'Poppins', sans-serif;
+        font-size: 22px;
+        background-color: #1696CC;
+        border-style: solid;
+        border-width: thin;
+        border-radius: 5px;
+        color: white;
+        margin-top: 8px;
+        margin-bottom: 3px;
+        font-family: 'Poppins', sans-serif;
     }
 }
+
 /* nexus 5x nexus 6p */
-@media (width: 412px) and (height: 732px){
-    
+
+@media (width: 412px) and (height: 732px) {
     .containerBook {
         width: 100%;
         height: auto;
@@ -216,11 +216,11 @@
     }
     .current {
         width: 110px;
-        margin: 0 auto;
+        margin: 10px auto;
+        padding: 5px;
         height: auto;
         display: block;
         border: 8px solid #DAA520;
-        
     }
     .info {
         background-color: #F5F5DC;
@@ -231,9 +231,8 @@
         display: block;
         font-family: 'Poppins', sans-serif;
         border-radius: 5px;
-        
     }
-    .bookPage{
+    .bookPage {
         height: 100%;
         position: fixed;
         top: 0;
@@ -242,12 +241,10 @@
         right: 0;
         overflow: auto;
     }
-    
-    .bookTitle{
+    .bookTitle {
         font-size: 22px;
     }
-    
-    .description{
+    .description {
         border-radius: 5px;
         font-size: 16px;
         width: 80%;
@@ -256,26 +253,27 @@
         font-family: 'Poppins', sans-serif;
         padding: 8px;
     }
-    .remove{
+    .remove {
         text-align: center;
         margin: 0 auto;
     }
-    .removeButton{
+    .removeButton {
         width: 178px;
-         font-size: 22px;
-         background-color: #1696CC;
-         border-style: solid;
-         border-width: thin; 
-         border-radius: 5px;   
-         color: white;
-         margin-top: 8px;
-         margin-bottom: 3px;
-         font-family: 'Poppins', sans-serif;
+        font-size: 22px;
+        background-color: #1696CC;
+        border-style: solid;
+        border-width: thin;
+        border-radius: 5px;
+        color: white;
+        margin-top: 8px;
+        margin-bottom: 3px;
+        font-family: 'Poppins', sans-serif;
     }
 }
+
 /* iphone 7 + */
-@media (width: 414px) and (height: 736px){
-    
+
+@media (width: 414px) and (height: 736px) {
     .containerBook {
         width: 100%;
         height: auto;
@@ -286,11 +284,11 @@
     }
     .current {
         width: 110px;
-        margin: 0 auto;
+        margin: 10px auto;
+        padding: 5px;
         height: auto;
         display: block;
         border: 8px solid #DAA520;
-        
     }
     .info {
         background-color: #F5F5DC;
@@ -301,9 +299,8 @@
         display: block;
         font-family: 'Poppins', sans-serif;
         border-radius: 5px;
-        
     }
-    .bookPage{
+    .bookPage {
         height: 100%;
         position: fixed;
         top: 0;
@@ -312,12 +309,10 @@
         right: 0;
         overflow: auto;
     }
-    
-    .bookTitle{
+    .bookTitle {
         font-size: 24px;
     }
-    
-    .description{
+    .description {
         border-radius: 5px;
         font-size: 16px;
         width: 80%;
@@ -326,27 +321,27 @@
         font-family: 'Poppins', sans-serif;
         padding: 8px;
     }
-    .remove{
+    .remove {
         text-align: center;
         margin: 0 auto;
     }
-    .removeButton{
+    .removeButton {
         width: 178px;
-         font-size: 24px;
-         background-color: #1696CC;
-         border-style: solid;
-         border-width: thin; 
-         border-radius: 5px;   
-         color: white;
-         margin-top: 8px;
-         margin-bottom: 3px;
-         font-family: 'Poppins', sans-serif;
+        font-size: 24px;
+        background-color: #1696CC;
+        border-style: solid;
+        border-width: thin;
+        border-radius: 5px;
+        color: white;
+        margin-top: 8px;
+        margin-bottom: 3px;
+        font-family: 'Poppins', sans-serif;
     }
 }
 
 /* iphone x */
-@media (width: 375px) and (height: 812px){
-    
+
+@media (width: 375px) and (height: 812px) {
     .containerBook {
         width: 100%;
         height: auto;
@@ -357,11 +352,11 @@
     }
     .current {
         width: 110px;
-        margin: 0 auto;
+        margin: 10px auto;
+        padding: 5px;
         height: auto;
         display: block;
         border: 8px solid #DAA520;
-        
     }
     .info {
         background-color: #F5F5DC;
@@ -372,9 +367,8 @@
         display: block;
         font-family: 'Poppins', sans-serif;
         border-radius: 5px;
-        
     }
-    .bookPage{
+    .bookPage {
         height: 100%;
         position: fixed;
         top: 0;
@@ -383,12 +377,10 @@
         right: 0;
         overflow: auto;
     }
-    
-    .bookTitle{
+    .bookTitle {
         font-size: 24px;
     }
-    
-    .description{
+    .description {
         border-radius: 5px;
         font-size: 16px;
         width: 80%;
@@ -397,26 +389,25 @@
         font-family: 'Poppins', sans-serif;
         padding: 8px;
     }
-    .remove{
+    .remove {
         text-align: center;
         margin: 0 auto;
     }
-    .removeButton{
+    .removeButton {
         width: 178px;
-         font-size: 24px;
-         background-color: #1696CC;
-         border-style: solid;
-         border-width: thin; 
-         border-radius: 5px;   
-         color: white;
-         margin-top: 8px;
-         margin-bottom: 3px;
-         font-family: 'Poppins', sans-serif;
+        font-size: 24px;
+        background-color: #1696CC;
+        border-style: solid;
+        border-width: thin;
+        border-radius: 5px;
+        color: white;
+        margin-top: 8px;
+        margin-bottom: 3px;
+        font-family: 'Poppins', sans-serif;
     }
 }
 
-@media (width: 768px) and (height: 1024px){
-    
+@media (width: 768px) and (height: 1024px) {
     .containerBook {
         width: 100%;
         height: auto;
@@ -428,10 +419,10 @@
     .current {
         width: 110px;
         margin: 10px auto;
+        padding: 5px;
         height: auto;
         display: block;
         border: 8px solid #DAA520;
-        
     }
     .info {
         background-color: #F5F5DC;
@@ -442,9 +433,8 @@
         display: block;
         font-family: 'Poppins', sans-serif;
         border-radius: 5px;
-        
     }
-    .bookPage{
+    .bookPage {
         height: 100%;
         position: fixed;
         top: 0;
@@ -453,12 +443,10 @@
         right: 0;
         overflow: auto;
     }
-    
-    .bookTitle{
+    .bookTitle {
         font-size: 26px;
     }
-    
-    .description{
+    .description {
         border-radius: 5px;
         font-size: 20px;
         width: 80%;
@@ -467,21 +455,20 @@
         font-family: 'Poppins', sans-serif;
         padding: 8px;
     }
-    .remove{
+    .remove {
         text-align: center;
         margin: 0 auto;
     }
-    .removeButton{
+    .removeButton {
         width: 178px;
-         font-size: 26px;
-         background-color: #1696CC;
-         border-style: solid;
-         border-width: thin; 
-         border-radius: 5px;   
-         color: white;
-         margin-top: 8px;
-         margin-bottom: 3px;
-         font-family: 'Poppins', sans-serif;
+        font-size: 26px;
+        background-color: #1696CC;
+        border-style: solid;
+        border-width: thin;
+        border-radius: 5px;
+        color: white;
+        margin-top: 8px;
+        margin-bottom: 3px;
+        font-family: 'Poppins', sans-serif;
     }
 }
-

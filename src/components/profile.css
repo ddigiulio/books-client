@@ -29,7 +29,7 @@
     background-color: #F5F5DC;
     padding-top: 2px;
     width: 280px;
-    margin: 5px auto;
+    margin: 25px auto;
     margin-bottom: 5px;
     border-radius: 5px;
 }
@@ -59,14 +59,7 @@
     display: relative;
     text-align: center;
 }
-.currentBook{ 
-    text-align: center;    
-    width: 120px;
-    height: auto;
-    margin: 5px auto;   
-    border: 8px solid #DAA520;
-    border-radius: 5px;    
-}
+
 .currentBook:hover{
     border-color: #1696CC
 }
@@ -85,7 +78,7 @@
 .topBookWrapper{
     background-color: #F5F5DC;
     width: 130px;
-    height: auto;
+    height: fit-content;
     text-align: center;
     padding-top: 15px;
     border: 8px solid #DAA520;
@@ -120,12 +113,14 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    height: auto; 
+    height: auto;
+    align-items: center;
 }
 .topAuthors{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;  
+    justify-content: space-around; 
+    align-items: center; 
 }
 .updateTopBooksContainer {
     margin: 0 auto;
@@ -169,6 +164,7 @@
     transform: scale(1.1);
 }
 
+
 .updateTopAuthorsContainer {
     margin: 0 auto;
     width: 100%;
@@ -184,8 +180,8 @@
 
 .topAuthorWrapper{
     background-color: #F5F5DC;
-    width: 80px;
-    height: auto;
+    width: 220px;
+    height: fit-content;
     text-align: center;
     padding-top: 5px;
     border: 5px solid #DAA520;
@@ -363,9 +359,9 @@
     
     .topAuthorWrapper{
         background-color: #F5F5DC;
-        width: 80px;
+        width: 220px;
         margin-top: 5px;
-        height: auto;
+        height: fit-content;
         text-align: center;
         padding: 5px;
         border: 5px solid #DAA520;
@@ -541,9 +537,9 @@
     
     .topAuthorWrapper{
         background-color: #F5F5DC;
-        width: 80px;
+        width: 220px;
         margin-top: 5px;
-        height: auto;
+        height: fit-content;
         text-align: center;
         padding: 5px;
         border: 5px solid #DAA520;
@@ -721,9 +717,9 @@
     
     .topAuthorWrapper{
         background-color: #F5F5DC;
-        width: 80px;
+        width: 220px;
         margin-top: 5px;
-        height: auto;
+        height: fit-content;
         text-align: center;
         padding: 5px;
         border: 5px solid #DAA520;
@@ -900,9 +896,9 @@
     
     .topAuthorWrapper{
         background-color: #F5F5DC;
-        width: 80px;
+        width: 220px;
         margin-top: 5px;
-        height: auto;
+        height: fit-content;
         text-align: center;
         padding: 5px;
         border: 5px solid #DAA520;
@@ -1078,9 +1074,9 @@
     
     .topAuthorWrapper{
         background-color: #F5F5DC;
-        width: 80px;
+        width: 220px;
         margin-top: 5px;
-        height: auto;
+        height: fit-content;
         text-align: center;
         padding: 5px;
         border: 5px solid #DAA520;

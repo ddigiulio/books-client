@@ -4,6 +4,7 @@ import HeaderBar from './header-bar'
 import * as actions from '../actions/search';
 import './searchPage.css'
 import { Link } from 'react-router-dom'
+import image from '../books2.jpg'
 
 export class searchPage extends React.Component {
 
@@ -18,24 +19,34 @@ export class searchPage extends React.Component {
     }
 
     render() {
-        let result;
+        let result, title, help;
+        const sectionStyle = {
+            backgroundImage: `url(${image})`
+        }
         if(!this.props.searchResult){
-            
+            help = (<div className="helpSearchPage">
+            <span>Search is by exact username only.</span><br />
+            <span> Search for: demo1 </span>
+            </div>)
         }
         else{
            result = (<Link to="/personProfile" style={{ textDecoration: 'none' }}>
                 <div className="searchResultContainer">
-                <span> {this.props.searchResult.firstname} </span>
-                <span>{this.props.searchResult.lastname}</span><br />
-                <span> {this.props.searchResult.username}</span><br /></div></Link>)
+                <span className="searchSpan"> Name: </span><br />
+                <span className="searchSpan"> {this.props.searchResult.firstname} </span>
+                <span className="searchSpan">{this.props.searchResult.lastname}</span><br />
+                <span className="searchSpan"> Username: </span><br />
+                <span className="searchSpan"> {this.props.searchResult.username}</span><br />
+                <button className="searchProfileButton"> Go to Profile </button>
+                </div></Link>)
+                
+            title = <div className="searchResultsTitle">Search Results</div>;
+            help=""
         }
         return (
-            <div>
+            <div style={sectionStyle} className="searchPage">
                 <HeaderBar />
-                <div className="helpPage">
-                <span>Search is by exact username only.</span><br />
-                <span> Search for: demo1 </span>
-                </div>
+                {help}
                 <div className="searchWrapper">
                 <form onSubmit={this.searchUser}>
                     <label className="searchLabel">
@@ -45,6 +56,7 @@ export class searchPage extends React.Component {
                     <input type="submit" value="Submit" />
                 </form>  
                 </div>
+                {title}
                 <div className="searchResults">
                 {result}
                 </div>          

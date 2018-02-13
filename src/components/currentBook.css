@@ -1,0 +1,21 @@
+.currentBook{ 
+  text-align: center;    
+  width: 120px;
+  height: auto;
+  margin: 5px auto; 
+  padding: 5px;  
+  border: 8px solid #DAA520;
+  border-radius: 5px;    
+}
+
+.noCurrent{
+  background-color: #F5F5DC;
+  padding-top: 2px;
+  text-align: center;
+  font-size: 26px;
+  width: 80%;
+  font-family: 'Poppins', sans-serif;
+  margin: 5px auto;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}

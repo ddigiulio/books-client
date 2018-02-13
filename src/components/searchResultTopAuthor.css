@@ -1,0 +1,211 @@
+.searchResultTopAuthor{
+  text-align: center;
+  padding: 10px 5px;
+  background-color:#F5F5DC;
+  border-radius: 5px;
+  height: auto;
+  margin-top: 20px;
+  width: 260px;
+}
+.topAuthorWrapper_{
+  width: 220px;
+  padding: 5px;
+  margin: 0 auto;
+  border: 8px solid #DAA520;
+}
+.addAuthorSearchButton{
+  width: 178px;
+  font-size: 22px;
+  background-color: #1696CC;
+  border-style: solid;
+  border-width: thin; 
+  border-radius: 5px;   
+  color: white;
+  margin-top: 8px;
+  margin-bottom: 3px;
+  font-family: 'Poppins', sans-serif;
+}
+.authorSpan{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}
+
+@media (width: 360px) and (height: 640px){
+
+  .searchResultTopAuthor{
+    text-align: center;
+    padding: 10px 5px;
+    background-color:#F5F5DC;
+    border-radius: 5px;
+    height: auto;
+    margin: 20px auto;
+    width: 260px;
+    overflow: auto;
+  }
+  .topAuthorWrapper_{
+    width: 220px;
+    padding: 5px;
+    margin: 0 auto;
+    border: 8px solid #DAA520;
+  }
+  .addAuthorSearchButton{
+    width: 178px;
+    font-size: 22px;
+    background-color: #1696CC;
+    border-style: solid;
+    border-width: thin; 
+    border-radius: 5px;   
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .authorSpan{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+  }
+}
+
+@media (width: 412px) and (height: 732px){
+  
+  .searchResultTopAuthor{
+    text-align: center;
+    padding: 10px 5px;
+    background-color:#F5F5DC;
+    border-radius: 5px;
+    height: auto;
+    margin: 20px auto;
+    width: 260px;
+    overflow: auto;
+  }
+  .topAuthorWrapper_{
+    width: 220px;
+    padding: 5px;
+    margin: 0 auto;
+    border: 8px solid #DAA520;
+  }
+  .addAuthorSearchButton{
+    width: 178px;
+    font-size: 22px;
+    background-color: #1696CC;
+    border-style: solid;
+    border-width: thin; 
+    border-radius: 5px;   
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .authorSpan{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+  }
+}
+
+@media (width: 375px) and (height: 667px){
+  
+  .searchResultTopAuthor{
+    text-align: center;
+    padding: 10px 5px;
+    background-color:#F5F5DC;
+    border-radius: 5px;
+    height: auto;
+    margin: 20px auto;
+    width: 260px;
+    overflow: auto;
+  }
+  .topAuthorWrapper_{
+    width: 220px;
+    padding: 5px;
+    margin: 0 auto;
+    border: 8px solid #DAA520;
+  }
+  .addAuthorSearchButton{
+    width: 178px;
+    font-size: 22px;
+    background-color: #1696CC;
+    border-style: solid;
+    border-width: thin; 
+    border-radius: 5px;   
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .authorSpan{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+  }
+}
+
+@media (width: 414px) and (height: 736px){
+  
+  .searchResultTopAuthor{
+    text-align: center;
+    padding: 10px 5px;
+    background-color:#F5F5DC;
+    border-radius: 5px;
+    height: auto;
+    margin: 20px auto;
+    width: 260px;
+    overflow: auto;
+  }
+  .topAuthorWrapper_{
+    width: 220px;
+    padding: 5px;
+    margin: 0 auto;
+    border: 8px solid #DAA520;
+  }
+  .addAuthorSearchButton{
+    width: 178px;
+    font-size: 22px;
+    background-color: #1696CC;
+    border-style: solid;
+    border-width: thin; 
+    border-radius: 5px;   
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .authorSpan{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+  }
+}
+
+@media (width: 375px) and (height: 812px){
+  
+  .searchResultTopAuthor{
+    text-align: center;
+    padding: 10px 5px;
+    background-color:#F5F5DC;
+    border-radius: 5px;
+    height: auto;
+    margin: 20px auto;
+    width: 260px;
+    overflow: auto;
+  }
+  .topAuthorWrapper_{
+    width: 220px;
+    padding: 5px;
+    margin: 0 auto;
+    border: 8px solid #DAA520;
+  }
+  .addAuthorSearchButton{
+    width: 178px;
+    font-size: 22px;
+    background-color: #1696CC;
+    border-style: solid;
+    border-width: thin; 
+    border-radius: 5px;   
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .authorSpan{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+  }
+}

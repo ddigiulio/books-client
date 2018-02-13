@@ -1,0 +1,235 @@
+.searchResultCurrent{
+  text-align: center;
+  padding: 10px 5px;
+  background-color:#F5F5DC;
+  border-radius: 5px;
+  height: auto;
+  margin-top: 8px;
+  max-width: 180px;
+}
+.currentBookWrapper_{
+  width: 110px;
+  padding: 3px;
+  margin: 0 auto;
+  border: 8px solid #DAA520;
+}
+.addCurrentSearchButton{
+  width: 178px;
+  font-size: 22px;
+  background-color: #1696CC;
+  border-style: solid;
+  border-width: thin; 
+  border-radius: 5px;   
+  color: white;
+  margin-top: 8px;
+  margin-bottom: 3px;
+  font-family: 'Poppins', sans-serif;
+}
+span{
+  font-family: 'Poppins', sans-serif;
+}
+
+@media (width: 375px) and (height: 667px){
+  .searchResultCurrent{
+    text-align: center;
+    padding: 10px 5px;
+    background-color:#F5F5DC;
+    border-radius: 5px;
+    height: auto;
+    margin-top: 8px;
+    max-width: 180px;
+  }
+  .currentBookWrapper_{
+    width: 110px;
+    padding: 3px;
+    margin: 0 auto;
+    border: 8px solid #DAA520;
+  }
+  .addCurrentSearchButton{
+    width: 178px;
+    font-size: 22px;
+    background-color: #1696CC;
+    border-style: solid;
+    border-width: thin; 
+    border-radius: 5px;   
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@media (width: 360px) and (height: 640px){
+  .searchResultCurrent{
+    text-align: center;
+    padding: 10px 5px;
+    background-color:#F5F5DC;
+    border-radius: 5px;
+    height: auto;
+    margin-top: 8px;
+    max-width: 180px;
+  }
+  .currentBookWrapper_{
+    width: 110px;
+    padding: 3px;
+    margin: 0 auto;
+    border: 8px solid #DAA520;
+  }
+  .addCurrentSearchButton{
+    width: 178px;
+    font-size: 22px;
+    background-color: #1696CC;
+    border-style: solid;
+    border-width: thin; 
+    border-radius: 5px;   
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@media (width: 412px) and (height: 732px){
+  .searchResultCurrent{
+    text-align: center;
+    padding: 10px 5px;
+    background-color:#F5F5DC;
+    border-radius: 5px;
+    height: auto;
+    width: 240px;
+    margin: 10px;
+    max-width: 180px;
+  }
+  .currentBookWrapper_{
+    width: 110px;
+    padding: 3px;
+    margin: 0 auto;
+    border: 8px solid #DAA520;
+  }
+  .addCurrentSearchButton{
+    width: 178px;
+    font-size: 22px;
+    background-color: #1696CC;
+    border-style: solid;
+    border-width: thin; 
+    border-radius: 5px;   
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+  }
+}
+
+@media (width: 414px) and (height: 736px){
+  .searchResultCurrent{
+    text-align: center;
+    padding: 10px 5px;
+    background-color:#F5F5DC;
+    border-radius: 5px;
+    height: auto;
+    width: 240px;
+    margin: 10px;
+    max-width: 180px;
+  }
+  .currentBookWrapper_{
+    width: 110px;
+    padding: 3px;
+    margin: 0 auto;
+    border: 8px solid #DAA520;
+  }
+  .addCurrentSearchButton{
+    width: 178px;
+    font-size: 22px;
+    background-color: #1696CC;
+    border-style: solid;
+    border-width: thin; 
+    border-radius: 5px;   
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+  }
+}
+
+@media (width: 375px) and (height: 812px){
+  .searchResultCurrent{
+    text-align: center;
+    padding: 10px 5px;
+    margin: 10px;
+    background-color:#F5F5DC;
+    border-radius: 5px;
+    height: auto;
+    width: 240px;
+    margin-top: 8px;
+    max-width: 180px;
+  }
+  .currentBookWrapper_{
+    width: 110px;
+    padding: 3px;
+    margin: 0 auto;
+    border: 8px solid #DAA520;
+  }
+  .addCurrentSearchButton{
+    width: 178px;
+    font-size: 22px;
+    background-color: #1696CC;
+    border-style: solid;
+    border-width: thin; 
+    border-radius: 5px;   
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+  }
+}
+
+@media (width: 768px) and (height: 1024px){
+  .searchResultCurrent{
+    text-align: center;
+    padding: 10px 5px;
+    background-color:#F5F5DC;
+    border-radius: 5px;
+    height: auto;
+    width: 240px;
+    margin-top: 8px;
+    max-width: 180px;
+  }
+  .currentBookWrapper_{
+    width: 110px;
+    padding: 3px;
+    margin: 0 auto;
+    border: 8px solid #DAA520;
+  }
+  .addCurrentSearchButton{
+    width: 178px;
+    font-size: 22px;
+    background-color: #1696CC;
+    border-style: solid;
+    border-width: thin; 
+    border-radius: 5px;   
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+  }
+}

@@ -3,74 +3,81 @@
   height: auto;
   margin: 0 auto;
   padding-top: 20px;
+  text-align: center;
 }
-.authorCurrent{
-  width: 110px;
+
+.authorCurrent {
+  width: 220px;
   margin: 0 auto;
   height: auto;
   display: block;
   border: 8px solid #DAA520;
-  
 }
-.infoContainer{
-  width: 30%;
+
+.infoContainer {
+  width: 60%;
   margin: 10px auto;
   text-align: center;
   border-radius: 5px;
   background-color: #F5F5DC;
   padding: 5px 0px;
 }
-.authorName{
+
+.authorName {
   font-size: 20px;
 }
-.span{
+
+.span {
   font-size: 18px;
 }
-.infoContainer span{
+
+.infoContainer span {
   display: inline-block;
 }
-.descriptionAuthor{
+
+.descriptionAuthor {
   border-radius: 5px;
   font-size: 22px;
-  width: 80%;
+  width: 60%;
   margin: 10px auto;
   background-color: #F5F5DC;
   font-family: 'Poppins', sans-serif;
   padding: 8px;
 }
-.remove{
+
+.remove {
   text-align: center;
   margin: 0 auto;
 }
-.removeButton{
+
+.removeButton {
   width: 220px;
   font-size: 26px;
   background-color: #1696CC;
   border-style: solid;
-  border-width: thin; 
-  border-radius: 5px;   
+  border-width: thin;
+  border-radius: 5px;
   color: white;
   margin-top: 8px;
   margin-bottom: 3px;
   font-family: 'Poppins', sans-serif;
 }
 
-@media (width: 375px) and (height: 667px){
+@media (width: 375px) and (height: 667px) {
   .containerAuthor {
     width: 100%;
     height: auto;
     margin: 0 auto;
     padding-top: 20px;
   }
-  .authorCurrent{
-    width: 110px;
+  .authorCurrent {
+    width: 220px;
     margin: 0 auto;
     height: auto;
     display: block;
     border: 8px solid #DAA520;
-    
   }
-  .infoContainer{
+  .infoContainer {
     width: 70%;
     margin: 10px auto;
     text-align: center;
@@ -78,16 +85,16 @@
     padding: 5px 0px;
     background-color: #F5F5DC;
   }
-  .authorName{
+  .authorName {
     font-size: 20px;
   }
-  .span{
+  .span {
     font-size: 18px;
   }
-  .infoContainer span{
+  .infoContainer span {
     display: inline-block;
   }
-  .descriptionAuthor{
+  .descriptionAuthor {
     border-radius: 5px;
     font-size: 16px;
     width: 80%;
@@ -96,40 +103,39 @@
     font-family: 'Poppins', sans-serif;
     padding: 8px;
   }
-  .remove{
+  .remove {
     text-align: center;
     margin: 0 auto;
-}
-.removeButton{
+  }
+  .removeButton {
     width: 220px;
     font-size: 24px;
     background-color: #1696CC;
     border-style: solid;
-    border-width: thin; 
-    border-radius: 5px;   
+    border-width: thin;
+    border-radius: 5px;
     color: white;
     margin-top: 8px;
     margin-bottom: 3px;
     font-family: 'Poppins', sans-serif;
-}
+  }
 }
 
-@media (width: 360px) and (height: 640px){
+@media (width: 360px) and (height: 640px) {
   .containerAuthor {
     width: 100%;
     height: auto;
     margin: 0 auto;
     padding-top: 20px;
   }
-  .authorCurrent{
-    width: 110px;
+  .authorCurrent {
+    width: 220px;
     margin: 0 auto;
     height: auto;
     display: block;
     border: 8px solid #DAA520;
-    
   }
-  .infoContainer{
+  .infoContainer {
     width: 70%;
     margin: 10px auto;
     text-align: center;
@@ -137,16 +143,16 @@
     padding: 5px 0px;
     background-color: #F5F5DC;
   }
-  .authorName{
+  .authorName {
     font-size: 20px;
   }
-  .span{
+  .span {
     font-size: 18px;
   }
-  .infoContainer span{
+  .infoContainer span {
     display: inline-block;
   }
-  .descriptionAuthor{
+  .descriptionAuthor {
     border-radius: 5px;
     font-size: 16px;
     width: 80%;
@@ -155,40 +161,39 @@
     font-family: 'Poppins', sans-serif;
     padding: 8px;
   }
-  .remove{
+  .remove {
     text-align: center;
     margin: 0 auto;
-}
-.removeButton{
+  }
+  .removeButton {
     width: 220px;
     font-size: 24px;
     background-color: #1696CC;
     border-style: solid;
-    border-width: thin; 
-    border-radius: 5px;   
+    border-width: thin;
+    border-radius: 5px;
     color: white;
     margin-top: 8px;
     margin-bottom: 3px;
     font-family: 'Poppins', sans-serif;
-}
+  }
 }
 
-@media (width: 412px) and (height: 732px){
+@media (width: 412px) and (height: 732px) {
   .containerAuthor {
     width: 100%;
     height: auto;
     margin: 0 auto;
     padding-top: 20px;
   }
-  .authorCurrent{
-    width: 110px;
+  .authorCurrent {
+    width: 220px;
     margin: 0 auto;
     height: auto;
     display: block;
     border: 8px solid #DAA520;
-    
   }
-  .infoContainer{
+  .infoContainer {
     width: 70%;
     margin: 10px auto;
     text-align: center;
@@ -196,16 +201,16 @@
     padding: 5px 0px;
     background-color: #F5F5DC;
   }
-  .authorName{
+  .authorName {
     font-size: 20px;
   }
-  .span{
+  .span {
     font-size: 18px;
   }
-  .infoContainer span{
+  .infoContainer span {
     display: inline-block;
   }
-  .descriptionAuthor{
+  .descriptionAuthor {
     border-radius: 5px;
     font-size: 16px;
     width: 80%;
@@ -214,40 +219,39 @@
     font-family: 'Poppins', sans-serif;
     padding: 8px;
   }
-  .remove{
+  .remove {
     text-align: center;
     margin: 0 auto;
-}
-.removeButton{
+  }
+  .removeButton {
     width: 220px;
     font-size: 24px;
     background-color: #1696CC;
     border-style: solid;
-    border-width: thin; 
-    border-radius: 5px;   
+    border-width: thin;
+    border-radius: 5px;
     color: white;
     margin-top: 8px;
     margin-bottom: 3px;
     font-family: 'Poppins', sans-serif;
-}
+  }
 }
 
-@media (width: 414px) and (height: 736px){
+@media (width: 414px) and (height: 736px) {
   .containerAuthor {
     width: 100%;
     height: auto;
     margin: 0 auto;
     padding-top: 20px;
   }
-  .authorCurrent{
-    width: 110px;
+  .authorCurrent {
+    width: 220px;
     margin: 0 auto;
     height: auto;
     display: block;
     border: 8px solid #DAA520;
-    
   }
-  .infoContainer{
+  .infoContainer {
     width: 70%;
     margin: 10px auto;
     text-align: center;
@@ -255,16 +259,16 @@
     padding: 5px 0px;
     background-color: #F5F5DC;
   }
-  .authorName{
+  .authorName {
     font-size: 20px;
   }
-  .span{
+  .span {
     font-size: 18px;
   }
-  .infoContainer span{
+  .infoContainer span {
     display: inline-block;
   }
-  .descriptionAuthor{
+  .descriptionAuthor {
     border-radius: 5px;
     font-size: 16px;
     width: 80%;
@@ -273,98 +277,39 @@
     font-family: 'Poppins', sans-serif;
     padding: 8px;
   }
-  .remove{
+  .remove {
     text-align: center;
     margin: 0 auto;
-}
-.removeButton{
+  }
+  .removeButton {
     width: 220px;
     font-size: 24px;
     background-color: #1696CC;
     border-style: solid;
-    border-width: thin; 
-    border-radius: 5px;   
+    border-width: thin;
+    border-radius: 5px;
     color: white;
     margin-top: 8px;
     margin-bottom: 3px;
     font-family: 'Poppins', sans-serif;
-}
-}
-@media (width: 375px) and (height: 812px){
-  .containerAuthor {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    padding-top: 20px;
   }
-  .authorCurrent{
-    width: 110px;
-    margin: 0 auto;
-    height: auto;
-    display: block;
-    border: 8px solid #DAA520;
-    
-  }
-  .infoContainer{
-    width: 70%;
-    margin: 10px auto;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px 0px;
-    background-color: #F5F5DC;
-  }
-  .authorName{
-    font-size: 20px;
-  }
-  .span{
-    font-size: 18px;
-  }
-  .infoContainer span{
-    display: inline-block;
-  }
-  .descriptionAuthor{
-    border-radius: 5px;
-    font-size: 16px;
-    width: 80%;
-    margin: 10px auto;
-    background-color: #F5F5DC;
-    font-family: 'Poppins', sans-serif;
-    padding: 8px;
-  }
-  .remove{
-    text-align: center;
-    margin: 0 auto;
-}
-.removeButton{
-    width: 220px;
-    font-size: 24px;
-    background-color: #1696CC;
-    border-style: solid;
-    border-width: thin; 
-    border-radius: 5px;   
-    color: white;
-    margin-top: 8px;
-    margin-bottom: 3px;
-    font-family: 'Poppins', sans-serif;
-}
 }
 
-@media (width: 768px) and (height: 1024px){
+@media (width: 375px) and (height: 812px) {
   .containerAuthor {
     width: 100%;
     height: auto;
     margin: 0 auto;
     padding-top: 20px;
   }
-  .authorCurrent{
-    width: 110px;
+  .authorCurrent {
+    width: 220px;
     margin: 0 auto;
     height: auto;
     display: block;
     border: 8px solid #DAA520;
-    
   }
-  .infoContainer{
+  .infoContainer {
     width: 70%;
     margin: 10px auto;
     text-align: center;
@@ -372,16 +317,74 @@
     padding: 5px 0px;
     background-color: #F5F5DC;
   }
-  .authorName{
+  .authorName {
+    font-size: 20px;
+  }
+  .span {
+    font-size: 18px;
+  }
+  .infoContainer span {
+    display: inline-block;
+  }
+  .descriptionAuthor {
+    border-radius: 5px;
+    font-size: 16px;
+    width: 80%;
+    margin: 10px auto;
+    background-color: #F5F5DC;
+    font-family: 'Poppins', sans-serif;
+    padding: 8px;
+  }
+  .remove {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .removeButton {
+    width: 220px;
+    font-size: 24px;
+    background-color: #1696CC;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 5px;
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@media (width: 768px) and (height: 1024px) {
+  .containerAuthor {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  .authorCurrent {
+    width: 220px;
+    margin: 0 auto;
+    height: auto;
+    display: block;
+    border: 8px solid #DAA520;
+  }
+  .infoContainer {
+    width: 70%;
+    margin: 10px auto;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0px;
+    background-color: #F5F5DC;
+  }
+  .authorName {
     font-size: 26px;
   }
-  .span{
+  .span {
     font-size: 22px;
   }
-  .infoContainer span{
+  .infoContainer span {
     display: inline-block;
   }
-  .descriptionAuthor{
+  .descriptionAuthor {
     border-radius: 5px;
     font-size: 22px;
     width: 80%;
@@ -390,20 +393,20 @@
     font-family: 'Poppins', sans-serif;
     padding: 8px;
   }
-  .remove{
+  .remove {
     text-align: center;
     margin: 0 auto;
-}
-.removeButton{
+  }
+  .removeButton {
     width: 220px;
     font-size: 26px;
     background-color: #1696CC;
     border-style: solid;
-    border-width: thin; 
-    border-radius: 5px;   
+    border-width: thin;
+    border-radius: 5px;
     color: white;
     margin-top: 8px;
     margin-bottom: 3px;
     font-family: 'Poppins', sans-serif;
+  }
 }
-} 
