@@ -31,16 +31,7 @@
   margin-bottom: 10px;
   border-radius: 5px;
 }
-.currentBookContainer {
-  border-bottom-style: solid;
-  border-bottom-width: thin;
-  border-bottom-color: #585858;
-}
-.topBooksContainer {
-  border-bottom-style: solid;
-  border-bottom-width: thin;
-  border-bottom-color: #585858;
-}
+
 .personUsername {
   text-align: center;
   border-bottom-style: solid;
@@ -94,16 +85,7 @@
     margin-bottom: 10px;
     border-radius: 5px;
   }
-  .currentBookContainer {
-    border-bottom-style: solid;
-    border-bottom-width: thin;
-    border-bottom-color: #585858;
-  }
-  .topBooksContainer {
-    border-bottom-style: solid;
-    border-bottom-width: thin;
-    border-bottom-color: #585858;
-  }
+
   .personUsername {
     text-align: center;
     border-bottom-style: solid;
@@ -158,16 +140,7 @@
     margin-bottom: 10px;
     border-radius: 5px;
   }
-  .currentBookContainer {
-    border-bottom-style: solid;
-    border-bottom-width: thin;
-    border-bottom-color: #585858;
-  }
-  .topBooksContainer {
-    border-bottom-style: solid;
-    border-bottom-width: thin;
-    border-bottom-color: #585858;
-  }
+
   .personUsername {
     text-align: center;
     border-bottom-style: solid;
@@ -222,16 +195,7 @@
     margin-bottom: 10px;
     border-radius: 5px;
   }
-  .currentBookContainer {
-    border-bottom-style: solid;
-    border-bottom-width: thin;
-    border-bottom-color: #585858;
-  }
-  .topBooksContainer {
-    border-bottom-style: solid;
-    border-bottom-width: thin;
-    border-bottom-color: #585858;
-  }
+
   .personUsername {
     text-align: center;
     border-bottom-style: solid;
@@ -286,16 +250,6 @@
     margin-bottom: 10px;
     border-radius: 5px;
   }
-  .currentBookContainer {
-    border-bottom-style: solid;
-    border-bottom-width: thin;
-    border-bottom-color: #585858;
-  }
-  .topBooksContainer {
-    border-bottom-style: solid;
-    border-bottom-width: thin;
-    border-bottom-color: #585858;
-  }
   .personUsername {
     text-align: center;
     border-bottom-style: solid;
@@ -349,16 +303,6 @@
     margin: 5px auto;
     margin-bottom: 10px;
     border-radius: 5px;
-  }
-  .currentBookContainer {
-    border-bottom-style: solid;
-    border-bottom-width: thin;
-    border-bottom-color: #585858;
-  }
-  .topBooksContainer {
-    border-bottom-style: solid;
-    border-bottom-width: thin;
-    border-bottom-color: #585858;
   }
   .personUsername {
     text-align: center;

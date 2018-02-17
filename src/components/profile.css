@@ -1,9 +1,11 @@
 /* desktop */
-.profile{
+
+.profile {
     height: 100%;
     background-color: #F5F5DC
 }
-.noTopBooks{
+
+.noTopBooks {
     background-color: #F5F5DC;
     padding-top: 2px;
     text-align: center;
@@ -14,7 +16,8 @@
     margin-bottom: 5px;
     border-radius: 5px;
 }
-.noTopAuthors{
+
+.noTopAuthors {
     background-color: #F5F5DC;
     padding-top: 2px;
     text-align: center;
@@ -25,34 +28,33 @@
     margin-bottom: 5px;
     border-radius: 5px;
 }
-.currentBookWrapper{
+
+.currentBookWrapper {
     background-color: #F5F5DC;
     padding-top: 2px;
     width: 280px;
     margin: 25px auto;
-    margin-bottom: 5px;
+    margin-bottom: 30px;
     border-radius: 5px;
 }
-.currentBookContainer{   
-    border-bottom-style: solid;
-    border-bottom-width: thin;
-    border-bottom-color: black;
-    }
+
 .updateCurrentButton {
     width: auto;
     font-size: 24px;
     background-color: #1696CC;
     border-style: solid;
-    border-width: thin; 
-    border-radius: 5px;   
+    border-width: thin;
+    border-radius: 5px;
     color: #F0F0F0;
     margin-top: 8px;
     margin-bottom: 5px;
-    font-family: 'Poppins', sans-serif    
+    font-family: 'Poppins', sans-serif
 }
-.updateCurrentButton:hover{
+
+.updateCurrentButton:hover {
     transform: scale(1.1);
 }
+
 .updateCurrentBookContainer {
     margin: 0 auto;
     width: 100%;
@@ -60,69 +62,78 @@
     text-align: center;
 }
 
-.currentBook:hover{
+.currentBook:hover {
     border-color: #1696CC
 }
 
-.currentBookTitle{
+.currentBookTitle {
     margin: 5px auto;
     width: 240px;
     top: 5px;
     font-size: 24px;
     color: #F0F0F0;
-    background-color: #1696CC;
+    background-color: crimson;
     text-align: center;
-    border-radius: 5px; 
-    font-family: 'Poppins', sans-serif 
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif
 }
-.topBookWrapper{
+
+.topBookWrapper {
     background-color: #F5F5DC;
     width: 130px;
-    height: fit-content;
+    height: auto;
     text-align: center;
     padding-top: 15px;
     border: 8px solid #DAA520;
     border-radius: 5px;
 }
-.topBookWrapper:hover{
+
+.topBookWrapper:hover {
     border-color: #1696CC
 }
-.topBooksTitle{
+
+.topBooksTitle {
     margin: 10px auto;
     width: 150px;
     font-size: 24px;
     color: #F0F0F0;
     text-align: center;
-    background-color: #1696CC;
-    border-radius: 5px; 
-    font-family: 'Poppins', sans-serif 
+    background-color: crimson;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif
 }
 
-.topAuthorsTitle{
+.topAuthorsTitle {
     margin: 10px auto;
     width: 150px;
     font-size: 24px;
     color: #F0F0F0;
     text-align: center;
-    background-color: #1696CC;
-    border-radius: 5px; 
-    font-family: 'Poppins', sans-serif 
+    background-color: crimson;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif
 }
 
-.topBooks{
+.topBooks {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     height: auto;
     align-items: center;
-    
+
 }
-.topAuthors{
+
+.topBooksContainer{
+    margin-bottom: 30px;
+}
+
+.topAuthors {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around; 
-    align-items: center; 
+    justify-content: space-around;
+    align-items: center;
 }
+
 .updateTopBooksContainer {
     margin: 0 auto;
     width: 100%;
@@ -134,52 +145,43 @@
     width: auto;
     font-size: 24px;
     background-color: #1696CC;
-    border-radius: 5px;   
+    border-radius: 5px;
     color: #F0F0F0;
     margin-top: 8px;
     margin-bottom: 5px;
-    font-family: 'Poppins', sans-serif    
+    font-family: 'Poppins', sans-serif
 }
-.updateTopBooksButton:hover{
+
+.updateTopBooksButton:hover {
     transform: scale(1.1);
 }
-.topBooksContainer{   
-    border-bottom-style: solid;
-    border-bottom-width: thin;
-    border-bottom-color: #585858;
-    }
+
 
 .updateTopAuthorsButton {
     width: auto;
     font-size: 24px;
     background-color: #1696CC;
     border-style: solid;
-    border-width: thin; 
-    border-radius: 5px;   
+    border-width: thin;
+    border-radius: 5px;
     color: #F0F0F0;
     margin-top: 8px;
     margin-bottom: 5px;
-    font-family: 'Poppins', sans-serif    
-    }
-.updateTopAuthorsButton:hover{
-    transform: scale(1.1);
+    font-family: 'Poppins', sans-serif
 }
 
+.updateTopAuthorsButton:hover {
+    transform: scale(1.1);
+}
 
 .updateTopAuthorsContainer {
     margin: 0 auto;
     width: 100%;
     display: relative;
     text-align: center;
-    }
-
-.topAuthorsContainer{   
-    border-bottom-style: solid;
-    border-bottom-width: thin;
-    border-bottom-color: #585858;
 }
 
-.topAuthorWrapper{
+.topAuthorWrapper {
     background-color: #F5F5DC;
     width: 220px;
     height: fit-content;
@@ -188,45 +190,43 @@
     border: 5px solid #DAA520;
     border-radius: 5px;
 }
-.topAuthorWrapper:hover{
+
+.topAuthorWrapper:hover {
     border-color: #1696CC
 }
-.spanTitle{
+
+.spanTitle {
     font-family: 'Poppins', sans-serif
 }
+
 /* iphone 7 and 8 */
-@media (width: 375px) and (height: 667px){
-    
-    .profile{
+
+@media (width: 375px) and (height: 667px) {
+    .profile {
         height: 100%;
-        background-color: #F5F5DC
+        background-color: #F5F5DC;
     }
-    .currentBookWrapper{
+    .currentBookWrapper {
         background-color: #F5F5DC;
         padding-top: 2px;
         width: 260px;
         margin: 5px auto;
-        margin-bottom: 5px;
+        margin-bottom: 30px;
         border-radius: 5px;
     }
-    .currentBookContainer{   
-        border-bottom-style: solid;
-        border-bottom-width: thin;
-        border-bottom-color: black;
-        }
     .updateCurrentButton {
         width: auto;
         font-size: 18px;
         background-color: #1696CC;
         border-style: solid;
-        border-width: thin; 
-        border-radius: 5px;   
+        border-width: thin;
+        border-radius: 5px;
         color: #F0F0F0;
         margin-top: 8px;
         margin-bottom: 5px;
-        font-family: 'Poppins', sans-serif    
+        font-family: 'Poppins', sans-serif
     }
-    .updateCurrentButton:hover{
+    .updateCurrentButton:hover {
         transform: scale(1.1);
     }
     .updateCurrentBookContainer {
@@ -235,29 +235,32 @@
         display: relative;
         text-align: center;
     }
-    .currentBook{ 
-        text-align: center;    
+    .topBooksContainer{
+        margin-bottom: 30px;
+    }
+    .currentBook {
+        text-align: center;
         width: 120px;
         height: auto;
-        margin: 5px auto;   
+        margin: 5px auto;
         border: 8px solid #DAA520;
-        border-radius: 5px;    
+        border-radius: 5px;
     }
-    .currentBook:hover{
+    .currentBook:hover {
         border-color: #1696CC
     }
-    .currentBookTitle{
+    .currentBookTitle {
         margin: 5px auto;
         width: 220px;
         top: 5px;
         font-size: 18px;
         color: #F0F0F0;
-        background-color: #1696CC;
+        background-color: crimson;
         text-align: center;
-        border-radius: 5px; 
-        font-family: 'Poppins', sans-serif 
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif
     }
-    .topBookWrapper{
+    .topBookWrapper {
         background-color: #F5F5DC;
         width: 130px;
         height: auto;
@@ -265,43 +268,41 @@
         text-align: center;
         padding-top: 15px;
         border: 8px solid #DAA520;
-        border-radius: 5px;       
+        border-radius: 5px;
     }
-    .topBookWrapper:hover{
+    .topBookWrapper:hover {
         border-color: #1696CC
     }
-    .topBooksTitle{
+    .topBooksTitle {
         margin: 10px auto;
         width: 150px;
         font-size: 18px;
         color: #F0F0F0;
         text-align: center;
-        background-color: #1696CC;
-        border-radius: 5px; 
-        font-family: 'Poppins', sans-serif 
+        background-color: crimson;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif
     }
-    
-    .topAuthorsTitle{
+    .topAuthorsTitle {
         margin: 10px auto;
         width: 150px;
         font-size: 18px;
         color: #F0F0F0;
         text-align: center;
-        background-color: #1696CC;
-        border-radius: 5px; 
-        font-family: 'Poppins', sans-serif 
+        background-color: crimson;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif
     }
-    
-    .topBooks{
+    .topBooks {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
-        height: auto; 
+        height: auto;
     }
-    .topAuthors{
+    .topAuthors {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-around;  
+        justify-content: space-around;
     }
     .updateTopBooksContainer {
         margin: 0 auto;
@@ -309,56 +310,41 @@
         display: relative;
         text-align: center;
     }
-    
     .updateTopBooksButton {
         width: auto;
         font-size: 18px;
         background-color: #1696CC;
-        border-radius: 5px;   
+        border-radius: 5px;
         color: #F0F0F0;
         margin-top: 8px;
         margin-bottom: 5px;
-        font-family: 'Poppins', sans-serif    
+        font-family: 'Poppins', sans-serif
     }
-    .updateTopBooksButton:hover{
+    .updateTopBooksButton:hover {
         transform: scale(1.1);
     }
-    .topBooksContainer{   
-        border-bottom-style: solid;
-        border-bottom-width: thin;
-        border-bottom-color: #585858;
-        }
-    
     .updateTopAuthorsButton {
         width: auto;
         font-size: 18px;
         background-color: #1696CC;
         border-style: solid;
-        border-width: thin; 
-        border-radius: 5px;   
+        border-width: thin;
+        border-radius: 5px;
         color: #F0F0F0;
         margin-top: 8px;
         margin-bottom: 5px;
-        font-family: 'Poppins', sans-serif    
-        }
-    .updateTopAuthorsButton:hover{
+        font-family: 'Poppins', sans-serif
+    }
+    .updateTopAuthorsButton:hover {
         transform: scale(1.1);
     }
-    
     .updateTopAuthorsContainer {
         margin: 0 auto;
         width: 100%;
         display: relative;
         text-align: center;
-        }
-    
-    .topAuthorsContainer{   
-        border-bottom-style: solid;
-        border-bottom-width: thin;
-        border-bottom-color: #585858;
     }
-    
-    .topAuthorWrapper{
+    .topAuthorWrapper {
         background-color: #F5F5DC;
         width: 220px;
         margin-top: 5px;
@@ -368,19 +354,19 @@
         border: 5px solid #DAA520;
         border-radius: 5px;
     }
-    .topAuthorWrapper:hover{
+    .topAuthorWrapper:hover {
         border-color: #1696CC
     }
 }
 
 /* galaxy s5 */
-@media (width: 360px) and (height: 640px){
-    
-    .profile{
+
+@media (width: 360px) and (height: 640px) {
+    .profile {
         height: 100%;
         background-color: #F5F5DC
     }
-    .currentBookWrapper{
+    .currentBookWrapper {
         background-color: #F5F5DC;
         padding-top: 2px;
         width: 260px;
@@ -388,24 +374,22 @@
         margin-bottom: 5px;
         border-radius: 5px;
     }
-    .currentBookContainer{   
-        border-bottom-style: solid;
-        border-bottom-width: thin;
-        border-bottom-color: black;
-        }
+    .topBooksContainer{
+        margin-bottom: 30px;
+    }
     .updateCurrentButton {
         width: auto;
         font-size: 18px;
         background-color: #1696CC;
         border-style: solid;
-        border-width: thin; 
-        border-radius: 5px;   
+        border-width: thin;
+        border-radius: 5px;
         color: #F0F0F0;
         margin-top: 8px;
         margin-bottom: 5px;
-        font-family: 'Poppins', sans-serif    
+        font-family: 'Poppins', sans-serif
     }
-    .updateCurrentButton:hover{
+    .updateCurrentButton:hover {
         transform: scale(1.1);
     }
     .updateCurrentBookContainer {
@@ -414,29 +398,29 @@
         display: relative;
         text-align: center;
     }
-    .currentBook{ 
-        text-align: center;    
+    .currentBook {
+        text-align: center;
         width: 120px;
         height: auto;
-        margin: 5px auto;   
+        margin: 5px auto;
         border: 8px solid #DAA520;
-        border-radius: 5px;    
+        border-radius: 5px;
     }
-    .currentBook:hover{
+    .currentBook:hover {
         border-color: #1696CC
     }
-    .currentBookTitle{
+    .currentBookTitle {
         margin: 5px auto;
         width: 220px;
         top: 5px;
         font-size: 18px;
         color: #F0F0F0;
-        background-color: #1696CC;
+        background-color: crimson;
         text-align: center;
-        border-radius: 5px; 
-        font-family: 'Poppins', sans-serif 
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif
     }
-    .topBookWrapper{
+    .topBookWrapper {
         background-color: #F5F5DC;
         width: 130px;
         height: auto;
@@ -446,40 +430,39 @@
         border: 8px solid #DAA520;
         border-radius: 5px;
     }
-    .topBookWrapper:hover{
+    .topBookWrapper:hover {
         border-color: #1696CC
     }
-    .topBooksTitle{
+    .topBooksTitle {
         margin: 10px auto;
         width: 150px;
         font-size: 18px;
         color: #F0F0F0;
         text-align: center;
-        background-color: #1696CC;
-        border-radius: 5px; 
-        font-family: 'Poppins', sans-serif 
+        background-color: crimson;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif
     }
-    
-    .topAuthorsTitle{
+    .topAuthorsTitle {
         margin: 10px auto;
         width: 150px;
         font-size: 18px;
         color: #F0F0F0;
         text-align: center;
-        background-color: #1696CC;
-        border-radius: 5px; 
-        font-family: 'Poppins', sans-serif 
-    }  
-    .topBooks{
+        background-color: crimson;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif
+    }
+    .topBooks {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
-        height: auto; 
+        height: auto;
     }
-    .topAuthors{
+    .topAuthors {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-around;  
+        justify-content: space-around;
     }
     .updateTopBooksContainer {
         margin: 0 auto;
@@ -487,56 +470,41 @@
         display: relative;
         text-align: center;
     }
-    
     .updateTopBooksButton {
         width: auto;
         font-size: 18px;
         background-color: #1696CC;
-        border-radius: 5px;   
+        border-radius: 5px;
         color: #F0F0F0;
         margin-top: 8px;
         margin-bottom: 5px;
-        font-family: 'Poppins', sans-serif    
+        font-family: 'Poppins', sans-serif
     }
-    .updateTopBooksButton:hover{
+    .updateTopBooksButton:hover {
         transform: scale(1.1);
     }
-    .topBooksContainer{   
-        border-bottom-style: solid;
-        border-bottom-width: thin;
-        border-bottom-color: #585858;
-    }
-    
     .updateTopAuthorsButton {
         width: auto;
         font-size: 18px;
         background-color: #1696CC;
         border-style: solid;
-        border-width: thin; 
-        border-radius: 5px;   
+        border-width: thin;
+        border-radius: 5px;
         color: #F0F0F0;
         margin-top: 8px;
         margin-bottom: 5px;
-        font-family: 'Poppins', sans-serif    
-     }
-    .updateTopAuthorsButton:hover{
+        font-family: 'Poppins', sans-serif
+    }
+    .updateTopAuthorsButton:hover {
         transform: scale(1.1);
     }
-    
     .updateTopAuthorsContainer {
         margin: 0 auto;
         width: 100%;
         display: relative;
         text-align: center;
     }
-    
-    .topAuthorsContainer{   
-        border-bottom-style: solid;
-        border-bottom-width: thin;
-        border-bottom-color: #585858;
-    }
-    
-    .topAuthorWrapper{
+    .topAuthorWrapper {
         background-color: #F5F5DC;
         width: 220px;
         margin-top: 5px;
@@ -546,20 +514,19 @@
         border: 5px solid #DAA520;
         border-radius: 5px;
     }
-    .topAuthorWrapper:hover{
+    .topAuthorWrapper:hover {
         border-color: #1696CC
     }
 }
 
 /* nexus 6p and nexus 5x */
 
-@media (width: 412px) and (height: 732px){
-    
-    .profile{
+@media (width: 412px) and (height: 732px) {
+    .profile {
         height: 100%;
         background-color: #F5F5DC
     }
-    .currentBookWrapper{
+    .currentBookWrapper {
         background-color: #F5F5DC;
         padding-top: 2px;
         width: 260px;
@@ -567,24 +534,22 @@
         margin-bottom: 5px;
         border-radius: 5px;
     }
-    .currentBookContainer{   
-        border-bottom-style: solid;
-        border-bottom-width: thin;
-        border-bottom-color: black;
-        }
+    .topBooksContainer{
+        margin-bottom: 30px;
+    }
     .updateCurrentButton {
         width: auto;
         font-size: 18px;
         background-color: #1696CC;
         border-style: solid;
-        border-width: thin; 
-        border-radius: 5px;   
+        border-width: thin;
+        border-radius: 5px;
         color: #F0F0F0;
         margin-top: 8px;
         margin-bottom: 5px;
-        font-family: 'Poppins', sans-serif    
+        font-family: 'Poppins', sans-serif
     }
-    .updateCurrentButton:hover{
+    .updateCurrentButton:hover {
         transform: scale(1.1);
     }
     .updateCurrentBookContainer {
@@ -593,29 +558,29 @@
         display: relative;
         text-align: center;
     }
-    .currentBook{ 
-        text-align: center;    
+    .currentBook {
+        text-align: center;
         width: 120px;
         height: auto;
-        margin: 5px auto;   
+        margin: 5px auto;
         border: 8px solid #DAA520;
-        border-radius: 5px;    
+        border-radius: 5px;
     }
-    .currentBook:hover{
+    .currentBook:hover {
         border-color: #1696CC
     }
-    .currentBookTitle{
+    .currentBookTitle {
         margin: 5px auto;
         width: 220px;
         top: 5px;
         font-size: 18px;
         color: #F0F0F0;
-        background-color: #1696CC;
+        background-color: crimson;
         text-align: center;
-        border-radius: 5px; 
-        font-family: 'Poppins', sans-serif 
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif
     }
-    .topBookWrapper{
+    .topBookWrapper {
         background-color: #F5F5DC;
         width: 130px;
         height: auto;
@@ -625,41 +590,39 @@
         border: 8px solid #DAA520;
         border-radius: 5px;
     }
-    .topBookWrapper:hover{
+    .topBookWrapper:hover {
         border-color: #1696CC
     }
-    .topBooksTitle{
+    .topBooksTitle {
         margin: 10px auto;
         width: 150px;
         font-size: 18px;
         color: #F0F0F0;
         text-align: center;
-        background-color: #1696CC;
-        border-radius: 5px; 
-        font-family: 'Poppins', sans-serif 
+        background-color: crimson;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif
     }
-    
-    .topAuthorsTitle{
+    .topAuthorsTitle {
         margin: 10px auto;
         width: 150px;
         font-size: 18px;
         color: #F0F0F0;
         text-align: center;
-        background-color: #1696CC;
-        border-radius: 5px; 
-        font-family: 'Poppins', sans-serif 
+        background-color: crimson;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif
     }
-    
-    .topBooks{
+    .topBooks {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
-        height: auto; 
+        height: auto;
     }
-    .topAuthors{
+    .topAuthors {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-around;  
+        justify-content: space-around;
     }
     .updateTopBooksContainer {
         margin: 0 auto;
@@ -667,56 +630,41 @@
         display: relative;
         text-align: center;
     }
-    
     .updateTopBooksButton {
         width: auto;
         font-size: 18px;
         background-color: #1696CC;
-        border-radius: 5px;   
+        border-radius: 5px;
         color: #F0F0F0;
         margin-top: 8px;
         margin-bottom: 5px;
-        font-family: 'Poppins', sans-serif    
+        font-family: 'Poppins', sans-serif
     }
-    .updateTopBooksButton:hover{
+    .updateTopBooksButton:hover {
         transform: scale(1.1);
     }
-    .topBooksContainer{   
-        border-bottom-style: solid;
-        border-bottom-width: thin;
-        border-bottom-color: #585858;
-        }
-    
     .updateTopAuthorsButton {
         width: auto;
         font-size: 18px;
         background-color: #1696CC;
         border-style: solid;
-        border-width: thin; 
-        border-radius: 5px;   
+        border-width: thin;
+        border-radius: 5px;
         color: #F0F0F0;
         margin-top: 8px;
         margin-bottom: 5px;
-        font-family: 'Poppins', sans-serif    
+        font-family: 'Poppins', sans-serif
     }
-    .updateTopAuthorsButton:hover{
+    .updateTopAuthorsButton:hover {
         transform: scale(1.1);
     }
-    
     .updateTopAuthorsContainer {
         margin: 0 auto;
         width: 100%;
         display: relative;
         text-align: center;
-        }
-    
-    .topAuthorsContainer{   
-        border-bottom-style: solid;
-        border-bottom-width: thin;
-        border-bottom-color: #585858;
     }
-    
-    .topAuthorWrapper{
+    .topAuthorWrapper {
         background-color: #F5F5DC;
         width: 220px;
         margin-top: 5px;
@@ -726,19 +674,22 @@
         border: 5px solid #DAA520;
         border-radius: 5px;
     }
-    .topAuthorWrapper:hover{
+    .topAuthorWrapper:hover {
         border-color: #1696CC
     }
 }
 
 /* iphone 7+ 8+ */
-@media (width: 414px) and (height: 736px){
-    
-    .profile{
+
+@media (width: 414px) and (height: 736px) {
+    .profile {
         height: 100%;
         background-color: #F5F5DC
     }
-    .currentBookWrapper{
+    .topBooksContainer{
+        margin-bottom: 30px;
+    }
+    .currentBookWrapper {
         background-color: #F5F5DC;
         padding-top: 2px;
         width: 260px;
@@ -746,24 +697,19 @@
         margin-bottom: 5px;
         border-radius: 5px;
     }
-    .currentBookContainer{   
-        border-bottom-style: solid;
-        border-bottom-width: thin;
-        border-bottom-color: black;
-        }
     .updateCurrentButton {
         width: auto;
         font-size: 20px;
         background-color: #1696CC;
         border-style: solid;
-        border-width: thin; 
-        border-radius: 5px;   
+        border-width: thin;
+        border-radius: 5px;
         color: #F0F0F0;
         margin-top: 8px;
         margin-bottom: 5px;
-        font-family: 'Poppins', sans-serif    
+        font-family: 'Poppins', sans-serif
     }
-    .updateCurrentButton:hover{
+    .updateCurrentButton:hover {
         transform: scale(1.1);
     }
     .updateCurrentBookContainer {
@@ -772,29 +718,29 @@
         display: relative;
         text-align: center;
     }
-    .currentBook{ 
-        text-align: center;    
+    .currentBook {
+        text-align: center;
         width: 120px;
         height: auto;
-        margin: 5px auto;   
+        margin: 5px auto;
         border: 8px solid #DAA520;
-        border-radius: 5px;    
+        border-radius: 5px;
     }
-    .currentBook:hover{
+    .currentBook:hover {
         border-color: #1696CC
     }
-    .currentBookTitle{
+    .currentBookTitle {
         margin: 5px auto;
         width: 220px;
         top: 5px;
         font-size: 20px;
         color: #F0F0F0;
-        background-color: #1696CC;
+        background-color: crimson;
         text-align: center;
-        border-radius: 5px; 
-        font-family: 'Poppins', sans-serif 
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif
     }
-    .topBookWrapper{
+    .topBookWrapper {
         background-color: #F5F5DC;
         width: 130px;
         height: auto;
@@ -804,41 +750,39 @@
         border: 8px solid #DAA520;
         border-radius: 5px;
     }
-    .topBookWrapper:hover{
+    .topBookWrapper:hover {
         border-color: #1696CC
     }
-    .topBooksTitle{
+    .topBooksTitle {
         margin: 10px auto;
         width: 150px;
         font-size: 20px;
         color: #F0F0F0;
         text-align: center;
-        background-color: #1696CC;
-        border-radius: 5px; 
-        font-family: 'Poppins', sans-serif 
+        background-color: crimson;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif
     }
-    
-    .topAuthorsTitle{
+    .topAuthorsTitle {
         margin: 10px auto;
         width: 150px;
         font-size: 20px;
         color: #F0F0F0;
         text-align: center;
-        background-color: #1696CC;
-        border-radius: 5px; 
-        font-family: 'Poppins', sans-serif 
+        background-color: crimson;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif
     }
-    
-    .topBooks{
+    .topBooks {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
-        height: auto; 
+        height: auto;
     }
-    .topAuthors{
+    .topAuthors {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-around;  
+        justify-content: space-around;
     }
     .updateTopBooksContainer {
         margin: 0 auto;
@@ -846,56 +790,41 @@
         display: relative;
         text-align: center;
     }
-    
     .updateTopBooksButton {
         width: auto;
         font-size: 20px;
         background-color: #1696CC;
-        border-radius: 5px;   
+        border-radius: 5px;
         color: #F0F0F0;
         margin-top: 8px;
         margin-bottom: 5px;
-        font-family: 'Poppins', sans-serif    
+        font-family: 'Poppins', sans-serif
     }
-    .updateTopBooksButton:hover{
+    .updateTopBooksButton:hover {
         transform: scale(1.1);
     }
-    .topBooksContainer{   
-        border-bottom-style: solid;
-        border-bottom-width: thin;
-        border-bottom-color: #585858;
-        }
-    
     .updateTopAuthorsButton {
         width: auto;
         font-size: 20px;
         background-color: #1696CC;
         border-style: solid;
-        border-width: thin; 
-        border-radius: 5px;   
+        border-width: thin;
+        border-radius: 5px;
         color: #F0F0F0;
         margin-top: 8px;
         margin-bottom: 5px;
-        font-family: 'Poppins', sans-serif    
+        font-family: 'Poppins', sans-serif
     }
-    .updateTopAuthorsButton:hover{
+    .updateTopAuthorsButton:hover {
         transform: scale(1.1);
     }
-    
     .updateTopAuthorsContainer {
         margin: 0 auto;
         width: 100%;
         display: relative;
         text-align: center;
-        }
-    
-    .topAuthorsContainer{   
-        border-bottom-style: solid;
-        border-bottom-width: thin;
-        border-bottom-color: #585858;
     }
-    
-    .topAuthorWrapper{
+    .topAuthorWrapper {
         background-color: #F5F5DC;
         width: 220px;
         margin-top: 5px;
@@ -905,18 +834,19 @@
         border: 5px solid #DAA520;
         border-radius: 5px;
     }
-    .topAuthorWrapper:hover{
+    .topAuthorWrapper:hover {
         border-color: #1696CC
     }
 }
+
 /* iphone X */
-@media (width: 375px) and (height: 812px){
-    
-    .profile{
+
+@media (width: 375px) and (height: 812px) {
+    .profile {
         height: 100%;
         background-color: #F5F5DC
     }
-    .currentBookWrapper{
+    .currentBookWrapper {
         background-color: #F5F5DC;
         padding-top: 2px;
         width: 260px;
@@ -924,24 +854,22 @@
         margin-bottom: 5px;
         border-radius: 5px;
     }
-    .currentBookContainer{   
-        border-bottom-style: solid;
-        border-bottom-width: thin;
-        border-bottom-color: black;
-        }
+    .topBooksContainer{
+        margin-bottom: 30px;
+    }
     .updateCurrentButton {
         width: auto;
         font-size: 18px;
         background-color: #1696CC;
         border-style: solid;
-        border-width: thin; 
-        border-radius: 5px;   
+        border-width: thin;
+        border-radius: 5px;
         color: #F0F0F0;
         margin-top: 8px;
         margin-bottom: 5px;
-        font-family: 'Poppins', sans-serif    
+        font-family: 'Poppins', sans-serif
     }
-    .updateCurrentButton:hover{
+    .updateCurrentButton:hover {
         transform: scale(1.1);
     }
     .updateCurrentBookContainer {
@@ -950,29 +878,29 @@
         display: relative;
         text-align: center;
     }
-    .currentBook{ 
-        text-align: center;    
+    .currentBook {
+        text-align: center;
         width: 120px;
         height: auto;
-        margin: 5px auto;   
+        margin: 5px auto;
         border: 8px solid #DAA520;
-        border-radius: 5px;    
+        border-radius: 5px;
     }
-    .currentBook:hover{
+    .currentBook:hover {
         border-color: #1696CC
     }
-    .currentBookTitle{
+    .currentBookTitle {
         margin: 5px auto;
         width: 220px;
         top: 5px;
         font-size: 18px;
         color: #F0F0F0;
-        background-color: #1696CC;
+        background-color: crimson;
         text-align: center;
-        border-radius: 5px; 
-        font-family: 'Poppins', sans-serif 
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif
     }
-    .topBookWrapper{
+    .topBookWrapper {
         background-color: #F5F5DC;
         width: 130px;
         height: auto;
@@ -982,41 +910,39 @@
         border: 8px solid #DAA520;
         border-radius: 5px;
     }
-    .topBookWrapper:hover{
+    .topBookWrapper:hover {
         border-color: #1696CC
     }
-    .topBooksTitle{
+    .topBooksTitle {
         margin: 10px auto;
         width: 150px;
         font-size: 18px;
         color: #F0F0F0;
         text-align: center;
-        background-color: #1696CC;
-        border-radius: 5px; 
-        font-family: 'Poppins', sans-serif 
+        background-color: crimson;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif
     }
-    
-    .topAuthorsTitle{
+    .topAuthorsTitle {
         margin: 10px auto;
         width: 150px;
         font-size: 18px;
         color: #F0F0F0;
         text-align: center;
-        background-color: #1696CC;
-        border-radius: 5px; 
-        font-family: 'Poppins', sans-serif 
+        background-color: crimson;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif
     }
-    
-    .topBooks{
+    .topBooks {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
-        height: auto; 
+        height: auto;
     }
-    .topAuthors{
+    .topAuthors {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-around;  
+        justify-content: space-around;
     }
     .updateTopBooksContainer {
         margin: 0 auto;
@@ -1024,56 +950,41 @@
         display: relative;
         text-align: center;
     }
-    
     .updateTopBooksButton {
         width: auto;
         font-size: 18px;
         background-color: #1696CC;
-        border-radius: 5px;   
+        border-radius: 5px;
         color: #F0F0F0;
         margin-top: 8px;
         margin-bottom: 5px;
-        font-family: 'Poppins', sans-serif    
+        font-family: 'Poppins', sans-serif
     }
-    .updateTopBooksButton:hover{
+    .updateTopBooksButton:hover {
         transform: scale(1.1);
     }
-    .topBooksContainer{   
-        border-bottom-style: solid;
-        border-bottom-width: thin;
-        border-bottom-color: #585858;
-        }
-    
     .updateTopAuthorsButton {
         width: auto;
         font-size: 18px;
         background-color: #1696CC;
         border-style: solid;
-        border-width: thin; 
-        border-radius: 5px;   
+        border-width: thin;
+        border-radius: 5px;
         color: #F0F0F0;
         margin-top: 8px;
         margin-bottom: 5px;
-        font-family: 'Poppins', sans-serif    
+        font-family: 'Poppins', sans-serif
     }
-    .updateTopAuthorsButton:hover{
+    .updateTopAuthorsButton:hover {
         transform: scale(1.1);
     }
-    
     .updateTopAuthorsContainer {
         margin: 0 auto;
         width: 100%;
         display: relative;
         text-align: center;
-        }
-    
-    .topAuthorsContainer{   
-        border-bottom-style: solid;
-        border-bottom-width: thin;
-        border-bottom-color: #585858;
     }
-    
-    .topAuthorWrapper{
+    .topAuthorWrapper {
         background-color: #F5F5DC;
         width: 220px;
         margin-top: 5px;
@@ -1083,44 +994,42 @@
         border: 5px solid #DAA520;
         border-radius: 5px;
     }
-    .topAuthorWrapper:hover{
+    .topAuthorWrapper:hover {
         border-color: #1696CC
     }
 }
 
 /* ipad */
-@media (width: 768px) and (height: 1024px){
-    
-    .profile{
+
+@media (width: 768px) and (height: 1024px) {
+    .profile {
         height: 100%;
         background-color: #F5F5DC
     }
-    .currentBookWrapper{
+    .currentBookWrapper {
         background-color: #F5F5DC;
         padding-top: 2px;
         width: 260px;
         margin: 5px auto;
-        margin-bottom: 5px;
+        margin-bottom: 30px;
         border-radius: 5px;
     }
-    .currentBookContainer{   
-        border-bottom-style: solid;
-        border-bottom-width: thin;
-        border-bottom-color: black;
-        }
+    .topBooksContainer{
+        margin-bottom: 30px;
+    }
     .updateCurrentButton {
         width: auto;
         font-size: 18px;
         background-color: #1696CC;
         border-style: solid;
-        border-width: thin; 
-        border-radius: 5px;   
+        border-width: thin;
+        border-radius: 5px;
         color: #F0F0F0;
         margin-top: 8px;
         margin-bottom: 5px;
-        font-family: 'Poppins', sans-serif    
+        font-family: 'Poppins', sans-serif
     }
-    updateCurrentButton:hover{
+    updateCurrentButton:hover {
         transform: scale(1.1);
     }
     .updateCurrentBookContainer {
@@ -1129,29 +1038,29 @@
         display: relative;
         text-align: center;
     }
-    .currentBook{ 
-        text-align: center;    
+    .currentBook {
+        text-align: center;
         width: 120px;
         height: auto;
-        margin: 5px auto;   
+        margin: 5px auto;
         border: 8px solid #DAA520;
-        border-radius: 5px;    
+        border-radius: 5px;
     }
-    .currentBook:hover{
+    .currentBook:hover {
         border-color: #1696CC
     }
-    .currentBookTitle{
+    .currentBookTitle {
         margin: 5px auto;
         width: 220px;
         top: 5px;
         font-size: 18px;
         color: #F0F0F0;
-        background-color: #1696CC;
+        background-color: crimson;
         text-align: center;
-        border-radius: 5px; 
-        font-family: 'Poppins', sans-serif 
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif
     }
-    .topBookWrapper{
+    .topBookWrapper {
         background-color: #F5F5DC;
         width: 130px;
         height: auto;
@@ -1161,39 +1070,39 @@
         border: 8px solid #DAA520;
         border-radius: 5px;
     }
-    .topBookWrapper:hover{
+    .topBookWrapper:hover {
         border-color: #1696CC
     }
-    .topBooksTitle{
+    .topBooksTitle {
         margin: 10px auto;
         width: 150px;
         font-size: 18px;
         color: #F0F0F0;
         text-align: center;
-        background-color: #1696CC;
-        border-radius: 5px; 
-        font-family: 'Poppins', sans-serif 
-    }   
-    .topAuthorsTitle{
+        background-color: crimson;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif
+    }
+    .topAuthorsTitle {
         margin: 10px auto;
         width: 150px;
         font-size: 18px;
         color: #F0F0F0;
         text-align: center;
-        background-color: #1696CC;
-        border-radius: 5px; 
-        font-family: 'Poppins', sans-serif 
-    } 
-    .topBooks{
+        background-color: crimson;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif
+    }
+    .topBooks {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
-        height: auto; 
+        height: auto;
     }
-    .topAuthors{
+    .topAuthors {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-around;  
+        justify-content: space-around;
     }
     .updateTopBooksContainer {
         margin: 0 auto;
@@ -1201,39 +1110,32 @@
         display: relative;
         text-align: center;
     }
-    
     .updateTopBooksButton {
         width: auto;
         font-size: 18px;
         background-color: #1696CC;
-        border-radius: 5px;   
+        border-radius: 5px;
         color: #F0F0F0;
         margin-top: 8px;
         margin-bottom: 5px;
-        font-family: 'Poppins', sans-serif    
+        font-family: 'Poppins', sans-serif
     }
-    .updateTopBooksButton:hover{
+    .updateTopBooksButton:hover {
         transform: scale(1.1);
     }
-    .topBooksContainer{   
-        border-bottom-style: solid;
-        border-bottom-width: thin;
-        border-bottom-color: #585858;
-        }
-    
     .updateTopAuthorsButton {
         width: auto;
         font-size: 18px;
         background-color: #1696CC;
         border-style: solid;
-        border-width: thin; 
-        border-radius: 5px;   
+        border-width: thin;
+        border-radius: 5px;
         color: #F0F0F0;
         margin-top: 8px;
         margin-bottom: 5px;
-        font-family: 'Poppins', sans-serif    
+        font-family: 'Poppins', sans-serif
     }
-    .updateTopAuthorsButton:hover{
+    .updateTopAuthorsButton:hover {
         transform: scale(1.1);
     }
     .updateTopAuthorsContainer {
@@ -1241,15 +1143,8 @@
         width: 100%;
         display: relative;
         text-align: center;
-        }
-    
-    .topAuthorsContainer{   
-        border-bottom-style: solid;
-        border-bottom-width: thin;
-        border-bottom-color: #585858;
     }
-    
-    .topAuthorWrapper{
+    .topAuthorWrapper {
         background-color: #F5F5DC;
         width: 80px;
         margin-top: 5px;
@@ -1259,7 +1154,7 @@
         border: 5px solid #DAA520;
         border-radius: 5px;
     }
-    .topAuthorWrapper:hover{
+    .topAuthorWrapper:hover {
         border-color: #1696CC
     }
 }
