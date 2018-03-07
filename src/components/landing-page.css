@@ -8,21 +8,52 @@
         left: 0;
         bottom: 0;
         right: 0;
-        overflow: auto;   
+        overflow: auto; 
+        /* background-color: #D3D3D3   */
     }
-    .home h1{
+    .top{
+        height: 30%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .top h1{
         text-align: center;
         padding-top: 30px;
         font-family: 'Berkshire Swash', cursive;
         font-size: 50px;
         color: #1696CC;
         text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+        -webkit-margin-before: 0em;
+        -webkit-margin-after: 0em;
+        margin-bottom: 10px;
     }
+    .top p{
+        
+        padding: 5px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        color: #1696CC;
+        -webkit-margin-before: 0em;
+        -webkit-margin-after: 0em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+    }
+
+    .p-div{
+        width: 80%;
+        height: 70px;
+        border-radius: 3px;
+        border: 3px solid #DAA520;
+        margin: 30px auto 15px;
+        background-color: #F5F5DC;
+    }
+    
     .aboutContainer{
         font-size: 13px;
         height: auto;
         margin: 10px auto 0px;
-        background-color: white;
+       
         padding: 5px;
         width: 260px;
         display: flex;
@@ -45,14 +76,44 @@
         overflow: auto; 
       
     }
-    .home h1{
+    .top{
+        height: 40%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .top h1{
         text-align: center;
         padding-top: 30px;
         font-family: 'Berkshire Swash', cursive;
         font-size: 80px;
         color: #1696CC;
         text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+        -webkit-margin-before: 0em;
+        -webkit-margin-after: 0em;
+        margin-bottom: 10px;
     }
+    .top p{
+        
+        padding: 5px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 22px;
+        color: #1696CC;
+        -webkit-margin-before: 0em;
+        -webkit-margin-after: 0em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+    }
+
+    .p-div{
+        width: 400px;
+        height: 80px;
+        border-radius: 3px;
+        border: 3px solid #DAA520;
+        margin: 30px auto 15px;
+        background-color: #F5F5DC;
+    }
+    
 
     .aboutContainer{
         height: auto;
@@ -79,15 +140,35 @@
         overflow: auto;
     
     }
-    .home h1{
+   
+    .top{
+        height: 30%;
+        width: 100%;
         text-align: center;
-        padding-top: 30px;
+    }
+
+    .top h1{
+        text-align: center;
+        padding-top: 60px;
         font-family: 'Berkshire Swash', cursive;
         font-size: 80px;
         color: #1696CC;
         text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
         -webkit-margin-before: 0em;
         -webkit-margin-after: 0em;
+        margin-bottom: 10px;
+    }
+
+    span{
+        font-size: 20px;
+    }
+    .p-div{
+        width: 400px;
+        height: 80px;
+        border-radius: 3px;
+        border: 3px solid #DAA520;
+        margin: 30px auto 15px;
+        background-color: #F5F5DC;
     }
     
     .aboutContainer{
@@ -95,7 +176,7 @@
         height: auto;
         margin: 10px auto 0px;
         background-color: white;
-        width: 360px;
+        width: 500px;
         display: flex;
         align-items: center;
         flex-direction: column; 

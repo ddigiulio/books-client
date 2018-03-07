@@ -7,6 +7,7 @@
     padding-top: 10px;
     text-align: center;
     overflow: auto;
+    
 }
 
 .current_ {
@@ -15,6 +16,8 @@
     height: auto;
     display: block;
     border: 8px solid #DAA520;
+    background-color: #F5F5DC;
+    padding: 5px;
 }
 
 .infoCurrent {

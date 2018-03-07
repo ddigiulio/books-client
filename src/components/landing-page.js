@@ -11,15 +11,22 @@ export function LandingPage(props) {
         return <Redirect to="/profile" />;
     }
     const sectionStyle = {
-        backgroundImage: `url(${image})`
+        backgroundImage: `url(${image})`,
+        
     }
     return (
-        <div style={sectionStyle} className="home">
+        <div className="home">
+            <div style={sectionStyle} className="top">
             <h1>The Book Nook</h1>
-            <div className="aboutContainer">
-            <span> The Book Nook is a place to share and explore your favorite works of literature!</span><br />
-            <span> With the Book Nook you can keep track of your favorite books and authors
-                   and let others know what you are currently reading!</span><br />
+            {/* <div className="p-div">
+            <p> Share and explore your favorite works of literature!</p><br />
+            </div> */}
+            </div>
+            
+             <div className="aboutContainer">
+            
+            <span> Do you love to read and want others to know what you are reading?</span><br />
+            <span> The Book Nook lets you share and explore your favorite works of literature!</span><br />
             <span>Demo Username: demo</span>
             <span>Demo Password: qwertyuiop</span>
             </div>  
