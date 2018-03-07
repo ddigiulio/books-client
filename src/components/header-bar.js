@@ -29,7 +29,7 @@ export class HeaderBar extends React.Component {
                 <div className="secondary">
                 
                 <Link to="/profile"><button className="profileButton">{this.props.currentUser.firstName || this.props.currentUser.username}</button></Link>
-                <Link to="/searchPage"><button className="search">Search</button></Link>
+                <Link to="/searchPage"><button className="search">User search</button></Link>
                 {logOutButton}
                 </div>
             </div>
