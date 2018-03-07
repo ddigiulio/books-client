@@ -25,8 +25,8 @@ export function LandingPage(props) {
             
              <div className="aboutContainer">
             
-            <span> Do you love to read and want others to know what you are reading?</span><br />
-            <span> The Book Nook lets you share and explore your favorite works of literature!</span><br />
+            <span> Do you <span className="blue">love</span> to read and want others to know what you are reading?</span><br />
+            <span> The <span className="blue"> Book Nook</span> lets you share and explore your <span className="blue">favorite</span> works of literature!</span><br />
             <span>Demo Username: demo</span>
             <span>Demo Password: qwertyuiop</span>
             </div>  

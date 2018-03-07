@@ -1,6 +1,6 @@
 /* desktop */
 
-@media (min-width: 360px){   
+@media (min-width: 320px){   
     .home {
         height: 100%;
         position: fixed;
@@ -12,14 +12,14 @@
         /* background-color: #D3D3D3   */
     }
     .top{
-        height: 30%;
+        height: 20%;
         width: 100%;
         text-align: center;
     }
 
     .top h1{
         text-align: center;
-        padding-top: 30px;
+        padding-top: 40px;
         font-family: 'Berkshire Swash', cursive;
         font-size: 50px;
         color: #1696CC;
@@ -48,19 +48,28 @@
         margin: 30px auto 15px;
         background-color: #F5F5DC;
     }
+
+    span{
+        font-size: 16px;
+    }
+    .blue{
+        color: #1696CC;
+        font-size: 18px;
+    }
     
     .aboutContainer{
+        text-align: center;
         font-size: 13px;
         height: auto;
         margin: 10px auto 0px;
-       
         padding: 5px;
-        width: 260px;
+        width: 300px;
         display: flex;
         align-items: center;
         flex-direction: column; 
         background-color: #F5F5DC; 
-        border-radius: 5px;
+        border-bottom-style: solid;
+        border-bottom-color: #1696CC;
         font-family: 'Poppins', sans-serif  
     }
 }
@@ -104,6 +113,13 @@
         -webkit-margin-start: 0px;
         -webkit-margin-end: 0px;
     }
+    span{
+        font-size: 20px;
+    }
+    .blue{
+        color: #1696CC;
+        font-size: 22px;
+    }
 
     .p-div{
         width: 400px;
@@ -124,7 +140,7 @@
         align-items: center;
         flex-direction: column; 
         background-color: #F5F5DC; 
-        border-radius: 5px;
+        
         font-family: 'Poppins', sans-serif  
     }
 }
@@ -162,6 +178,10 @@
     span{
         font-size: 20px;
     }
+    .blue{
+        color: #1696CC;
+        font-size: 22px;
+    }
     .p-div{
         width: 400px;
         height: 80px;
@@ -174,14 +194,16 @@
     .aboutContainer{
         text-align: center;
         height: auto;
-        margin: 10px auto 0px;
-        background-color: white;
-        width: 500px;
-        display: flex;
-        align-items: center;
-        flex-direction: column; 
+        padding: 10px;
+        border-bottom-style: solid;
+        border-bottom-color: #1696CC;
+        /* margin: 10px auto 0px; */
+        width: 80%;
+        /* display: flex;
+        /* align-items: center; */
+        flex-direction: column;  
         background-color: #F5F5DC; 
-        border-radius: 5px;
+      
         font-family: 'Poppins', sans-serif  
         }
     }
