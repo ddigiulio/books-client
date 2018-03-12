@@ -15,22 +15,19 @@ export function LandingPage(props) {
         
     }
     return (
-        <div className="home">
-            <div style={sectionStyle} className="top">
+        <div style={sectionStyle} className="home">
+            <div  className="top">
             <h1>The Book Nook</h1>
-            {/* <div className="p-div">
-            <p> Share and explore your favorite works of literature!</p><br />
-            </div> */}
             </div>
-            
+            <div className="all-container">
              <div className="aboutContainer">
-            
             <span> Do you <span className="blue">love</span> to read and want others to know what you are reading?</span><br />
             <span> The <span className="blue"> Book Nook</span> lets you share and explore your <span className="blue">favorite</span> works of literature!</span><br />
             <span>Demo Username: demo</span>
             <span>Demo Password: qwertyuiop</span>
             </div>  
             <LoginForm />
+            </div>
         </div>
     );
 }
