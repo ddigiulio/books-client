@@ -5,6 +5,7 @@ import * as actions from '../actions/book';
 import Book from './book'
 import HeaderBar from './header-bar'
 import './bookPage.css'
+import Footer from './footer'
 import image from '../books2.jpg'
 export class bookPage extends React.Component {
 
@@ -48,7 +49,7 @@ export class bookPage extends React.Component {
                 <div className="remove">
                 <button className="removeButton" onClick={this.removeBook}>Remove Book</button>
                 </div>
-               
+               <Footer />
             </div>
         )
     }

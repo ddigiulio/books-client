@@ -5,6 +5,7 @@ import * as actions from '../actions/book';
 import Book from './book'
 import HeaderBar from './header-bar'
 import './currentBookPage.css'
+import Footer from './footer'
 import image from '../books2.jpg'
 
 export class currentBookPage extends React.Component {
@@ -46,9 +47,8 @@ export class currentBookPage extends React.Component {
                     </div>
                 <div className="descriptionCurrent">
                     {this.props.currentBook.description}
-
                 </div>
-
+               
             </div>
         )
     }

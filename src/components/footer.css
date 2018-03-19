@@ -1,0 +1,56 @@
+.footer h1 {
+  text-align: center;
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 45px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 6px solid #DAA520;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  color: #1696CC;
+}
+
+.footer {
+  background-color: #F5F5DC;
+  bottom: 0px;
+  
+}
+
+@media (min-width: 360px) and (max-height: 640px) {
+  .footer h1 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 412px) and (max-height: 732px) {
+  .footer h1 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 375px) and (max-height: 667px) {
+  .footer h1 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 414px) and (max-height: 736px){
+    
+  .footer h1{
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 375px) and (max-height: 812px){
+    
+  .footer h1{
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-height: 1024px){
+    
+  .footer h1{
+    font-size: 45px;
+  }
+}

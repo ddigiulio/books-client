@@ -5,6 +5,7 @@ import * as actions from '../actions/search';
 import './searchPage.css'
 import { Link } from 'react-router-dom'
 import image from '../books2.jpg'
+import Footer from './footer'
 
 export class searchPage extends React.Component {
 
@@ -59,7 +60,8 @@ export class searchPage extends React.Component {
                 {title}
                 <div className="searchResults">
                 {result}
-                </div>          
+                </div>   
+                     
             </div>
         )
     }

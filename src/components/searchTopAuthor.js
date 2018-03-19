@@ -6,6 +6,7 @@ import Author from './Author'
 import HeaderBar from './header-bar'
 import './bookPage.css'
 import './searchTopAuthor.css'
+import Footer from './footer'
 export class searchTopAuthor extends React.Component {
 
     componentDidMount(){
@@ -43,6 +44,7 @@ export class searchTopAuthor extends React.Component {
                     <button className="addBook buttonsCurrent" onClick={this.addAuthor}>Add Author</button>          
                 </div>
                 </div>
+                <Footer />
             </div>
         )
     }

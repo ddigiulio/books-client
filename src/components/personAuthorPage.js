@@ -7,6 +7,7 @@ import './bookPage.css'
 import * as actions from '../actions/author';
 import './authorPage.css'
 import image from '../books2.jpg'
+import Footer from './footer'
 
 export class authorPage extends React.Component {
 
@@ -46,6 +47,7 @@ export class authorPage extends React.Component {
                 <div className="goBackContainer">
                 <button className="goBackButton" onClick={this.goBack}>Back to profile</button>
                 </div>
+                <Footer />
             </div>
         )
     }

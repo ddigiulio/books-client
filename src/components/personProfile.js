@@ -8,6 +8,7 @@ import TopBooksPerson from './topBooksPerson'
 import TopAuthorsPerson from './topAuthorsPerson'
 import CurrentBookPerson from './currentBookPerson.js'
 import image from '../books2.jpg'
+import Footer from './footer'
 
 export class personProfile extends React.Component {
 
@@ -21,7 +22,7 @@ export class personProfile extends React.Component {
             <div style={sectionStyle} className="profile">
                 <HeaderBar />
                 <div className="personUsername">
-                    <span className="usernameSpan">{this.props.username}</span>
+                    <span className="usernameSpan">Viewing {this.props.username}'s Nook</span>
                 </div>
                 <div className="currentBookContainer">
                     <div className="currentBookWrapper">
@@ -43,6 +44,7 @@ export class personProfile extends React.Component {
                         <TopAuthorsPerson />
                     </div>
                 </div>
+                <Footer />
             </div>
         );
     }

@@ -34,7 +34,7 @@
     padding-top: 2px;
     width: 280px;
     margin: 25px auto;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     border-radius: 5px;
 }
 
@@ -55,6 +55,20 @@
     transform: scale(1.1);
 }
 
+.currentBookContainer{
+    border-bottom: 8px solid #DAA520;
+}
+.topBooksContainer{
+    margin-top: 30px;
+    border-bottom: 8px solid #DAA520;
+    margin-bottom: 30px;
+}
+
+.topAuthorsContainer{
+    margin-top: 30px;
+   
+
+}
 .updateCurrentBookContainer {
     margin: 0 auto;
     width: 100%;
@@ -123,10 +137,6 @@
 
 }
 
-.topBooksContainer{
-    margin-bottom: 30px;
-}
-
 .topAuthors {
     display: flex;
     flex-flow: row wrap;
@@ -137,7 +147,7 @@
 .updateTopBooksContainer {
     margin: 0 auto;
     width: 100%;
-    display: relative;
+    margin-bottom: 25px;
     text-align: center;
 }
 
@@ -174,10 +184,11 @@
     transform: scale(1.1);
 }
 
+
 .updateTopAuthorsContainer {
     margin: 0 auto;
     width: 100%;
-    display: relative;
+    margin-bottom: 30px;
     text-align: center;
 }
 
@@ -210,9 +221,17 @@
         background-color: #F5F5DC;
         padding-top: 2px;
         width: 260px;
-        margin: 5px auto;
+        margin: 20px auto;
         margin-bottom: 30px;
         border-radius: 5px;
+    }
+
+    .currentBookContainer{
+    
+        border-bottom: 6px solid #DAA520;
+    }
+    .topBooksContainer{
+        border-bottom: 6px solid #DAA520;
     }
     .updateCurrentButton {
         width: auto;
@@ -307,7 +326,7 @@
     .updateTopBooksContainer {
         margin: 0 auto;
         width: 100%;
-        display: relative;
+        margin-bottom: 25px;
         text-align: center;
     }
     .updateTopBooksButton {
@@ -341,9 +360,11 @@
     .updateTopAuthorsContainer {
         margin: 0 auto;
         width: 100%;
-        display: relative;
+        margin-bottom: 25px;
         text-align: center;
     }
+
+
     .topAuthorWrapper {
         background-color: #F5F5DC;
         width: 220px;
@@ -370,12 +391,20 @@
         background-color: #F5F5DC;
         padding-top: 2px;
         width: 260px;
-        margin: 5px auto;
-        margin-bottom: 5px;
+        margin: 25px auto;
+        margin-bottom: 25px;
         border-radius: 5px;
     }
     .topBooksContainer{
         margin-bottom: 30px;
+    }
+    .currentBookContainer{
+    
+        border-bottom: 6px solid #DAA520;
+    }
+    .topBooksContainer{
+        
+        border-bottom: 6px solid #DAA520;
     }
     .updateCurrentButton {
         width: auto;
@@ -467,7 +496,7 @@
     .updateTopBooksContainer {
         margin: 0 auto;
         width: 100%;
-        display: relative;
+        margin-bottom: 25px;
         text-align: center;
     }
     .updateTopBooksButton {
@@ -501,9 +530,10 @@
     .updateTopAuthorsContainer {
         margin: 0 auto;
         width: 100%;
-        display: relative;
+        margin-bottom: 25px;
         text-align: center;
     }
+ 
     .topAuthorWrapper {
         background-color: #F5F5DC;
         width: 220px;
@@ -530,12 +560,20 @@
         background-color: #F5F5DC;
         padding-top: 2px;
         width: 260px;
-        margin: 5px auto;
-        margin-bottom: 5px;
+        margin: 25px auto;
+        margin-bottom: 25px;
         border-radius: 5px;
     }
     .topBooksContainer{
         margin-bottom: 30px;
+    }
+    .currentBookContainer{
+    
+        border-bottom: 6px solid #DAA520;
+    }
+    .topBooksContainer{
+        
+        border-bottom: 6px solid #DAA520;
     }
     .updateCurrentButton {
         width: auto;
@@ -627,7 +665,7 @@
     .updateTopBooksContainer {
         margin: 0 auto;
         width: 100%;
-        display: relative;
+        margin-bottom: 25px;
         text-align: center;
     }
     .updateTopBooksButton {
@@ -661,9 +699,11 @@
     .updateTopAuthorsContainer {
         margin: 0 auto;
         width: 100%;
-        display: relative;
+        margin-bottom: 25px;
         text-align: center;
     }
+
+  
     .topAuthorWrapper {
         background-color: #F5F5DC;
         width: 220px;
@@ -693,9 +733,17 @@
         background-color: #F5F5DC;
         padding-top: 2px;
         width: 260px;
-        margin: 5px auto;
-        margin-bottom: 5px;
+        margin: 25px auto;
+        margin-bottom: 25px;
         border-radius: 5px;
+    }
+    .currentBookContainer{
+    
+        border-bottom: 6px solid #DAA520;
+    }
+    .topBooksContainer{
+        
+        border-bottom: 6px solid #DAA520;
     }
     .updateCurrentButton {
         width: auto;
@@ -787,7 +835,7 @@
     .updateTopBooksContainer {
         margin: 0 auto;
         width: 100%;
-        display: relative;
+        margin-bottom: 25px;
         text-align: center;
     }
     .updateTopBooksButton {
@@ -821,9 +869,11 @@
     .updateTopAuthorsContainer {
         margin: 0 auto;
         width: 100%;
-        display: relative;
+        margin-bottom: 25px;
         text-align: center;
     }
+
+ 
     .topAuthorWrapper {
         background-color: #F5F5DC;
         width: 220px;
@@ -850,12 +900,20 @@
         background-color: #F5F5DC;
         padding-top: 2px;
         width: 260px;
-        margin: 5px auto;
-        margin-bottom: 5px;
+        margin: 25px auto;
+        margin-bottom: 2px;
         border-radius: 5px;
     }
     .topBooksContainer{
         margin-bottom: 30px;
+    }
+    .currentBookContainer{
+    
+        border-bottom: 6px solid #DAA520;
+    }
+    .topBooksContainer{
+        
+        border-bottom: 6px solid #DAA520;
     }
     .updateCurrentButton {
         width: auto;
@@ -947,7 +1005,7 @@
     .updateTopBooksContainer {
         margin: 0 auto;
         width: 100%;
-        display: relative;
+        margin-bottom: 25px;
         text-align: center;
     }
     .updateTopBooksButton {
@@ -981,9 +1039,11 @@
     .updateTopAuthorsContainer {
         margin: 0 auto;
         width: 100%;
-        display: relative;
+        margin-bottom: 25px;
         text-align: center;
     }
+
+
     .topAuthorWrapper {
         background-color: #F5F5DC;
         width: 220px;
@@ -1010,12 +1070,20 @@
         background-color: #F5F5DC;
         padding-top: 2px;
         width: 260px;
-        margin: 5px auto;
-        margin-bottom: 30px;
+        margin: 25px auto;
+        margin-bottom: 25px;
         border-radius: 5px;
     }
     .topBooksContainer{
         margin-bottom: 30px;
+    }
+    .currentBookContainer{
+    
+        border-bottom: 6px solid #DAA520;
+    }
+    .topBooksContainer{
+        
+        border-bottom: 6px solid #DAA520;
     }
     .updateCurrentButton {
         width: auto;
@@ -1107,7 +1175,7 @@
     .updateTopBooksContainer {
         margin: 0 auto;
         width: 100%;
-        display: relative;
+        margin-bottom: 25px;
         text-align: center;
     }
     .updateTopBooksButton {
@@ -1141,9 +1209,10 @@
     .updateTopAuthorsContainer {
         margin: 0 auto;
         width: 100%;
-        display: relative;
+        margin-bottom: 25px;
         text-align: center;
     }
+
     .topAuthorWrapper {
         background-color: #F5F5DC;
         width: 80px;

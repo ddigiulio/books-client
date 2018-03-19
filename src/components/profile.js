@@ -4,6 +4,7 @@ import requiresLogin from './requires-login';
 import * as actions from '../actions/profile';
 import { Link } from 'react-router-dom'
 import './profile.css'
+import Footer from './footer'
 import HeaderBar from './header-bar'
 import TopBooks from './topBooks'
 import TopAuthors from './topAuthors'
@@ -55,6 +56,7 @@ export class profile extends React.Component {
                         <Link to="/updateTopAuthorsPage"><button className="updateTopAuthorsButton">Update</button></Link>
                     </div>
                 </div>
+                <Footer />
             </div>
 
         );

@@ -56,6 +56,7 @@
 .remove {
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 25px;
 }
 
 .removeButton {
@@ -122,6 +123,7 @@
     .remove {
         text-align: center;
         margin: 0 auto;
+        margin-bottom: 25px;
     }
     .removeButton {
         width: 178px;
@@ -190,6 +192,7 @@
     .remove {
         text-align: center;
         margin: 0 auto;
+        margin-bottom: 25px;
     }
     .removeButton {
         width: 178px;
@@ -258,6 +261,7 @@
     .remove {
         text-align: center;
         margin: 0 auto;
+        margin-bottom: 25px;
     }
     .removeButton {
         width: 178px;
@@ -326,6 +330,7 @@
     .remove {
         text-align: center;
         margin: 0 auto;
+        margin-bottom: 20px;
     }
     .removeButton {
         width: 178px;
@@ -394,6 +399,7 @@
     .remove {
         text-align: center;
         margin: 0 auto;
+        margin-bottom: 25px;
     }
     .removeButton {
         width: 178px;
@@ -460,6 +466,8 @@
     .remove {
         text-align: center;
         margin: 0 auto;
+        margin-bottom: 25px;
+
     }
     .removeButton {
         width: 178px;

@@ -7,6 +7,7 @@ import './bookPage.css'
 import * as actions from '../actions/author';
 import './authorPage.css'
 import image from '../books2.jpg'
+import Footer from './footer'
 export class authorPage extends React.Component {
 
     componentDidMount(){
@@ -44,6 +45,7 @@ export class authorPage extends React.Component {
                 <div className="remove">
                 <button className="removeButton" onClick={this.removeAuthor}>Remove Author</button>
                 </div>
+                <Footer />
             </div>
         )
     }

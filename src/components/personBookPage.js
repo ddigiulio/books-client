@@ -6,6 +6,7 @@ import Book from './book'
 import HeaderBar from './header-bar'
 import './personBookPage.css'
 import image from '../books2.jpg'
+import Footer from './footer'
 export class personBookPage extends React.Component {
 
     componentDidMount(){
@@ -43,6 +44,7 @@ export class personBookPage extends React.Component {
                 <div className="goBackContainer">
                 <button className="goBackButton" onClick={this.goBack}>Back to profile</button>
                 </div>
+                <Footer />
             </div>
         )
     }
